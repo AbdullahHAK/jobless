@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -A \"JoblessBot/0.1 \\(+https://github.com/jobless; job board aggregator for PK software jobs\\)\" https://www.confiz.com/robots.txt)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{url_effective}\\\\n\" -L \"https://abacus-consulting-3.careers-page.com/\" --max-time 20)",
+      "Bash(curl -sL -A 'Mozilla/5.0 \\(JoblessBot research\\)' https://www.xavor.com/careers/ -o 'C:\\\\Users\\\\MEGA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-MEGA-Desktop-projects-jobless\\\\d2be880d-95f3-4783-8ce5-03328699c2a1\\\\scratchpad/xavor_careers.html')",
+      "Bash(curl -s -L --max-time 15 https://hr.kualitatem.com/careers/ -o /tmp/kualitatem_careers.html)",
+      "Bash(curl -s -A 'JoblessBot/0.1 \\(+https://github.com/jobless; job board aggregator for PK software jobs\\)' https://confiz.simplicant.com/ -o 'C:\\\\Users\\\\MEGA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-MEGA-Desktop-projects-jobless\\\\d2be880d-95f3-4783-8ce5-03328699c2a1\\\\scratchpad/confiz_simplicant.html')",
+      "Bash(curl -sI -A \"Mozilla/5.0 \\(JoblessBot research\\)\" https://www.xavor.com/careers/)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s --compressed -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) JoblessBot-Research/0.1\" \"https://www.techlogix.com/careers/lahore/\" -o \"C:/Users/MEGA/AppData/Local/Temp/claude/c--Users-MEGA-Desktop-projects-jobless/d2be880d-95f3-4783-8ce5-03328699c2a1/scratchpad/techlogix_lahore.html\" -w \"HTTP_CODE:%{http_code} SIZE:%{size_download}\\\\n\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" -L \"https://codup.applytojob.com/\" --max-time 20 -A \"Mozilla/5.0 JoblessBot-research\")",
+      "Bash(nslookup codup.applytojob.com)",
+      "Bash(curl -sv -L \"https://codup.applytojob.com/\" --max-time 20 -A \"Mozilla/5.0 JoblessBot-research\" -o /dev/null)",
+      "Bash(curl -s --compressed -A \"JoblessBot/0.1 \\(+https://github.com/jobless; job board aggregator for PK software jobs\\)\" -m 20 \"https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSr-SQA-Automation-Analyst_R52907&jobTitle=Sr.%20SQA%20Automation%20Analyst\" -o \"/c/Users/MEGA/AppData/Local/Temp/claude/c--Users-MEGA-Desktop-projects-jobless/d2be880d-95f3-4783-8ce5-03328699c2a1/scratchpad/contour_job_detail.html\" -w \"HTTP %{http_code}, size %{size_download}\\\\n\")",
+      "Bash(curl -s -L -A \"JoblessBot/0.1 \\(+https://github.com/jobless; job board aggregator for PK software jobs\\)\" \"https://www.venturedive.com/careers/\" -o /tmp/vd_careers.html)",
+      "Bash(grep -o 'href=\"//confiz.simplicant.com/jobs/[^\"]*\"' C:/Users/MEGA/AppData/Local/Temp/claude/c--Users-MEGA-Desktop-projects-jobless/d2be880d-95f3-4783-8ce5-03328699c2a1/scratchpad/confiz_home.html)",
+      "Bash(curl -s -A \"JoblessBot/0.1 \\(+https://github.com/jobless; job board aggregator for PK software jobs\\)\" \"https://api.resumatorapi.com/v1/jobs?apikey=jB0b57gnKdU9rqBWvqQpxzITAPrHUFaz\" -o \"C:/Users/MEGA/AppData/Local/Temp/claude/c--Users-MEGA-Desktop-projects-jobless/d2be880d-95f3-4783-8ce5-03328699c2a1/scratchpad/jobs.json\" -w \"HTTP_STATUS:%{http_code} SIZE:%{size_download}\\\\n\")"
+    ]
+  }
+}

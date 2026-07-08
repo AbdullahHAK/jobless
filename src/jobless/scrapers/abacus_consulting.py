@@ -27,6 +27,14 @@ JOB_DETAIL_URL = "https://abacus-consulting-3.careers-page.com/jobs/{job_id}"
 REQUEST_TIMEOUT_SECONDS = 10
 DELAY_BETWEEN_PAGES_SECONDS = 1
 
+# The platform enforces a fairly tight per-IP rate limit (observed: roughly the
+# first ~7 requests in a rolling window succeed, then it returns HTTP 429 with
+# no Retry-After header, until the window ages out). Rather than hammering it,
+# we back off for a full cooldown period and retry a bounded number of times
+# whenever we get rate-limited.
+MAX_RETRIES_PER_PAGE = 3
+RATE_LIMIT_BACKOFF_SECONDS = 65
+
 HEADERS = {
     "User-Agent": "JoblessBot/0.1 (+https://github.com/jobless; job board aggregator for PK software jobs)",
     "Accept": "text/html",
@@ -39,6 +47,31 @@ PAGE_INDICATOR_RE = re.compile(r"Page\s+\d+\s+of\s+(\d+)", re.IGNORECASE)
 class AbacusConsultingScraper(Scraper):
     company_name = "Abacus Consulting"
 
+    def _get_page(self, page_number: int) -> requests.Response:
+        """GET one listing page, backing off and retrying on rate-limit (429)."""
+        for attempt in range(1, MAX_RETRIES_PER_PAGE + 1):
+            response = requests.get(
+                BASE_URL,
+                params={"page": page_number},
+                headers=HEADERS,
+                timeout=REQUEST_TIMEOUT_SECONDS,
+            )
+            if response.status_code != 429:
+                response.raise_for_status()
+                return response
+
+            logger.warning(
+                "rate-limited fetching page %d (attempt %d/%d); backing off %ds",
+                page_number,
+                attempt,
+                MAX_RETRIES_PER_PAGE,
+                RATE_LIMIT_BACKOFF_SECONDS,
+            )
+            time.sleep(RATE_LIMIT_BACKOFF_SECONDS)
+
+        response.raise_for_status()
+        return response
+
     def scrape(self) -> list[Job]:
         jobs: list[Job] = []
 
@@ -46,13 +79,7 @@ class AbacusConsultingScraper(Scraper):
         total_pages = 1
 
         while page_number <= total_pages:
-            response = requests.get(
-                BASE_URL,
-                params={"page": page_number},
-                headers=HEADERS,
-                timeout=REQUEST_TIMEOUT_SECONDS,
-            )
-            response.raise_for_status()
+            response = self._get_page(page_number)
 
             soup = BeautifulSoup(response.text, "lxml")
 

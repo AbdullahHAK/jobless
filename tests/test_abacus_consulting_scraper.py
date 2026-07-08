@@ -39,12 +39,27 @@ PAGE_TWO_HTML = """
 </html>
 """
 
+SINGLE_PAGE_HTML = """
+<html>
+<body>
+  <div class="page-indicator"><span class="heading-font">Page 1 of 1</span></div>
+  <article class="mb-3 job-card">
+    <a class="job-title-link" data-job-id="11111111-1111-1111-1111-111111111111"
+       data-job-title="Apigee Architect" data-job-city="" data-job-country=""
+       href="/jobs/11111111-1111-1111-1111-111111111111">
+      <h6 class="job-title mb-0">Apigee Architect</h6>
+    </a>
+  </article>
+</body>
+</html>
+"""
+
 
 def test_scrape_follows_pagination_and_builds_job_schema(mocker):
     mock_get = mocker.patch("jobless.scrapers.abacus_consulting.requests.get")
     mock_get.side_effect = [
-        mocker.Mock(text=PAGE_ONE_HTML, raise_for_status=lambda: None),
-        mocker.Mock(text=PAGE_TWO_HTML, raise_for_status=lambda: None),
+        mocker.Mock(text=PAGE_ONE_HTML, status_code=200, raise_for_status=lambda: None),
+        mocker.Mock(text=PAGE_TWO_HTML, status_code=200, raise_for_status=lambda: None),
     ]
     mocker.patch("jobless.scrapers.abacus_consulting.time.sleep")
 
@@ -70,3 +85,23 @@ def test_scrape_follows_pagination_and_builds_job_schema(mocker):
     third = jobs[2]
     assert third.title == "Procurement Executive"
     assert third.location == "Lahore, Pakistan"
+
+
+def test_scrape_backs_off_and_retries_on_rate_limit(mocker):
+    mock_get = mocker.patch("jobless.scrapers.abacus_consulting.requests.get")
+    rate_limited = mocker.Mock(status_code=429)
+    rate_limited.raise_for_status.side_effect = AssertionError(
+        "raise_for_status should not be called for a 429 response"
+    )
+    mock_get.side_effect = [
+        rate_limited,
+        mocker.Mock(text=SINGLE_PAGE_HTML, status_code=200, raise_for_status=lambda: None),
+    ]
+    mock_sleep = mocker.patch("jobless.scrapers.abacus_consulting.time.sleep")
+
+    jobs = AbacusConsultingScraper().scrape()
+
+    assert mock_get.call_count == 2
+    mock_sleep.assert_called_once()
+    assert len(jobs) == 1
+    assert jobs[0].title == "Apigee Architect"

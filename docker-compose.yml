@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: jobless
+      POSTGRES_PASSWORD: jobless
+      POSTGRES_DB: jobless
+    ports:
+      - "5432:5432"
+    volumes:
+      - jobless_pgdata:/var/lib/postgresql/data
+
+volumes:
+  jobless_pgdata:

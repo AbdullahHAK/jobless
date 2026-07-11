@@ -1,6 +1,6 @@
 import logging
 
-from . import scrapers  # noqa: F401 - import triggers scraper auto-registration
+from . import db, scrapers  # noqa: F401 - import triggers scraper auto-registration
 from .scrapers.base import Job
 from .scrapers.registry import all_scrapers
 
@@ -26,3 +26,15 @@ def main() -> None:
     logger.info("scraped %d jobs total", len(jobs))
     for job in jobs:
         print(f"{job.company} | {job.title} | {job.location} | {job.apply_link}")
+
+    try:
+        conn = db.get_connection()
+    except Exception:
+        logger.exception("could not connect to the database; skipping persistence")
+        return
+
+    try:
+        db.init_db(conn)
+        db.save_jobs(conn, jobs)
+    finally:
+        conn.close()

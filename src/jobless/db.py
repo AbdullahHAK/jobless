@@ -2,6 +2,7 @@ import logging
 import os
 
 import psycopg
+from psycopg.rows import dict_row
 
 from .scrapers.base import Job
 
@@ -69,3 +70,22 @@ def save_jobs(conn: psycopg.Connection, jobs: list[Job]) -> int:
 
     logger.info("saved %d jobs to the database", len(rows))
     return len(rows)
+
+
+def list_jobs(
+    conn: psycopg.Connection,
+    company: str | None = None,
+    limit: int = 50,
+    offset: int = 0,
+) -> list[dict]:
+    """Return jobs, most recently scraped first, optionally filtered by company."""
+    query = "SELECT id, title, company, location, apply_link, date_scraped, first_seen_at FROM jobs"
+    params: dict = {"limit": limit, "offset": offset}
+    if company:
+        query += " WHERE company = %(company)s"
+        params["company"] = company
+    query += " ORDER BY date_scraped DESC, id DESC LIMIT %(limit)s OFFSET %(offset)s;"
+
+    with conn.cursor(row_factory=dict_row) as cur:
+        cur.execute(query, params)
+        return cur.fetchall()

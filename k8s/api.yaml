@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jobless-api
+  namespace: jobless
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: jobless-api
+  template:
+    metadata:
+      labels:
+        app: jobless-api
+    spec:
+      containers:
+        - name: api
+          image: jobless-api:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          env:
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-credentials
+                  key: DATABASE_URL
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 20
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jobless-api
+  namespace: jobless
+spec:
+  selector:
+    app: jobless-api
+  ports:
+    - port: 80
+      targetPort: 8000

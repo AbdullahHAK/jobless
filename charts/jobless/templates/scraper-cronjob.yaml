@@ -2,9 +2,9 @@ apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: jobless-scraper
-  namespace: jobless
+  namespace: {{ .Release.Namespace }}
 spec:
-  schedule: "0 3 * * *" # 03:00 daily
+  schedule: {{ .Values.scraper.schedule | quote }}
   concurrencyPolicy: Forbid # don't overlap if a run takes longer than a day
   successfulJobsHistoryLimit: 3
   failedJobsHistoryLimit: 3
@@ -16,8 +16,8 @@ spec:
           restartPolicy: OnFailure
           containers:
             - name: scraper
-              image: jobless-scraper:latest
-              imagePullPolicy: IfNotPresent
+              image: "{{ .Values.scraper.image.repository }}:{{ .Values.scraper.image.tag }}"
+              imagePullPolicy: {{ .Values.scraper.image.pullPolicy }}
               env:
                 - name: DATABASE_URL
                   valueFrom:
@@ -25,9 +25,4 @@ spec:
                       name: postgres-credentials
                       key: DATABASE_URL
               resources:
-                requests:
-                  cpu: 100m
-                  memory: 128Mi
-                limits:
-                  cpu: 500m
-                  memory: 256Mi
+                {{- toYaml .Values.scraper.resources | nindent 16 }}

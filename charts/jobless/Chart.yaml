@@ -1,0 +1,6 @@
+apiVersion: v2
+name: jobless
+description: Job board for the Pakistani software industry - API, scraper CronJob, and Postgres
+type: application
+version: 0.1.0
+appVersion: "0.1.0"

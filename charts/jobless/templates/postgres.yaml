@@ -2,18 +2,18 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: postgres-data
-  namespace: jobless
+  namespace: {{ .Release.Namespace }}
 spec:
   accessModes: ["ReadWriteOnce"]
   resources:
     requests:
-      storage: 1Gi
+      storage: {{ .Values.postgres.storage }}
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: postgres
-  namespace: jobless
+  namespace: {{ .Release.Namespace }}
 spec:
   replicas: 1
   strategy:
@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
         - name: postgres
-          image: postgres:16-alpine
+          image: {{ .Values.postgres.image }}
           ports:
             - containerPort: 5432
           envFrom:
@@ -40,7 +40,7 @@ spec:
               subPath: postgres # avoid postgres's "lost+found" mount-root complaint
           readinessProbe:
             exec:
-              command: ["pg_isready", "-U", "jobless"]
+              command: ["pg_isready", "-U", {{ .Values.credentials.user | quote }}]
             initialDelaySeconds: 5
             periodSeconds: 5
       volumes:
@@ -52,7 +52,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: postgres
-  namespace: jobless
+  namespace: {{ .Release.Namespace }}
 spec:
   selector:
     app: postgres

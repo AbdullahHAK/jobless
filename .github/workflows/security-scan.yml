@@ -1,0 +1,77 @@
+name: Security Scan
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  trivy-image-scan:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - name: api
+            dockerfile: Dockerfile
+          - name: scraper
+            dockerfile: Dockerfile.scraper
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build ${{ matrix.name }} image
+        run: docker build -t jobless-${{ matrix.name }} -f ${{ matrix.dockerfile }} .
+
+      # Report-only, not a hard gate: most findings here are base-image OS
+      # package CVEs (e.g. perl, ncurses) with no upstream fix available yet
+      # ("fix_deferred"). Failing CI on issues we can't actually remediate
+      # just creates alert fatigue - results go to the Security tab instead
+      # so they're visible without blocking every build.
+      - name: Scan ${{ matrix.name }} image with Trivy
+        uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          image-ref: jobless-${{ matrix.name }}
+          severity: HIGH,CRITICAL
+          format: sarif
+          output: trivy-${{ matrix.name }}.sarif
+          exit-code: "0"
+
+      - name: Upload Trivy results
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: trivy-${{ matrix.name }}.sarif
+          category: trivy-${{ matrix.name }}
+
+  dependency-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.10.9"
+
+      # Unlike base-image OS CVEs, a vulnerable Python dependency is
+      # directly actionable (bump the version), so this one does fail the
+      # build. Python-ecosystem equivalent of OWASP Dependency-Check's SCA
+      # scanning - Dependency-Check's own Python analyzer is experimental
+      # and its NVD database download is slow/rate-limited without an API
+      # key, which makes it a poor fit for CI without extra setup.
+      - name: Run pip-audit
+        run: |
+          uv export --no-dev --no-hashes -o requirements-audit.txt
+          uvx pip-audit --requirement requirements-audit.txt
+
+  sonarcloud:
+    runs-on: ubuntu-latest
+    # Requires a SONAR_TOKEN repo secret from a SonarCloud project - not
+    # configured yet, so this step is skipped rather than failing the
+    # workflow until that's set up.
+    if: ${{ vars.SONAR_ENABLED == 'true' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: SonarSource/sonarqube-scan-action@v4
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

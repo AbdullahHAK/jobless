@@ -1,0 +1,31 @@
+name: Smoke Test (full deploy + live scrape)
+
+# Manual trigger only - this spins up a real cluster and runs the scrapers
+# against the actual company websites. Running that on every push/PR would
+# mean hammering 15 external sites on every commit, which is exactly the
+# kind of scraping behavior this project is trying not to be. Run it
+# on-demand (Actions tab -> Smoke Test -> Run workflow) when you actually
+# want an end-to-end confidence check.
+on:
+  workflow_dispatch: {}
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install kind
+        run: |
+          curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.32.0/kind-linux-amd64
+          chmod +x ./kind
+          sudo mv ./kind /usr/local/bin/kind
+
+      - name: Install Helm
+        uses: azure/setup-helm@v4
+
+      - name: Install kubectl
+        uses: azure/setup-kubectl@v4
+
+      - name: Run smoke test
+        run: bash scripts/smoke-test.sh

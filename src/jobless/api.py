@@ -4,6 +4,7 @@ from datetime import date, datetime
 import psycopg
 from fastapi import Depends, FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
+from prometheus_fastapi_instrumentator import Instrumentator
 from pydantic import BaseModel
 
 from . import db
@@ -19,6 +20,12 @@ app.add_middleware(
     allow_origins=["*"],
     allow_methods=["GET"],
 )
+
+# Exposes GET /metrics in Prometheus text format (request counts, latency
+# histograms, in-progress requests, per path+status). Once kube-prometheus-
+# stack is installed in-cluster, a ServiceMonitor selecting the jobless-api
+# Service is all that's needed to start scraping this - no code changes.
+Instrumentator().instrument(app).expose(app)
 
 
 class JobOut(BaseModel):

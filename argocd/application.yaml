@@ -1,0 +1,35 @@
+# ArgoCD watches this Application resource and keeps the live cluster in
+# sync with charts/jobless in this same repo - deploying is a git push
+# (bump values.yaml's image tags, merge to main), not a manual `helm upgrade`.
+#
+# Points at this repo's own charts/ directory rather than a separate "config
+# repo" - the standard pattern at larger orgs (app code and deploy config
+# versioned/reviewed separately), but for a single-maintainer project the
+# extra repo is overhead with no real benefit yet. Worth splitting out if
+# this grows multiple environments/apps sharing one ArgoCD instance.
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: jobless
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/AbdullahHAK/jobless.git
+    targetRevision: main
+    path: charts/jobless
+    helm:
+      valueFiles:
+        - values.yaml
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: jobless
+
+  syncPolicy:
+    automated:
+      prune: true # remove resources deleted from the chart
+      selfHeal: true # revert manual kubectl edits back to what git says
+    syncOptions:
+      - CreateNamespace=true

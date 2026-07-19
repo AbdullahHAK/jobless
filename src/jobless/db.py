@@ -37,9 +37,17 @@ ON CONFLICT (apply_link) DO UPDATE SET
 """
 
 
+CONNECT_TIMEOUT_SECONDS = 5
+
+
 def get_connection() -> psycopg.Connection:
+    # Without an explicit timeout, a DB outage can hang a connecting client
+    # indefinitely instead of failing fast - found by actually testing this
+    # (started the API with no Postgres reachable; a request to /jobs just
+    # hung rather than erroring). That defeats the point of readiness/
+    # liveness probes and piles up stuck requests under real load.
     database_url = os.environ.get("DATABASE_URL", DEFAULT_DATABASE_URL)
-    return psycopg.connect(database_url)
+    return psycopg.connect(database_url, connect_timeout=CONNECT_TIMEOUT_SECONDS)
 
 
 def init_db(conn: psycopg.Connection) -> None:

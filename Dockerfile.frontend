@@ -1,0 +1,5 @@
+# Frontend image - static files served by nginx. No build step needed,
+# it's plain HTML/CSS/JS with no bundler/framework.
+FROM nginx:1.27-alpine
+COPY frontend/ /usr/share/nginx/html/
+EXPOSE 80

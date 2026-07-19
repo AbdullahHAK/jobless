@@ -53,3 +53,14 @@ def test_save_jobs_with_empty_list_skips_db_calls(mocker):
     assert count == 0
     conn.cursor.assert_not_called()
     conn.commit.assert_not_called()
+
+
+def test_list_companies_returns_distinct_sorted_names(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchall.return_value = [("Arbisoft",), ("Confiz",)]
+
+    companies = db.list_companies(conn)
+
+    assert companies == ["Arbisoft", "Confiz"]
+    assert "DISTINCT company" in cursor.execute.call_args[0][0]

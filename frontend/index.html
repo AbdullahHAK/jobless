@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jobless — Pakistani Software Jobs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Jobless</h1>
+    <p class="tagline">Software jobs from Pakistani tech companies, updated daily.</p>
+  </header>
+
+  <main>
+    <div class="controls">
+      <select id="company-filter">
+        <option value="">All companies</option>
+      </select>
+      <span id="result-count" class="result-count"></span>
+    </div>
+
+    <p id="status" class="status"></p>
+    <ul id="job-list" class="job-list"></ul>
+
+    <button id="load-more" class="load-more" hidden>Load more</button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

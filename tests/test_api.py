@@ -57,6 +57,19 @@ def test_get_jobs_returns_rows_from_db(mocker):
     app.dependency_overrides.clear()
 
 
+def test_get_companies_returns_distinct_list(mocker):
+    fake_conn = mocker.MagicMock()
+    _override_with(fake_conn)
+    mocker.patch("jobless.api.db.list_companies", return_value=["Arbisoft", "Confiz"])
+
+    response = client.get("/companies")
+
+    assert response.status_code == 200
+    assert response.json() == ["Arbisoft", "Confiz"]
+
+    app.dependency_overrides.clear()
+
+
 def test_get_jobs_rejects_limit_over_max():
     app.dependency_overrides[get_db_connection] = lambda: iter([object()])
 

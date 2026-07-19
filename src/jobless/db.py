@@ -89,3 +89,10 @@ def list_jobs(
     with conn.cursor(row_factory=dict_row) as cur:
         cur.execute(query, params)
         return cur.fetchall()
+
+
+def list_companies(conn: psycopg.Connection) -> list[str]:
+    """Distinct companies that currently have at least one stored job."""
+    with conn.cursor() as cur:
+        cur.execute("SELECT DISTINCT company FROM jobs ORDER BY company;")
+        return [row[0] for row in cur.fetchall()]

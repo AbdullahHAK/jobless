@@ -1,0 +1,21 @@
+{{- if .Capabilities.APIVersions.Has "monitoring.coreos.com/v1" }}
+# Only created when the Prometheus Operator's CRDs are already installed
+# (e.g. via kube-prometheus-stack) - otherwise `helm install` would fail on
+# a cluster that doesn't have monitoring set up at all, like the plain
+# smoke-test.sh flow.
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: jobless-api
+  namespace: {{ .Release.Namespace }}
+  labels:
+    release: prometheus # matched by kube-prometheus-stack's default serviceMonitorSelector
+spec:
+  selector:
+    matchLabels:
+      app: jobless-api
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 30s
+{{- end }}

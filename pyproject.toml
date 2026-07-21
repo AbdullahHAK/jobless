@@ -30,4 +30,21 @@ dev = [
     "httpx>=0.28.1",
     "pytest>=9.1.1",
     "pytest-mock>=3.15.1",
+    "ruff>=0.15.22",
 ]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+# Standard defaults (pyflakes + pycodestyle) plus import sorting - not going
+# further (e.g. pydocstyle, complexity rules) since this project deliberately
+# favors minimal comments/docstrings and small, direct functions already.
+select = ["E", "F", "I", "W"]
+
+[tool.ruff.lint.per-file-ignores]
+# Test fixtures embed real HTML samples verbatim (for realism against the
+# actual markup each scraper parses) - wrapping those lines would hurt
+# readability without catching any real issue.
+"tests/*" = ["E501"]

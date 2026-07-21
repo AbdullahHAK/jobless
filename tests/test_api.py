@@ -2,7 +2,6 @@ from datetime import date, datetime
 
 from fastapi.testclient import TestClient
 
-from jobless import db
 from jobless.api import app, get_db_connection
 
 client = TestClient(app)

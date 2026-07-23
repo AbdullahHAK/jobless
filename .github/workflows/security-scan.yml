@@ -8,6 +8,14 @@ on:
 jobs:
   trivy-image-scan:
     runs-on: ubuntu-latest
+    # Uploading SARIF to the Security tab needs security-events: write - the
+    # default GITHUB_TOKEN doesn't have it, which failed every run so far
+    # ("Resource not accessible by integration") without failing the actual
+    # scan step itself, so it was easy to miss.
+    permissions:
+      contents: read
+      security-events: write
+      actions: read
     strategy:
       matrix:
         include:

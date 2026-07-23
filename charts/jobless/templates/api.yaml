@@ -45,6 +45,13 @@ kind: Service
 metadata:
   name: jobless-api
   namespace: {{ .Release.Namespace }}
+  # ServiceMonitor's selector matches a Service's own metadata.labels, not
+  # spec.selector (which only controls pod routing) - without this, Prometheus
+  # silently never discovers the target. Found by actually checking
+  # Prometheus's /api/v1/targets rather than assuming the ServiceMonitor
+  # existing was enough.
+  labels:
+    app: jobless-api
 spec:
   selector:
     app: jobless-api

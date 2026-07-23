@@ -8,6 +8,14 @@ on:
 jobs:
   trivy-image-scan:
     runs-on: ubuntu-latest
+    # Uploading SARIF to the Security tab needs security-events: write - the
+    # default GITHUB_TOKEN doesn't have it, which failed every run so far
+    # ("Resource not accessible by integration") without failing the actual
+    # scan step itself, so it was easy to miss.
+    permissions:
+      contents: read
+      security-events: write
+      actions: read
     strategy:
       matrix:
         include:
@@ -24,9 +32,20 @@ jobs:
       # Report-only, not a hard gate: most findings here are base-image OS
       # package CVEs (e.g. perl, ncurses) with no upstream fix available yet
       # ("fix_deferred"). Failing CI on issues we can't actually remediate
-      # just creates alert fatigue - results go to the Security tab instead
-      # so they're visible without blocking every build.
-      - name: Scan ${{ matrix.name }} image with Trivy
+      # just creates alert fatigue.
+      #
+      # Printed in both formats: table goes straight into this job's log, so
+      # findings are actually visible even though the SARIF upload below
+      # can't work on a private repo without a paid Code Security plan.
+      - name: Scan ${{ matrix.name }} image with Trivy (log output)
+        uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          image-ref: jobless-${{ matrix.name }}
+          severity: HIGH,CRITICAL
+          format: table
+          exit-code: "0"
+
+      - name: Scan ${{ matrix.name }} image with Trivy (SARIF)
         uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: jobless-${{ matrix.name }}
@@ -35,8 +54,15 @@ jobs:
           output: trivy-${{ matrix.name }}.sarif
           exit-code: "0"
 
+      # Non-blocking: code scanning (SARIF upload to the Security tab) isn't
+      # available on private repos without a paid GitHub Team/Enterprise +
+      # Code Security plan - confirmed via GitHub's own docs, not something
+      # a permissions fix can work around. The actual scan above already ran
+      # and its findings are in this job's log regardless of whether the
+      # upload succeeds, so this step failing shouldn't fail the build.
       - name: Upload Trivy results
         uses: github/codeql-action/upload-sarif@v3
+        continue-on-error: true
         with:
           sarif_file: trivy-${{ matrix.name }}.sarif
           category: trivy-${{ matrix.name }}

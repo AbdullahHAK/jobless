@@ -1,0 +1,19 @@
+{{- if .Capabilities.APIVersions.Has "monitoring.coreos.com/v1" }}
+# Only created alongside the ServiceMonitor (same capability gate) - a
+# dashboard with no metrics being scraped isn't useful, and this keeps
+# `helm install` working unchanged on a cluster with no monitoring stack.
+#
+# kube-prometheus-stack's Grafana ships with a sidecar that watches for
+# ConfigMaps labeled grafana_dashboard: "1" in any namespace and imports
+# them automatically - no manual upload, no dashboard UID to hardcode.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: jobless-grafana-dashboard
+  namespace: {{ .Release.Namespace }}
+  labels:
+    grafana_dashboard: "1"
+data:
+  jobless-api.json: |
+{{ .Files.Get "dashboards/jobless-api.json" | indent 4 }}
+{{- end }}

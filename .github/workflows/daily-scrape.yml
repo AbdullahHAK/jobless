@@ -1,0 +1,35 @@
+name: Daily Scrape
+
+# Same schedule as the K8s CronJob (charts/jobless/templates/scraper-cronjob.yaml)
+# - this workflow exists as a free, infra-free way to run the daily scrape
+# against a hosted Postgres (e.g. Neon) for the MVP, without needing a
+# cluster running anywhere. Requires a DATABASE_URL repo secret pointing at
+# a real reachable Postgres instance.
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: daily-scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.10.9"
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      - name: Run scrapers
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: uv run jobless

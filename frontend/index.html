@@ -12,6 +12,20 @@
     <p class="tagline">Software jobs from Pakistani tech companies, updated daily.</p>
   </header>
 
+  <form id="subscribe-form" class="subscribe-form">
+    <p class="subscribe-heading">Get new listings by email</p>
+    <div class="subscribe-fields">
+      <input type="text" id="subscribe-name" placeholder="Name" required />
+      <input type="email" id="subscribe-email" placeholder="Email" required />
+      <select id="subscribe-frequency">
+        <option value="daily">Daily</option>
+        <option value="weekly">Weekly</option>
+      </select>
+      <button type="submit">Subscribe</button>
+    </div>
+    <p id="subscribe-status" class="subscribe-status"></p>
+  </form>
+
   <main>
     <div class="controls">
       <select id="company-filter">

@@ -77,5 +77,31 @@ companyFilter.addEventListener("change", () => {
 
 loadMoreBtn.addEventListener("click", () => fetchJobs());
 
+const subscribeForm = document.getElementById("subscribe-form");
+const subscribeStatus = document.getElementById("subscribe-status");
+
+subscribeForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  subscribeStatus.textContent = "Submitting...";
+
+  const name = document.getElementById("subscribe-name").value;
+  const email = document.getElementById("subscribe-email").value;
+  const frequency = document.getElementById("subscribe-frequency").value;
+
+  try {
+    const response = await fetch(`${API_BASE}/subscribe`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, frequency }),
+    });
+    if (!response.ok) throw new Error(`API returned ${response.status}`);
+
+    subscribeStatus.textContent = `Subscribed - you'll get ${frequency} job updates at ${email}.`;
+    subscribeForm.reset();
+  } catch (err) {
+    subscribeStatus.textContent = `Couldn't subscribe (${err.message}). Please try again.`;
+  }
+});
+
 loadCompanyOptions();
 fetchJobs({ reset: true });

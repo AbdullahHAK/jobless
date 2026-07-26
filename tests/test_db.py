@@ -64,3 +64,48 @@ def test_list_companies_returns_distinct_sorted_names(mocker):
 
     assert companies == ["Arbisoft", "Confiz"]
     assert "DISTINCT company" in cursor.execute.call_args[0][0]
+
+
+def test_add_subscriber_upserts_by_email_and_returns_token(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchone.return_value = ("the-existing-token",)
+
+    token = db.add_subscriber(conn, name="Abdullah", email="a@example.com", frequency="daily")
+
+    assert token == "the-existing-token"
+    sql, params = cursor.execute.call_args[0]
+    assert "ON CONFLICT (email) DO UPDATE" in sql
+    assert "unsubscribe_token" not in sql.split("DO UPDATE SET")[1].split("RETURNING")[0]
+    assert params["name"] == "Abdullah"
+    assert params["email"] == "a@example.com"
+    assert params["frequency"] == "daily"
+    conn.commit.assert_called_once()
+
+
+def test_remove_subscriber_returns_true_when_a_row_was_deleted(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.rowcount = 1
+
+    assert db.remove_subscriber(conn, "some-token") is True
+    conn.commit.assert_called_once()
+
+
+def test_remove_subscriber_returns_false_when_token_not_found(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.rowcount = 0
+
+    assert db.remove_subscriber(conn, "unknown-token") is False
+
+
+def test_list_subscribers_filters_by_frequency(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchall.return_value = [{"id": 1, "name": "Abdullah", "email": "a@example.com", "unsubscribe_token": "t"}]
+
+    subscribers = db.list_subscribers(conn, "daily")
+
+    assert len(subscribers) == 1
+    assert cursor.execute.call_args[0][1] == {"frequency": "daily"}

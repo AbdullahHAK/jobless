@@ -1,5 +1,6 @@
 import logging
 import os
+import secrets
 
 import psycopg
 from psycopg.rows import dict_row
@@ -19,6 +20,15 @@ CREATE TABLE IF NOT EXISTS jobs (
     apply_link TEXT NOT NULL UNIQUE,
     date_scraped DATE NOT NULL,
     first_seen_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE TABLE IF NOT EXISTS subscribers (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE,
+    frequency TEXT NOT NULL CHECK (frequency IN ('daily', 'weekly')),
+    unsubscribe_token TEXT NOT NULL UNIQUE,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 """
 
@@ -104,3 +114,52 @@ def list_companies(conn: psycopg.Connection) -> list[str]:
     with conn.cursor() as cur:
         cur.execute("SELECT DISTINCT company FROM jobs ORDER BY company;")
         return [row[0] for row in cur.fetchall()]
+
+
+# Upsert by email: resubmitting the signup form (e.g. to switch daily <->
+# weekly) updates name/frequency in place rather than erroring on the unique
+# email constraint. unsubscribe_token is deliberately left out of the
+# DO UPDATE SET clause so an existing subscriber's unsubscribe link - already
+# possibly sitting in an old email - keeps working rather than silently
+# breaking on their next resubmit.
+_ADD_SUBSCRIBER = """
+INSERT INTO subscribers (name, email, frequency, unsubscribe_token)
+VALUES (%(name)s, %(email)s, %(frequency)s, %(token)s)
+ON CONFLICT (email) DO UPDATE SET
+    name = EXCLUDED.name,
+    frequency = EXCLUDED.frequency
+RETURNING unsubscribe_token;
+"""
+
+
+def add_subscriber(conn: psycopg.Connection, name: str, email: str, frequency: str) -> str:
+    """Insert or update a subscriber. Returns their unsubscribe token."""
+    params = {
+        "name": name,
+        "email": email,
+        "frequency": frequency,
+        "token": secrets.token_urlsafe(32),
+    }
+    with conn.cursor() as cur:
+        cur.execute(_ADD_SUBSCRIBER, params)
+        token = cur.fetchone()[0]
+    conn.commit()
+    return token
+
+
+def remove_subscriber(conn: psycopg.Connection, token: str) -> bool:
+    """Delete a subscriber by their unsubscribe token. Returns whether one was found."""
+    with conn.cursor() as cur:
+        cur.execute("DELETE FROM subscribers WHERE unsubscribe_token = %(token)s;", {"token": token})
+        removed = cur.rowcount > 0
+    conn.commit()
+    return removed
+
+
+def list_subscribers(conn: psycopg.Connection, frequency: str) -> list[dict]:
+    with conn.cursor(row_factory=dict_row) as cur:
+        cur.execute(
+            "SELECT id, name, email, unsubscribe_token FROM subscribers WHERE frequency = %(frequency)s;",
+            {"frequency": frequency},
+        )
+        return cur.fetchall()

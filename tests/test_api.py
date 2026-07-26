@@ -77,3 +77,73 @@ def test_get_jobs_rejects_limit_over_max():
     assert response.status_code == 422
 
     app.dependency_overrides.clear()
+
+
+def test_subscribe_adds_subscriber(mocker):
+    fake_conn = mocker.MagicMock()
+    _override_with(fake_conn)
+    add_subscriber = mocker.patch("jobless.api.db.add_subscriber", return_value="a-token")
+
+    response = client.post(
+        "/subscribe",
+        json={"name": "Abdullah", "email": "abdullah@example.com", "frequency": "daily"},
+    )
+
+    assert response.status_code == 200
+    assert response.json() == {"status": "subscribed"}
+    add_subscriber.assert_called_once_with(
+        fake_conn, name="Abdullah", email="abdullah@example.com", frequency="daily"
+    )
+
+    app.dependency_overrides.clear()
+
+
+def test_subscribe_rejects_invalid_email():
+    app.dependency_overrides[get_db_connection] = lambda: iter([object()])
+
+    response = client.post(
+        "/subscribe",
+        json={"name": "Abdullah", "email": "not-an-email", "frequency": "daily"},
+    )
+
+    assert response.status_code == 422
+
+    app.dependency_overrides.clear()
+
+
+def test_subscribe_rejects_invalid_frequency():
+    app.dependency_overrides[get_db_connection] = lambda: iter([object()])
+
+    response = client.post(
+        "/subscribe",
+        json={"name": "Abdullah", "email": "abdullah@example.com", "frequency": "monthly"},
+    )
+
+    assert response.status_code == 422
+
+    app.dependency_overrides.clear()
+
+
+def test_unsubscribe_removes_subscriber_and_returns_html(mocker):
+    fake_conn = mocker.MagicMock()
+    _override_with(fake_conn)
+    mocker.patch("jobless.api.db.remove_subscriber", return_value=True)
+
+    response = client.get("/unsubscribe?token=some-token")
+
+    assert response.status_code == 200
+    assert "unsubscribed" in response.text.lower()
+
+    app.dependency_overrides.clear()
+
+
+def test_unsubscribe_with_unknown_token_returns_404(mocker):
+    fake_conn = mocker.MagicMock()
+    _override_with(fake_conn)
+    mocker.patch("jobless.api.db.remove_subscriber", return_value=False)
+
+    response = client.get("/unsubscribe?token=unknown-token")
+
+    assert response.status_code == 404
+
+    app.dependency_overrides.clear()

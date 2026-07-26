@@ -67,7 +67,9 @@ def run(frequency: str) -> None:
             return
 
         subscribers = db.list_subscribers(conn, frequency)
-        logger.info("sending %s digest (%d new jobs) to %d subscriber(s)", frequency, len(jobs), len(subscribers))
+        logger.info(
+            "sending %s digest (%d new jobs) to %d subscriber(s)", frequency, len(jobs), len(subscribers)
+        )
 
         sent = 0
         for subscriber in subscribers:

@@ -1,0 +1,37 @@
+name: Daily Digest Email
+
+# Runs an hour after daily-scrape.yml so that day's new postings are already
+# in the database. Requires DATABASE_URL, RESEND_API_KEY repo secrets, and
+# API_BASE_URL (repo variable) pointing at wherever /unsubscribe is actually
+# served - unsubscribe links are broken without it.
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.10.9"
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      - name: Send daily digest
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM_EMAIL: ${{ vars.RESEND_FROM_EMAIL }}
+          API_BASE_URL: ${{ vars.API_BASE_URL }}
+        run: uv run python -m jobless.digest daily

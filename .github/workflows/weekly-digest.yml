@@ -1,0 +1,35 @@
+name: Weekly Digest Email
+
+# Same secrets/variables as daily-digest.yml - see that file for what each
+# one needs to be set to.
+on:
+  schedule:
+    - cron: "0 5 * * 1" # Monday
+  workflow_dispatch: {}
+
+concurrency:
+  group: weekly-digest
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.10.9"
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      - name: Send weekly digest
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM_EMAIL: ${{ vars.RESEND_FROM_EMAIL }}
+          API_BASE_URL: ${{ vars.API_BASE_URL }}
+        run: uv run python -m jobless.digest weekly

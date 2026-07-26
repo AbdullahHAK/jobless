@@ -66,6 +66,20 @@ def test_list_companies_returns_distinct_sorted_names(mocker):
     assert "DISTINCT company" in cursor.execute.call_args[0][0]
 
 
+def test_list_new_jobs_filters_by_first_seen_at(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchall.return_value = [{"id": 1, "title": "Senior Engineer"}]
+    since = date.today()
+
+    jobs = db.list_new_jobs(conn, since)
+
+    assert jobs == [{"id": 1, "title": "Senior Engineer"}]
+    sql, params = cursor.execute.call_args[0]
+    assert "first_seen_at >=" in sql
+    assert params == {"since": since}
+
+
 def test_add_subscriber_upserts_by_email_and_returns_token(mocker):
     conn = mocker.MagicMock()
     cursor = conn.cursor.return_value.__enter__.return_value

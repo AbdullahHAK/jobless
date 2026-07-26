@@ -1,6 +1,7 @@
 import logging
 import os
 import secrets
+from datetime import datetime
 
 import psycopg
 from psycopg.rows import dict_row
@@ -106,6 +107,23 @@ def list_jobs(
 
     with conn.cursor(row_factory=dict_row) as cur:
         cur.execute(query, params)
+        return cur.fetchall()
+
+
+def list_new_jobs(conn: psycopg.Connection, since: datetime) -> list[dict]:
+    """Jobs first seen at or after `since` - for email digests, deliberately
+    keyed on first_seen_at rather than date_scraped so a still-open job that
+    gets re-scraped every day doesn't get resent to subscribers every day."""
+    with conn.cursor(row_factory=dict_row) as cur:
+        cur.execute(
+            """
+            SELECT id, title, company, location, apply_link, first_seen_at
+            FROM jobs
+            WHERE first_seen_at >= %(since)s
+            ORDER BY first_seen_at DESC;
+            """,
+            {"since": since},
+        )
         return cur.fetchall()
 
 

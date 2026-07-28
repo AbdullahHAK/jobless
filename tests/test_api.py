@@ -147,3 +147,38 @@ def test_unsubscribe_with_unknown_token_returns_404(mocker):
     assert response.status_code == 404
 
     app.dependency_overrides.clear()
+
+
+def test_subscribe_is_rate_limited_per_client(mocker):
+    fake_conn = mocker.MagicMock()
+    _override_with(fake_conn)
+    mocker.patch("jobless.api.db.add_subscriber", return_value="token")
+
+    # Limit is 5/minute - fire well past that from the same test client
+    # (same source IP) and confirm at least one request actually gets
+    # rejected with 429, rather than asserting an exact trip point that
+    # could be thrown off by shared limiter state across other tests.
+    statuses = [
+        client.post(
+            "/subscribe",
+            json={"name": "X", "email": f"x{i}@example.com", "frequency": "daily"},
+        ).status_code
+        for i in range(10)
+    ]
+
+    assert 429 in statuses
+
+    app.dependency_overrides.clear()
+
+
+def test_health_is_not_rate_limited(mocker):
+    fake_conn = mocker.MagicMock()
+    _override_with(fake_conn)
+
+    # /health is hit repeatedly and legitimately by K8s probes - it must
+    # never 429, unlike /subscribe and /jobs.
+    statuses = [client.get("/health").status_code for _ in range(20)]
+
+    assert all(status == 200 for status in statuses)
+
+    app.dependency_overrides.clear()

@@ -24,7 +24,12 @@ JS payload embedded in the page - documented in a comment at the top of each scr
 - **Scraping**: Python, `requests` + BeautifulSoup (Playwright available for one-off
   reconnaissance of JS-heavy sites, not needed at runtime by any current scraper)
 - **Storage**: PostgreSQL
-- **Backend**: FastAPI (`GET /jobs`, `GET /companies`, `GET /health`, `GET /metrics`)
+- **Backend**: FastAPI (`GET /jobs`, `GET /companies`, `GET /health`, `GET /metrics`,
+  `POST /subscribe`, `GET /unsubscribe`), rate-limited per client IP (`/subscribe` and
+  `/jobs` only - not `/health`/`/metrics`, which K8s probes and Prometheus hit constantly)
+- **Email digests**: subscribers pick daily or weekly and get emailed genuinely new postings
+  (`src/jobless/digest.py`, sent via Resend), driven by `daily-digest.yml`/`weekly-digest.yml`
+  GitHub Actions workflows alongside the scrape's own `daily-scrape.yml`
 - **Frontend**: plain HTML/CSS/JS, no framework or build step
 - **Containers**: Docker (multi-stage builds) for the API, scraper, and frontend
 - **Orchestration**: Kubernetes via a Helm chart (`charts/jobless/`); the scraper runs as a

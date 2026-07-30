@@ -1,7 +1,7 @@
 [project]
 name = "jobless"
 version = "0.1.0"
-description = "Add your description here"
+description = "A daily-updated job board for the Pakistani software industry"
 authors = [
     { name = "Abdullah", email = "abdullah.compscientist@gmail.com" }
 ]

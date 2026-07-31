@@ -4,3 +4,4 @@ description: Job board for the Pakistani software industry - API, scraper CronJo
 type: application
 version: 0.1.0
 appVersion: "0.1.0"
+icon: https://raw.githubusercontent.com/AbdullahHAK/jobless/main/charts/jobless/icon.svg

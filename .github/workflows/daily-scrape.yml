@@ -19,10 +19,17 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     # contents: write is needed to push the regenerated frontend/data/jobs.json
-    # back to main - that file is what makes the GitHub Pages site update
-    # daily with zero backend/hosting involved.
+    # back to main. pages/id-token: write let this job deploy to Pages itself -
+    # a push made with the default GITHUB_TOKEN (below) does NOT trigger other
+    # workflows, so pages-deploy.yml would never fire for this commit
+    # otherwise. Deploying inline is what actually makes the site update daily.
     permissions:
       contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -52,3 +59,15 @@ jobs:
           git diff --staged --quiet && echo "no changes to commit" && exit 0
           git commit -m "Update job listings"
           git push
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: frontend
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

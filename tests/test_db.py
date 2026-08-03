@@ -80,6 +80,19 @@ def test_list_new_jobs_filters_by_first_seen_at(mocker):
     assert params == {"since": since}
 
 
+def test_list_all_jobs_returns_everything_unpaginated(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchall.return_value = [{"id": 1, "title": "A"}, {"id": 2, "title": "B"}]
+
+    jobs = db.list_all_jobs(conn)
+
+    assert jobs == [{"id": 1, "title": "A"}, {"id": 2, "title": "B"}]
+    sql = cursor.execute.call_args[0][0]
+    assert "LIMIT" not in sql
+    assert "OFFSET" not in sql
+
+
 def test_add_subscriber_upserts_by_email_and_returns_token(mocker):
     conn = mocker.MagicMock()
     cursor = conn.cursor.return_value.__enter__.return_value

@@ -18,6 +18,11 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    # contents: write is needed to push the regenerated frontend/data/jobs.json
+    # back to main - that file is what makes the GitHub Pages site update
+    # daily with zero backend/hosting involved.
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -33,3 +38,17 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: uv run jobless
+
+      - name: Export static jobs.json for the website
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: uv run python -m jobless.export_static
+
+      - name: Commit the updated jobs.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/data/jobs.json
+          git diff --staged --quiet && echo "no changes to commit" && exit 0
+          git commit -m "Update job listings"
+          git push

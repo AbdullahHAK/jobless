@@ -172,3 +172,11 @@ select {
 .load-more:hover {
   border-color: var(--accent);
 }
+
+/* `display: block` above beats the browser's default [hidden] { display:
+   none }, since a class selector always outranks that low-specificity UA
+   rule - without this, setting the button's `hidden` property in JS had no
+   visible effect at all. */
+.load-more[hidden] {
+  display: none;
+}

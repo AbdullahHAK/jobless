@@ -1,11 +1,15 @@
-// In production this would point at a reverse-proxied /api path on the same
-// origin (avoiding CORS entirely); for local dev it just points straight at
-// the API's own port.
+// Job listings are a static file regenerated daily by GitHub Actions and
+// committed back into the repo - no backend needed to browse jobs at all.
+// /subscribe still needs a real API (set window.JOBLESS_API_BASE to one) -
+// it degrades gracefully with an error message if that's not configured.
+const JOBS_DATA_URL = "data/jobs.json";
 const API_BASE = window.JOBLESS_API_BASE || "http://localhost:8000";
 const PAGE_SIZE = 50;
 
 const state = {
-  offset: 0,
+  allJobs: [],
+  filtered: [],
+  shown: 0,
   company: "",
 };
 
@@ -15,17 +19,11 @@ const resultCount = document.getElementById("result-count");
 const loadMoreBtn = document.getElementById("load-more");
 const companyFilter = document.getElementById("company-filter");
 
-async function loadCompanyOptions() {
-  try {
-    const response = await fetch(`${API_BASE}/companies`);
-    if (!response.ok) return;
-    const companies = await response.json();
-    companyFilter.innerHTML =
-      `<option value="">All companies</option>` +
-      companies.map((c) => `<option value="${c}">${c}</option>`).join("");
-  } catch {
-    // Filter just stays at "All companies" if this fails - not fatal.
-  }
+function populateCompanyOptions() {
+  const companies = [...new Set(state.allJobs.map((j) => j.company))].sort();
+  companyFilter.innerHTML =
+    `<option value="">All companies</option>` +
+    companies.map((c) => `<option value="${c}">${c}</option>`).join("");
 }
 
 function jobCardHtml(job) {
@@ -42,40 +40,46 @@ function jobCardHtml(job) {
   `;
 }
 
-async function fetchJobs({ reset = false } = {}) {
+function renderPage({ reset = false } = {}) {
   if (reset) {
-    state.offset = 0;
+    state.shown = 0;
     jobList.innerHTML = "";
   }
 
+  const nextBatch = state.filtered.slice(state.shown, state.shown + PAGE_SIZE);
+  jobList.insertAdjacentHTML("beforeend", nextBatch.map(jobCardHtml).join(""));
+  state.shown += nextBatch.length;
+
+  resultCount.textContent = `${state.shown} of ${state.filtered.length} job${state.filtered.length === 1 ? "" : "s"} shown`;
+  statusEl.textContent = state.filtered.length === 0 ? "No jobs found." : "";
+  loadMoreBtn.hidden = state.shown >= state.filtered.length;
+}
+
+function applyFilter() {
+  state.filtered = state.company ? state.allJobs.filter((j) => j.company === state.company) : state.allJobs;
+  renderPage({ reset: true });
+}
+
+async function loadJobs() {
   statusEl.textContent = "Loading...";
-  loadMoreBtn.hidden = true;
-
-  const params = new URLSearchParams({ limit: PAGE_SIZE, offset: state.offset });
-  if (state.company) params.set("company", state.company);
-
   try {
-    const response = await fetch(`${API_BASE}/jobs?${params}`);
-    if (!response.ok) throw new Error(`API returned ${response.status}`);
-    const jobs = await response.json();
+    const response = await fetch(JOBS_DATA_URL);
+    if (!response.ok) throw new Error(`${response.status}`);
+    state.allJobs = await response.json();
 
-    jobList.insertAdjacentHTML("beforeend", jobs.map(jobCardHtml).join(""));
-
-    state.offset += jobs.length;
-    resultCount.textContent = `${jobList.children.length} job${jobList.children.length === 1 ? "" : "s"} shown`;
-    statusEl.textContent = jobList.children.length === 0 ? "No jobs found." : "";
-    loadMoreBtn.hidden = jobs.length < PAGE_SIZE;
+    populateCompanyOptions();
+    applyFilter();
   } catch (err) {
-    statusEl.textContent = `Couldn't load jobs (${err.message}). Is the API running?`;
+    statusEl.textContent = `Couldn't load jobs (${err.message}). Try refreshing the page.`;
   }
 }
 
 companyFilter.addEventListener("change", () => {
   state.company = companyFilter.value;
-  fetchJobs({ reset: true });
+  applyFilter();
 });
 
-loadMoreBtn.addEventListener("click", () => fetchJobs());
+loadMoreBtn.addEventListener("click", () => renderPage());
 
 const subscribeForm = document.getElementById("subscribe-form");
 const subscribeStatus = document.getElementById("subscribe-status");
@@ -103,5 +107,4 @@ subscribeForm.addEventListener("submit", async (e) => {
   }
 });
 
-loadCompanyOptions();
-fetchJobs({ reset: true });
+loadJobs();

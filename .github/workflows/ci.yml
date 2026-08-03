@@ -3,6 +3,7 @@ name: CI
 on:
   push:
     branches: [main]
+    paths-ignore: ["frontend/data/**"] # daily data-only commits don't need a full test run
   pull_request:
 
 jobs:

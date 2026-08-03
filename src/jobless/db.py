@@ -110,6 +110,17 @@ def list_jobs(
         return cur.fetchall()
 
 
+def list_all_jobs(conn: psycopg.Connection) -> list[dict]:
+    """Every job, unpaginated - for the static site export, which ships the
+    whole dataset as one JSON file rather than paginating over an API."""
+    with conn.cursor(row_factory=dict_row) as cur:
+        cur.execute(
+            "SELECT id, title, company, location, apply_link, date_scraped, first_seen_at "
+            "FROM jobs ORDER BY date_scraped DESC, id DESC;"
+        )
+        return cur.fetchall()
+
+
 def list_new_jobs(conn: psycopg.Connection, since: datetime) -> list[dict]:
     """Jobs first seen at or after `since` - for email digests, deliberately
     keyed on first_seen_at rather than date_scraped so a still-open job that

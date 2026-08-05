@@ -1,9 +1,6 @@
 // Job listings are a static file regenerated daily by GitHub Actions and
 // committed back into the repo - no backend needed to browse jobs at all.
-// /subscribe still needs a real API (set window.JOBLESS_API_BASE to one) -
-// it degrades gracefully with an error message if that's not configured.
 const JOBS_DATA_URL = "data/jobs.json";
-const API_BASE = window.JOBLESS_API_BASE || "http://localhost:8000";
 const PAGE_SIZE = 50;
 
 const state = {
@@ -80,31 +77,5 @@ companyFilter.addEventListener("change", () => {
 });
 
 loadMoreBtn.addEventListener("click", () => renderPage());
-
-const subscribeForm = document.getElementById("subscribe-form");
-const subscribeStatus = document.getElementById("subscribe-status");
-
-subscribeForm.addEventListener("submit", async (e) => {
-  e.preventDefault();
-  subscribeStatus.textContent = "Submitting...";
-
-  const name = document.getElementById("subscribe-name").value;
-  const email = document.getElementById("subscribe-email").value;
-  const frequency = document.getElementById("subscribe-frequency").value;
-
-  try {
-    const response = await fetch(`${API_BASE}/subscribe`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, frequency }),
-    });
-    if (!response.ok) throw new Error(`API returned ${response.status}`);
-
-    subscribeStatus.textContent = `Subscribed - you'll get ${frequency} job updates at ${email}.`;
-    subscribeForm.reset();
-  } catch (err) {
-    subscribeStatus.textContent = `Couldn't subscribe (${err.message}). Please try again.`;
-  }
-});
 
 loadJobs();

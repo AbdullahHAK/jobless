@@ -3,11 +3,16 @@
 const JOBS_DATA_URL = "data/jobs.json";
 const PAGE_SIZE = 50;
 
+// Matches job titles aimed at recent grads - the audience this portal is
+// increasingly focused on, alongside general listings.
+const ENTRY_LEVEL_PATTERN = /\b(intern(ship)?|graduate|entry[- ]level|fresh(er)?|trainee)\b/i;
+
 const state = {
   allJobs: [],
   filtered: [],
   shown: 0,
   company: "",
+  entryLevelOnly: false,
 };
 
 const jobList = document.getElementById("job-list");
@@ -15,6 +20,7 @@ const statusEl = document.getElementById("status");
 const resultCount = document.getElementById("result-count");
 const loadMoreBtn = document.getElementById("load-more");
 const companyFilter = document.getElementById("company-filter");
+const entryLevelFilter = document.getElementById("entry-level-filter");
 
 function populateCompanyOptions() {
   const companies = [...new Set(state.allJobs.map((j) => j.company))].sort();
@@ -53,7 +59,11 @@ function renderPage({ reset = false } = {}) {
 }
 
 function applyFilter() {
-  state.filtered = state.company ? state.allJobs.filter((j) => j.company === state.company) : state.allJobs;
+  let jobs = state.company ? state.allJobs.filter((j) => j.company === state.company) : state.allJobs;
+  if (state.entryLevelOnly) {
+    jobs = jobs.filter((j) => ENTRY_LEVEL_PATTERN.test(j.title));
+  }
+  state.filtered = jobs;
   renderPage({ reset: true });
 }
 
@@ -73,6 +83,11 @@ async function loadJobs() {
 
 companyFilter.addEventListener("change", () => {
   state.company = companyFilter.value;
+  applyFilter();
+});
+
+entryLevelFilter.addEventListener("change", () => {
+  state.entryLevelOnly = entryLevelFilter.checked;
   applyFilter();
 });
 

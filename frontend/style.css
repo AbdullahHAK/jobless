@@ -69,6 +69,15 @@ select {
   color: var(--fg);
 }
 
+.entry-level-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  cursor: pointer;
+}
+
 .result-count {
   color: var(--muted);
   font-size: 0.9rem;

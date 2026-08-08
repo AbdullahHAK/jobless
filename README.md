@@ -49,8 +49,10 @@ uv run jobless                       # run every scraper once, store results
 uv run uvicorn jobless.api:app --reload   # serve the API on :8000
 ```
 
-Then open `frontend/index.html` (e.g. `python -m http.server` from `frontend/`) with the API
-running - it fetches from `http://localhost:8000` by default.
+Then open `frontend/index.html` (e.g. `python -m http.server` from `frontend/`) - it reads
+job listings straight from `frontend/data/jobs.json`, no API needed to browse.
+
+**Live site:** https://abdullahhak.github.io/jobless/ - rebuilt daily by GitHub Actions.
 
 ```bash
 uv run python -m pytest -v           # run the test suite

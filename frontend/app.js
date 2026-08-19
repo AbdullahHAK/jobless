@@ -22,11 +22,23 @@ const loadMoreBtn = document.getElementById("load-more");
 const companyFilter = document.getElementById("company-filter");
 const entryLevelFilter = document.getElementById("entry-level-filter");
 
+// Job titles/locations come from scraped third-party career pages, not
+// data we control - escape before injecting into innerHTML so a stray
+// "<"/">"/quote in a company's own posting can't run as markup/script.
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function populateCompanyOptions() {
   const companies = [...new Set(state.allJobs.map((j) => j.company))].sort();
   companyFilter.innerHTML =
     `<option value="">All companies</option>` +
-    companies.map((c) => `<option value="${c}">${c}</option>`).join("");
+    companies.map((c) => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join("");
 }
 
 function jobCardHtml(job) {
@@ -37,8 +49,8 @@ function jobCardHtml(job) {
   });
   return `
     <li class="job-card">
-      <a class="job-title" href="${job.apply_link}" target="_blank" rel="noopener">${job.title}</a>
-      <div class="job-meta">${job.company} · ${job.location} · seen ${date}</div>
+      <a class="job-title" href="${escapeHtml(job.apply_link)}" target="_blank" rel="noopener">${escapeHtml(job.title)}</a>
+      <div class="job-meta">${escapeHtml(job.company)} · ${escapeHtml(job.location)} · seen ${date}</div>
     </li>
   `;
 }

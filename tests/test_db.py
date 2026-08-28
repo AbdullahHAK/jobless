@@ -136,3 +136,63 @@ def test_list_subscribers_filters_by_frequency(mocker):
 
     assert len(subscribers) == 1
     assert cursor.execute.call_args[0][1] == {"frequency": "daily"}
+
+
+def test_close_stale_jobs_marks_missing_jobs_inactive_and_commits(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.rowcount = 2
+
+    closed = db.close_stale_jobs(conn, "Arbisoft", ["https://example.com/jobs/1"])
+
+    assert closed == 2
+    sql, params = cursor.execute.call_args[0]
+    assert "SET is_active = false" in sql
+    assert "apply_link != ALL(%(active_links)s)" in sql
+    assert params == {"company": "Arbisoft", "active_links": ["https://example.com/jobs/1"]}
+    conn.commit.assert_called_once()
+
+
+def test_close_stale_jobs_with_no_active_links_closes_everything_for_that_company(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.rowcount = 3
+
+    closed = db.close_stale_jobs(conn, "NetSol Technologies", [])
+
+    assert closed == 3
+    params = cursor.execute.call_args[0][1]
+    assert params["active_links"] == []
+
+
+def test_list_jobs_only_returns_active_jobs(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchall.return_value = []
+
+    db.list_jobs(conn)
+
+    sql = cursor.execute.call_args[0][0]
+    assert "is_active = true" in sql
+
+
+def test_list_all_jobs_only_returns_active_jobs(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchall.return_value = []
+
+    db.list_all_jobs(conn)
+
+    sql = cursor.execute.call_args[0][0]
+    assert "is_active = true" in sql
+
+
+def test_list_companies_only_counts_active_jobs(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchall.return_value = []
+
+    db.list_companies(conn)
+
+    sql = cursor.execute.call_args[0][0]
+    assert "is_active = true" in sql

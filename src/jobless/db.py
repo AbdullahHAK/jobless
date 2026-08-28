@@ -23,6 +23,11 @@ CREATE TABLE IF NOT EXISTS jobs (
     first_seen_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
+-- CREATE TABLE IF NOT EXISTS is a no-op once the table already exists (e.g.
+-- on the live Neon DB), so a new column needs its own idempotent statement
+-- to actually reach an existing deployment.
+ALTER TABLE jobs ADD COLUMN IF NOT EXISTS is_active BOOLEAN NOT NULL DEFAULT true;
+
 CREATE TABLE IF NOT EXISTS subscribers (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
@@ -37,14 +42,18 @@ CREATE TABLE IF NOT EXISTS subscribers (
 # produces that's actually unique per posting. Re-scraping a still-open job
 # just refreshes its title/location/date_scraped in place instead of adding
 # a duplicate row; first_seen_at is only set on the initial insert.
+# is_active is forced true here too, so a job that closed (see
+# close_stale_jobs) and later reopens under the same apply_link comes back
+# instead of staying hidden forever.
 _UPSERT = """
-INSERT INTO jobs (title, company, location, apply_link, date_scraped)
-VALUES (%(title)s, %(company)s, %(location)s, %(apply_link)s, %(date_scraped)s)
+INSERT INTO jobs (title, company, location, apply_link, date_scraped, is_active)
+VALUES (%(title)s, %(company)s, %(location)s, %(apply_link)s, %(date_scraped)s, true)
 ON CONFLICT (apply_link) DO UPDATE SET
     title = EXCLUDED.title,
     company = EXCLUDED.company,
     location = EXCLUDED.location,
-    date_scraped = EXCLUDED.date_scraped;
+    date_scraped = EXCLUDED.date_scraped,
+    is_active = true;
 """
 
 
@@ -91,17 +100,44 @@ def save_jobs(conn: psycopg.Connection, jobs: list[Job]) -> int:
     return len(rows)
 
 
+def close_stale_jobs(conn: psycopg.Connection, company: str, active_apply_links: list[str]) -> int:
+    """Mark a company's jobs inactive if they're currently active but weren't
+    in its latest successful scrape - i.e. the posting was closed/removed on
+    the company's own site. Scoped to one company and only meant to be
+    called for a company whose scraper actually succeeded this run - a
+    scraper that failed and returned nothing must never be treated as "this
+    company now has zero open jobs," or a transient site/network hiccup
+    would silently wipe out every real listing for that company."""
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            UPDATE jobs
+            SET is_active = false
+            WHERE company = %(company)s
+              AND is_active = true
+              AND apply_link != ALL(%(active_links)s);
+            """,
+            {"company": company, "active_links": active_apply_links},
+        )
+        closed = cur.rowcount
+    conn.commit()
+    return closed
+
+
 def list_jobs(
     conn: psycopg.Connection,
     company: str | None = None,
     limit: int = 50,
     offset: int = 0,
 ) -> list[dict]:
-    """Return jobs, most recently scraped first, optionally filtered by company."""
-    query = "SELECT id, title, company, location, apply_link, date_scraped, first_seen_at FROM jobs"
+    """Return active jobs, most recently scraped first, optionally filtered by company."""
+    query = (
+        "SELECT id, title, company, location, apply_link, date_scraped, first_seen_at "
+        "FROM jobs WHERE is_active = true"
+    )
     params: dict = {"limit": limit, "offset": offset}
     if company:
-        query += " WHERE company = %(company)s"
+        query += " AND company = %(company)s"
         params["company"] = company
     query += " ORDER BY date_scraped DESC, id DESC LIMIT %(limit)s OFFSET %(offset)s;"
 
@@ -111,26 +147,28 @@ def list_jobs(
 
 
 def list_all_jobs(conn: psycopg.Connection) -> list[dict]:
-    """Every job, unpaginated - for the static site export, which ships the
-    whole dataset as one JSON file rather than paginating over an API."""
+    """Every active job, unpaginated - for the static site export, which
+    ships the whole dataset as one JSON file rather than paginating over an
+    API."""
     with conn.cursor(row_factory=dict_row) as cur:
         cur.execute(
             "SELECT id, title, company, location, apply_link, date_scraped, first_seen_at "
-            "FROM jobs ORDER BY date_scraped DESC, id DESC;"
+            "FROM jobs WHERE is_active = true ORDER BY date_scraped DESC, id DESC;"
         )
         return cur.fetchall()
 
 
 def list_new_jobs(conn: psycopg.Connection, since: datetime) -> list[dict]:
-    """Jobs first seen at or after `since` - for email digests, deliberately
-    keyed on first_seen_at rather than date_scraped so a still-open job that
-    gets re-scraped every day doesn't get resent to subscribers every day."""
+    """Active jobs first seen at or after `since` - for email digests,
+    deliberately keyed on first_seen_at rather than date_scraped so a still-
+    open job that gets re-scraped every day doesn't get resent to
+    subscribers every day."""
     with conn.cursor(row_factory=dict_row) as cur:
         cur.execute(
             """
             SELECT id, title, company, location, apply_link, first_seen_at
             FROM jobs
-            WHERE first_seen_at >= %(since)s
+            WHERE first_seen_at >= %(since)s AND is_active = true
             ORDER BY first_seen_at DESC;
             """,
             {"since": since},
@@ -139,9 +177,9 @@ def list_new_jobs(conn: psycopg.Connection, since: datetime) -> list[dict]:
 
 
 def list_companies(conn: psycopg.Connection) -> list[str]:
-    """Distinct companies that currently have at least one stored job."""
+    """Distinct companies that currently have at least one active job."""
     with conn.cursor() as cur:
-        cur.execute("SELECT DISTINCT company FROM jobs ORDER BY company;")
+        cur.execute("SELECT DISTINCT company FROM jobs WHERE is_active = true ORDER BY company;")
         return [row[0] for row in cur.fetchall()]
 
 

@@ -114,6 +114,18 @@ select {
   color: var(--accent);
 }
 
+.new-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  vertical-align: middle;
+}
+
 .job-meta {
   color: var(--muted);
   font-size: 0.9rem;

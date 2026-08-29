@@ -41,15 +41,19 @@ function populateCompanyOptions() {
     companies.map((c) => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join("");
 }
 
+const NEW_BADGE_WINDOW_MS = 2 * 24 * 60 * 60 * 1000; // 2 days
+
 function jobCardHtml(job) {
   const date = new Date(job.date_scraped).toLocaleDateString(undefined, {
     year: "numeric",
     month: "short",
     day: "numeric",
   });
+  const isNew = Date.now() - new Date(job.first_seen_at).getTime() < NEW_BADGE_WINDOW_MS;
+  const newBadge = isNew ? `<span class="new-badge">New</span>` : "";
   return `
     <li class="job-card">
-      <a class="job-title" href="${escapeHtml(job.apply_link)}" target="_blank" rel="noopener">${escapeHtml(job.title)}</a>
+      <a class="job-title" href="${escapeHtml(job.apply_link)}" target="_blank" rel="noopener">${escapeHtml(job.title)}</a>${newBadge}
       <div class="job-meta">${escapeHtml(job.company)} · ${escapeHtml(job.location)} · seen ${date}</div>
     </li>
   `;

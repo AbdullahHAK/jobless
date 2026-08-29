@@ -1,5 +1,131 @@
 [
   {
+    "id": 22404,
+    "title": "iOS Software Engineer",
+    "company": "NayaPay",
+    "location": "Not specified",
+    "apply_link": "https://www.nayapay.com/careers#ios-software-engineer",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:11:58.581942+00:00"
+  },
+  {
+    "id": 22403,
+    "title": "Sales Associate",
+    "company": "NayaPay",
+    "location": "Not specified",
+    "apply_link": "https://www.nayapay.com/careers#sales-associate",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:11:58.581942+00:00"
+  },
+  {
+    "id": 22402,
+    "title": "Associate Product Manager",
+    "company": "NayaPay",
+    "location": "Not specified",
+    "apply_link": "https://www.nayapay.com/careers#associate-product-manager",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:11:58.581942+00:00"
+  },
+  {
+    "id": 22401,
+    "title": "Application Operations Engineer",
+    "company": "NayaPay",
+    "location": "Not specified",
+    "apply_link": "https://www.nayapay.com/careers#application-operations-engineer",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:11:58.581942+00:00"
+  },
+  {
+    "id": 22400,
+    "title": "Senior Infrastructure Engineer",
+    "company": "NayaPay",
+    "location": "Not specified",
+    "apply_link": "https://www.nayapay.com/careers#senior-infrastructure-engineer",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:11:58.581942+00:00"
+  },
+  {
+    "id": 22399,
+    "title": "DevOps Engineer",
+    "company": "NayaPay",
+    "location": "Not specified",
+    "apply_link": "https://www.nayapay.com/careers#devops-engineer",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:11:58.581942+00:00"
+  },
+  {
+    "id": 22398,
+    "title": "Associate SQA Automation Engineer.",
+    "company": "NayaPay",
+    "location": "Karachi",
+    "apply_link": "https://www.nayapay.com/careers#associate-sqa-automation-engineer",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:11:58.581942+00:00"
+  },
+  {
+    "id": 22397,
+    "title": "Regulatory Compliance Specialist",
+    "company": "NayaPay",
+    "location": "Karachi",
+    "apply_link": "https://www.nayapay.com/careers#regulatory-compliance-specialist",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:11:58.581942+00:00"
+  },
+  {
+    "id": 22396,
+    "title": "Data Automation Engineer",
+    "company": "NayaPay",
+    "location": "Karachi",
+    "apply_link": "https://www.nayapay.com/careers#data-automation-engineer",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:11:58.581942+00:00"
+  },
+  {
+    "id": 22395,
+    "title": "Integrations Executive",
+    "company": "NayaPay",
+    "location": "Karachi",
+    "apply_link": "https://www.nayapay.com/careers#integrations-executive",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:11:58.581942+00:00"
+  },
+  {
+    "id": 22394,
+    "title": "Assistant Manager - Marketing",
+    "company": "NayaPay",
+    "location": "Karachi",
+    "apply_link": "https://www.nayapay.com/careers#assistant-manager-marketing",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:11:58.581942+00:00"
+  },
+  {
+    "id": 22393,
+    "title": "Creative Designer",
+    "company": "NayaPay",
+    "location": "Karachi",
+    "apply_link": "https://www.nayapay.com/careers#creative-designer",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:11:58.581942+00:00"
+  },
+  {
+    "id": 21808,
+    "title": "Manager Contracts",
+    "company": "10Pearls",
+    "location": "Pakistan",
+    "apply_link": "https://10pearls.applytojob.com/apply/jobs/details/job_20260829195334_WBWLSQPPLN8VR5ZW",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:05:58.631477+00:00"
+  },
+  {
+    "id": 21716,
+    "title": "Software Engineer - MERN",
+    "company": "Devsinc",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://apply.workable.com/j/FBD510F2F1",
+    "date_scraped": "2026-08-29",
+    "first_seen_at": "2026-08-29T21:05:58.631477+00:00"
+  },
+  {
     "id": 21012,
     "title": "Associate RCM Executive",
     "company": "CureMD",
@@ -1006,15 +1132,6 @@
     "apply_link": "https://apply.workable.com/j/3287D37C4B",
     "date_scraped": "2026-08-29",
     "first_seen_at": "2026-08-17T03:44:03.131016+00:00"
-  },
-  {
-    "id": 13041,
-    "title": "Senior SQA Analyst with SmartBear Experience",
-    "company": "Genetech Solutions",
-    "location": "Karachi, Pakistan",
-    "apply_link": "https://www.genetechsolutions.com/jobs#senior-sqa-analyst-with-smartbear-experience",
-    "date_scraped": "2026-08-29",
-    "first_seen_at": "2026-08-16T03:43:36.653789+00:00"
   },
   {
     "id": 13040,

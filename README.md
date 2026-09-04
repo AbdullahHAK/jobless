@@ -2,7 +2,7 @@
 
 A daily-updated job board for the Pakistani software industry. Scrapes career pages of
 software houses and aggregates every opening into one place, so job seekers can browse and
-apply directly instead of checking 28+ company sites individually.
+apply directly instead of checking 29+ company sites individually.
 
 ## How it works
 
@@ -13,11 +13,11 @@ add a new one. Each scraper has isolated error handling, so one company's site c
 doesn't take down the rest of the run. Results are upserted into PostgreSQL keyed on
 `apply_link`, so re-scraping a still-open job updates it in place instead of duplicating it.
 
-Currently scraping 28 companies: Arbisoft, Devsinc, Folio3, Confiz, Codup, Tkxel, 10Pearls,
+Currently scraping 29 companies: Arbisoft, Devsinc, Folio3, Confiz, Codup, Tkxel, 10Pearls,
 Contour Software, VentureDive, NetSol Technologies, Abacus Consulting, Kualitatem, EurosHub,
 InvoZone, Nextbridge, Trango Tech, CureMD, Genetech Solutions, DPL, Ovex Technologies,
 KalSoft, Smart Working Solutions, Bazaar Technologies, NayaPay, Careem, Prime System
-Solutions, JS Bank, and Mindstorm Studios. Each scraper picks whatever data source is actually cleanest for
+Solutions, JS Bank, Mindstorm Studios, and Strategic Systems International. Each scraper picks whatever data source is actually cleanest for
 that site - static HTML, a public JSON API discovered via network inspection, or (rarely) a
 JS payload embedded in the page - documented in a comment at the top of each scraper module.
 

@@ -1,0 +1,86 @@
+[
+  {
+    "company": "Unilever Pakistan",
+    "program": "Future Leaders Programme",
+    "category": "FMCG",
+    "window": "Applications typically open March-May, program starts around July",
+    "link": "https://www.unilever.com.pk/careers/"
+  },
+  {
+    "company": "Nestlé Pakistan",
+    "program": "Nestlé Management Trainee Programme (NMTP)",
+    "category": "FMCG",
+    "window": "Applications typically open March-May, program starts around July",
+    "link": "https://www.nestle.pk/jobs"
+  },
+  {
+    "company": "Procter & Gamble Pakistan",
+    "program": "Management Trainee Program",
+    "category": "FMCG",
+    "window": "Applications typically open March-May, program starts around July",
+    "link": "https://www.pgcareers.com/"
+  },
+  {
+    "company": "HBL",
+    "program": "Management Trainee / Accelerate Graduate / League Internship",
+    "category": "Banking",
+    "window": "Hires in batches year-round rather than one fixed window",
+    "link": "https://www.hbl.com/careers"
+  },
+  {
+    "company": "UBL",
+    "program": "Management Trainee Officer (MTO)",
+    "category": "Banking",
+    "window": "Hires in batches year-round rather than one fixed window",
+    "link": "https://www.ubldigital.com/Careers"
+  },
+  {
+    "company": "Bank AL Habib",
+    "program": "MTO / GTO / IT Trainee / TBO",
+    "category": "Banking",
+    "window": "Hires in batches year-round rather than one fixed window",
+    "link": "https://www.bankalhabib.com/careers"
+  },
+  {
+    "company": "PTCL",
+    "program": "Summit Program (Graduate Trainee)",
+    "category": "Telecom",
+    "window": "12-month program, apply via PTCL's own careers portal",
+    "link": "https://ptcl.com.pk/Home/PageDetailWork"
+  },
+  {
+    "company": "Telenor Pakistan",
+    "program": "Summer Internship Program",
+    "category": "Telecom",
+    "window": "6-week paid summer internship, applications open ahead of summer",
+    "link": "https://www.telenor.com.pk/about-us/careers"
+  },
+  {
+    "company": "Jazz",
+    "program": "Associate Programme",
+    "category": "Telecom",
+    "window": "1-year paid rotational program for fresh graduates",
+    "link": "https://jazz.com.pk/careers"
+  },
+  {
+    "company": "Pakistan State Oil (PSO)",
+    "program": "Management Trainee / Internship / Mentorship Programs",
+    "category": "Energy",
+    "window": "Roughly a 2-year management trainee track; applications typically open mid-year",
+    "link": "https://psopk.com/en/career/opportunities"
+  },
+  {
+    "company": "Lucky Core Industries",
+    "program": "Graduate Recruit / Finance Trainee / Legal Trainee Programmes",
+    "category": "Industrial",
+    "window": "Separate tracks per function, company-specific timing",
+    "link": "https://luckycore.com/recruitment/trainee-programme/"
+  },
+  {
+    "company": "Systems Limited",
+    "program": "IT Mustakbil Training Program",
+    "category": "IT / Tech",
+    "window": "Recurring batches run jointly with a university partner - aimed at non-CS grads and career-switchers, not just CS graduates",
+    "link": "https://www.systemsltd.com/itm"
+  }
+]

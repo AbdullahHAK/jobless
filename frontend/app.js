@@ -1,6 +1,10 @@
 // Job listings are a static file regenerated daily by GitHub Actions and
 // committed back into the repo - no backend needed to browse jobs at all.
 const JOBS_DATA_URL = "data/jobs.json";
+// Unlike jobs.json, this is hand-curated (not touched by the daily scrape) -
+// the employers here run generic or bot-blocked HR portals we can't scrape,
+// but the program info itself is stable enough to maintain by hand.
+const PROGRAMS_DATA_URL = "data/programs.json";
 const PAGE_SIZE = 50;
 
 // Matches job titles aimed at recent grads - the audience this portal is
@@ -32,6 +36,36 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function programCardHtml(program) {
+  return `
+    <li class="program-card">
+      <a class="program-title" href="${escapeHtml(program.link)}" target="_blank" rel="noopener">${escapeHtml(program.company)} - ${escapeHtml(program.program)}</a>
+      <div class="program-meta">${escapeHtml(program.category)} · ${escapeHtml(program.window)}</div>
+    </li>
+  `;
+}
+
+let programsLoaded = false;
+
+async function loadPrograms() {
+  if (programsLoaded) return;
+  programsLoaded = true;
+
+  const programsList = document.getElementById("programs-list");
+  if (!programsList) return;
+
+  programsList.innerHTML = `<li class="status">Loading...</li>`;
+  try {
+    const response = await fetch(PROGRAMS_DATA_URL);
+    if (!response.ok) throw new Error(`${response.status}`);
+    const programs = await response.json();
+    programsList.innerHTML = programs.map(programCardHtml).join("");
+  } catch (err) {
+    programsLoaded = false;
+    programsList.innerHTML = `<li class="status">Couldn't load programs (${escapeHtml(err.message)}).</li>`;
+  }
 }
 
 function populateCompanyOptions() {
@@ -108,5 +142,9 @@ entryLevelFilter.addEventListener("change", () => {
 });
 
 loadMoreBtn.addEventListener("click", () => renderPage());
+
+document.querySelector(".programs-section").addEventListener("toggle", (e) => {
+  if (e.target.open) loadPrograms();
+});
 
 loadJobs();

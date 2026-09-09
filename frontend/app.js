@@ -11,6 +11,39 @@ const PAGE_SIZE = 50;
 // increasingly focused on, alongside general listings.
 const ENTRY_LEVEL_PATTERN = /\b(intern(ship)?|graduate|entry[- ]level|fresh(er)?|trainee)\b/i;
 
+// "Tech vs non-tech" is a title-keyword heuristic, not a real category from
+// any scraper (none of them expose a department/function field) - it won't
+// be perfect, but it's directionally right for the vast majority of
+// listings. Checked first: some companies here run car-inspection centers,
+// construction, or real-estate arms alongside their tech teams, so a
+// disqualifying-discipline check runs before the tech-keyword check, or
+// "Civil Site Engineer"/"Automotive Technical Trainer" would wrongly count
+// as tech just for containing "engineer"/"technical".
+// Deliberately no trailing \b on most alternatives below - "database admin"
+// needs to match into "Administrator", "sqa" into the abbreviation "SQAE",
+// etc. Only the short, substring-risky tokens (ai, dba, sre) keep their own
+// inline \b...\b so "ai" doesn't match inside words like "maintenance".
+const NON_TECH_DISCIPLINE_PATTERN =
+  /\b(civil|mechanical|electrical|automotive|chemical|structural|mep|hvac|process|construction|instrumentation|petroleum|industrial|diagnostic|batching|call cent(er|re))\b/i;
+const TECH_PATTERN =
+  /software|developer|programmer|devsecops|devops|sqa|qa engineer|quality assurance|test automation|automation engineer|data (scientist|engineer|analyst)|machine learning|artificial intelligence|computer vision|\bai\b|cloud|infrastructure (engineer|project)|network engineer|noc (engineer|analyst)|systems? (engineer|admin|administrator)|endpoint|database admin|\bdba\b|full[- ]?stack|front[- ]?end|back[- ]?end|mobile (developer|engineer)|ios developer|android developer|react native|cyber ?security|security (engineer|analyst|architect)|soc analyst|penetration test|site reliability|\bsre\b|solutions? architect|technical architect|it support|technical support|web developer|application (developer|engineer|operations)|integration engineer|ui\/ux|product designer/i;
+
+function isTechJob(title) {
+  if (NON_TECH_DISCIPLINE_PATTERN.test(title)) return false;
+  return TECH_PATTERN.test(title);
+}
+
+// Real location strings are free text scraped as-is ("Lahore, Punjab,
+// Pakistan", "Islamabad / Rawalpindi, Pakistan", "Karachi/Lahore", etc.),
+// so the location filter matches by substring rather than exact value.
+// Rawalpindi is grouped under the Islamabad filter since postings almost
+// always list the twin cities together.
+const LOCATION_MATCHERS = {
+  Lahore: ["lahore"],
+  Karachi: ["karachi"],
+  Islamabad: ["islamabad", "rawalpindi"],
+};
+
 // Applied-jobs tracking is entirely client-side (no accounts, no backend) -
 // stored in localStorage so it survives reloads but stays private to this
 // browser. Wrapped in try/catch since localStorage can throw in some
@@ -41,6 +74,8 @@ const state = {
   filtered: [],
   shown: 0,
   company: "",
+  location: "",
+  jobType: "",
   entryLevelOnly: false,
   hideApplied: false,
   appliedLinks: loadAppliedLinks(),
@@ -51,6 +86,8 @@ const statusEl = document.getElementById("status");
 const resultCount = document.getElementById("result-count");
 const loadMoreBtn = document.getElementById("load-more");
 const companyFilter = document.getElementById("company-filter");
+const locationFilter = document.getElementById("location-filter");
+const jobTypeFilter = document.getElementById("job-type-filter");
 const entryLevelFilter = document.getElementById("entry-level-filter");
 const hideAppliedFilter = document.getElementById("hide-applied-filter");
 
@@ -147,6 +184,13 @@ function renderPage({ reset = false } = {}) {
 
 function applyFilter() {
   let jobs = state.company ? state.allJobs.filter((j) => j.company === state.company) : state.allJobs;
+  if (state.location) {
+    const keywords = LOCATION_MATCHERS[state.location];
+    jobs = jobs.filter((j) => keywords.some((kw) => j.location.toLowerCase().includes(kw)));
+  }
+  if (state.jobType) {
+    jobs = jobs.filter((j) => isTechJob(j.title) === (state.jobType === "tech"));
+  }
   if (state.entryLevelOnly) {
     jobs = jobs.filter((j) => ENTRY_LEVEL_PATTERN.test(j.title));
   }
@@ -173,6 +217,16 @@ async function loadJobs() {
 
 companyFilter.addEventListener("change", () => {
   state.company = companyFilter.value;
+  applyFilter();
+});
+
+locationFilter.addEventListener("change", () => {
+  state.location = locationFilter.value;
+  applyFilter();
+});
+
+jobTypeFilter.addEventListener("change", () => {
+  state.jobType = jobTypeFilter.value;
   applyFilter();
 });
 

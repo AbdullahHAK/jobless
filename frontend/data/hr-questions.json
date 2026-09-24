@@ -1,0 +1,46 @@
+[
+  {
+    "question": "Tell me about yourself.",
+    "tip": "Keep it to 60-90 seconds: current role/studies, 1-2 relevant highlights, then why you're excited about this opportunity. Don't just read your resume line by line."
+  },
+  {
+    "question": "Why do you want to work here?",
+    "tip": "Reference something specific about the company - a product, their tech stack, a team you'd join. A vague \"I want to grow\" reads as unprepared."
+  },
+  {
+    "question": "Why should we hire you?",
+    "tip": "Connect 2-3 of your strongest, most relevant skills directly to what the job description actually asked for."
+  },
+  {
+    "question": "What are your greatest strengths?",
+    "tip": "Pick one strength and back it with a specific example or result, not just an adjective."
+  },
+  {
+    "question": "What is your biggest weakness?",
+    "tip": "Name a real, believable weakness and show what you're actively doing to improve it. Avoid the cliché \"I'm a perfectionist.\""
+  },
+  {
+    "question": "Tell me about a time you faced a conflict with a teammate.",
+    "tip": "Use the STAR method (Situation, Task, Action, Result). Focus on how you resolved it professionally, not on who was \"right.\""
+  },
+  {
+    "question": "Describe a challenging project and how you handled it.",
+    "tip": "Pick something with a clear, measurable outcome, and walk through your specific contribution - not just \"the team did X.\""
+  },
+  {
+    "question": "How do you handle tight deadlines or pressure?",
+    "tip": "Give a concrete example of how you prioritized, rather than a generic \"I stay calm under pressure.\""
+  },
+  {
+    "question": "Where do you see yourself in five years?",
+    "tip": "Show ambition that's realistic and aligned with growth paths at this company or in this role, not something unrelated."
+  },
+  {
+    "question": "Why are you leaving your current job / why do you want to switch roles?",
+    "tip": "Stay forward-looking and positive - talk about what you're moving toward, not what you're running from."
+  },
+  {
+    "question": "Do you have any questions for us?",
+    "tip": "Always have 2-3 ready: ask about the team, what success looks like in the first 90 days, or the tech stack. Never say \"no, I think you covered everything.\""
+  }
+]

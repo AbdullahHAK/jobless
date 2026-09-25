@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Keep it to one page",
+    "tip": "Especially for fresh grads and early-career roles - recruiters spend seconds per resume, and one page forces you to prioritize what actually matters."
+  },
+  {
+    "title": "Lead with Projects if your work history is thin",
+    "tip": "Personal or academic projects often say more than a short work history. Include a live link or GitHub repo whenever you can - a working demo beats a description."
+  },
+  {
+    "title": "Quantify impact wherever possible",
+    "tip": "\"Improved page load time by 40%\" beats \"Worked on performance.\" Numbers make claims verifiable and memorable."
+  },
+  {
+    "title": "List technologies precisely",
+    "tip": "Name the actual languages, frameworks, and tools you used - not vague phrases like \"various technologies.\" Both recruiters and ATS scanners look for exact keywords."
+  },
+  {
+    "title": "Skip the generic objective paragraph",
+    "tip": "Lines like \"Motivated CS graduate seeking opportunities...\" are filler that wastes your most valuable space. A tight one-line summary can work, but cut the fluff."
+  },
+  {
+    "title": "Order sections by relevance, not tradition",
+    "tip": "For a fresh grad, Education and Projects usually belong near the top, not buried below a short or irrelevant work history."
+  },
+  {
+    "title": "Use a clean, ATS-friendly format",
+    "tip": "Heavy graphics, tables, and multi-column layouts often break automated resume-screening software before a human ever sees your resume."
+  },
+  {
+    "title": "Tailor it per application",
+    "tip": "Listing every language and tool you've ever touched reads as unfocused. Highlight what's actually relevant to the specific role you're applying for."
+  },
+  {
+    "title": "Proofread for consistency",
+    "tip": "Same date format, same tense throughout (past tense for past roles, present for your current one), consistent punctuation. Small inconsistencies are an easy first filter for recruiters looking for a reason to reject."
+  },
+  {
+    "title": "Get someone else to review it",
+    "tip": "A second pair of eyes catches typos and awkward phrasing you've read past a dozen times."
+  }
+]

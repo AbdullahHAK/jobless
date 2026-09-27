@@ -9,56 +9,95 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Jobless</h1>
-    <p class="tagline">Software jobs and internships from Pakistani tech companies, updated daily.</p>
-    <a class="prep-link" href="prep.html">📚 Free interview prep &rarr;</a>
-  </header>
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
 
-  <details class="programs-section">
-    <summary>🎓 Graduate &amp; trainee programs at major Pakistani employers</summary>
-    <p class="programs-intro">
-      Big employers like banks, FMCG companies, and telecoms run recurring graduate/trainee
-      programs but their own career sites are too generic (or blocked to bots) to scrape - so
-      this list is hand-curated instead of auto-updated. Always confirm current dates on the
-      company's own site before applying.
-    </p>
-    <ul id="programs-list" class="programs-list"></ul>
-  </details>
-
-  <main>
-    <div class="controls">
-      <select id="company-filter">
-        <option value="">All companies</option>
-      </select>
-      <select id="location-filter">
-        <option value="">All locations</option>
-        <option value="Lahore">Lahore</option>
-        <option value="Karachi">Karachi</option>
-        <option value="Islamabad">Islamabad</option>
-      </select>
-      <select id="job-type-filter">
-        <option value="">All types</option>
-        <option value="tech">Tech</option>
-        <option value="non-tech">Non-tech</option>
-      </select>
-      <label class="entry-level-toggle">
-        <input type="checkbox" id="entry-level-filter" />
-        Internships &amp; entry-level only
-      </label>
-      <label class="entry-level-toggle">
-        <input type="checkbox" id="hide-applied-filter" />
-        Hide jobs I've applied to
-      </label>
-      <span id="result-count" class="result-count"></span>
+  <aside class="sidebar">
+    <a class="site-logo" href="index.html">Jobless</a>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="site-nav-active">📋 Jobs</a>
+      <a href="prep.html">🎯 Prep</a>
+    </nav>
+    <div class="sidebar-footer">
+      <p>Built by <a href="https://github.com/AbdullahHAK" target="_blank" rel="noopener">Abdullah</a></p>
+      <p><a href="https://github.com/AbdullahHAK/jobless" target="_blank" rel="noopener">Source on GitHub ↗</a></p>
+      <p>Free for everyone, updated daily</p>
     </div>
+  </aside>
 
-    <p id="status" class="status"></p>
-    <ul id="job-list" class="job-list"></ul>
+  <div class="page-content">
+    <header>
+      <h1>Jobless</h1>
+      <p class="tagline">Software jobs and internships from Pakistani tech companies, updated daily.</p>
+    </header>
 
-    <button id="load-more" class="load-more" hidden>Load more</button>
-  </main>
+    <section class="stats-section">
+      <div class="stats-cards">
+        <div class="stat-card">
+          <p class="stat-value" id="stat-total-jobs">-</p>
+          <p class="stat-label">Open roles</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-value" id="stat-total-companies">-</p>
+          <p class="stat-label">Companies tracked</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-value" id="stat-new-jobs">-</p>
+          <p class="stat-label">New in last 48h</p>
+        </div>
+      </div>
+      <div class="chart-card">
+        <h2>Top hiring companies</h2>
+        <ul id="company-chart" class="bar-chart"></ul>
+      </div>
+    </section>
 
+    <details class="programs-section">
+      <summary>🎓 Graduate &amp; trainee programs at major Pakistani employers</summary>
+      <p class="programs-intro">
+        Big employers like banks, FMCG companies, and telecoms run recurring graduate/trainee
+        programs but their own career sites are too generic (or blocked to bots) to scrape - so
+        this list is hand-curated instead of auto-updated. Always confirm current dates on the
+        company's own site before applying.
+      </p>
+      <ul id="programs-list" class="programs-list"></ul>
+    </details>
+
+    <main>
+      <div class="controls">
+        <select id="company-filter">
+          <option value="">All companies</option>
+        </select>
+        <select id="location-filter">
+          <option value="">All locations</option>
+          <option value="Lahore">Lahore</option>
+          <option value="Karachi">Karachi</option>
+          <option value="Islamabad">Islamabad</option>
+        </select>
+        <select id="job-type-filter">
+          <option value="">All types</option>
+          <option value="tech">Tech</option>
+          <option value="non-tech">Non-tech</option>
+        </select>
+        <label class="entry-level-toggle">
+          <input type="checkbox" id="entry-level-filter" />
+          Internships &amp; entry-level only
+        </label>
+        <label class="entry-level-toggle">
+          <input type="checkbox" id="hide-applied-filter" />
+          Hide jobs I've applied to
+        </label>
+        <span id="result-count" class="result-count"></span>
+      </div>
+
+      <p id="status" class="status"></p>
+      <ul id="job-list" class="job-list"></ul>
+
+      <button id="load-more" class="load-more" hidden>Load more</button>
+    </main>
+  </div>
+
+  <script src="sidebar.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

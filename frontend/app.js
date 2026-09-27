@@ -201,6 +201,43 @@ function applyFilter() {
   renderPage({ reset: true });
 }
 
+const TOP_COMPANIES_SHOWN = 8;
+
+// Reflects the full dataset (not the active filters) - this is a
+// site-wide snapshot, not a view of whatever the user just filtered to.
+function renderStats() {
+  const totalJobsEl = document.getElementById("stat-total-jobs");
+  const totalCompaniesEl = document.getElementById("stat-total-companies");
+  const newJobsEl = document.getElementById("stat-new-jobs");
+  const chart = document.getElementById("company-chart");
+  if (!totalJobsEl || !chart) return;
+
+  const counts = new Map();
+  let newCount = 0;
+  for (const job of state.allJobs) {
+    counts.set(job.company, (counts.get(job.company) || 0) + 1);
+    if (Date.now() - new Date(job.first_seen_at).getTime() < NEW_BADGE_WINDOW_MS) newCount++;
+  }
+
+  totalJobsEl.textContent = state.allJobs.length;
+  totalCompaniesEl.textContent = counts.size;
+  newJobsEl.textContent = newCount;
+
+  const top = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, TOP_COMPANIES_SHOWN);
+  const max = top.length ? top[0][1] : 1;
+  chart.innerHTML = top
+    .map(
+      ([company, count]) => `
+        <li class="bar-row">
+          <span class="bar-label">${escapeHtml(company)}</span>
+          <span class="bar-track"><span class="bar-fill" style="width: ${(count / max) * 100}%"></span></span>
+          <span class="bar-value">${count}</span>
+        </li>
+      `,
+    )
+    .join("");
+}
+
 async function loadJobs() {
   statusEl.textContent = "Loading...";
   try {
@@ -209,6 +246,7 @@ async function loadJobs() {
     state.allJobs = await response.json();
 
     populateCompanyOptions();
+    renderStats();
     applyFilter();
   } catch (err) {
     statusEl.textContent = `Couldn't load jobs (${err.message}). Try refreshing the page.`;

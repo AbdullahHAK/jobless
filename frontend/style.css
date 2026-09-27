@@ -1,22 +1,15 @@
 :root {
-  color-scheme: light dark;
-  --fg: #1a1a1a;
-  --bg: #ffffff;
-  --muted: #6b7280;
-  --border: #e5e7eb;
-  --accent: #2563eb;
-  --card-bg: #f9fafb;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --fg: #f3f4f6;
-    --bg: #111827;
-    --muted: #9ca3af;
-    --border: #374151;
-    --accent: #60a5fa;
-    --card-bg: #1f2937;
-  }
+  color-scheme: dark;
+  --bg: #0a0812;
+  --bg-elevated: #120f1c;
+  --card-bg: #161227;
+  --fg: #f1edfb;
+  --muted: #9d94b8;
+  --border: #2a2440;
+  --accent: #a855f7;
+  --accent-hover: #c084fc;
+  --accent-dark: #6d28d9;
+  --accent-soft: rgba(168, 85, 247, 0.14);
 }
 
 * {
@@ -28,18 +21,157 @@ body {
   color: var(--fg);
   background: var(--bg);
   margin: 0;
-  padding: 0 1rem 3rem;
+  min-height: 100vh;
+}
+
+/* Sidebar navigation - fixed on desktop (pushes .page-content over),
+   off-canvas overlay with a backdrop on mobile. Both states are driven by
+   a single `sidebar-collapsed` class on <body> so the show/hide rule below
+   doesn't need to be duplicated per breakpoint. */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  background: var(--bg-elevated);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.25rem;
+  z-index: 40;
+  transition: transform 0.2s ease;
+  overflow-y: auto;
+}
+
+body.sidebar-collapsed .sidebar {
+  transform: translateX(-100%);
+}
+
+.sidebar .site-logo {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.35rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, var(--accent-hover), var(--accent-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.sidebar-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.sidebar-nav a:hover {
+  background: var(--accent-soft);
+  color: var(--fg);
+}
+
+.sidebar-nav a.site-nav-active {
+  background: var(--accent-soft);
+  color: var(--accent-hover);
+  font-weight: 600;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.sidebar-footer a {
+  color: var(--muted);
+}
+
+.sidebar-footer a:hover {
+  color: var(--accent-hover);
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 50;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--fg);
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: left 0.2s ease;
+}
+
+.sidebar-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent-hover);
+}
+
+@media (min-width: 769px) {
+  body:not(.sidebar-collapsed) .sidebar-toggle {
+    left: calc(240px + 1rem);
+  }
+}
+
+.sidebar-backdrop {
+  display: none;
+}
+
+.page-content {
+  margin-left: 240px;
+  padding: 3.5rem 1.5rem 3rem;
+  transition: margin-left 0.2s ease;
+}
+
+body.sidebar-collapsed .page-content {
+  margin-left: 0;
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    margin-left: 0 !important;
+  }
+
+  body:not(.sidebar-collapsed) .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 30;
+  }
 }
 
 header {
   max-width: 720px;
   margin: 0 auto;
-  padding: 2.5rem 0 1rem;
+  padding: 0 0 1rem;
 }
 
 h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.25rem;
+  background: linear-gradient(135deg, var(--fg), var(--accent-hover));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .tagline {
@@ -47,18 +179,101 @@ h1 {
   margin: 0.25rem 0 0;
 }
 
-.back-link,
-.prep-link {
-  display: inline-block;
-  margin-top: 0.75rem;
-  color: var(--accent);
-  text-decoration: none;
-  font-size: 0.9rem;
+.stats-section {
+  max-width: 720px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.back-link:hover,
-.prep-link:hover {
-  text-decoration: underline;
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.stat-card {
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: 0.75rem;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.stat-value {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent-hover);
+}
+
+.stat-label {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.chart-card {
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: 0.75rem;
+  padding: 1.1rem 1.25rem 1.25rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.chart-card h2 {
+  margin: 0 0 0.9rem;
+  font-size: 1rem;
+}
+
+.bar-chart {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bar-label {
+  width: 130px;
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bar-track {
+  flex: 1;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  height: 1.35rem;
+}
+
+.bar-fill {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-dark), var(--accent));
+  border-radius: 0.4rem;
+}
+
+.bar-value {
+  width: 2rem;
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
 }
 
 .prep-main {
@@ -110,6 +325,11 @@ h1 {
   background: var(--bg);
   border-radius: 0.5rem;
   padding: 0.85rem 1rem;
+  transition: border-color 0.15s ease;
+}
+
+.prep-card:hover {
+  border-color: var(--accent);
 }
 
 .prep-question {
@@ -282,6 +502,12 @@ select {
   background: var(--card-bg);
   border-radius: 0.75rem;
   padding: 1rem 1.25rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.15s ease;
+}
+
+.job-card:hover {
+  border-color: var(--accent);
 }
 
 .job-card.applied {

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Applying directly to a role",
+    "template": "Subject: Application for [Role Name] - [Your Name]\n\nHi [Hiring Manager's Name],\n\nI'm applying for the [Role Name] position at [Company]. I recently [built X / worked on Y / graduated in Z], and [one specific, relevant detail about their product or tech stack] is what drew me to this role specifically.\n\nI've attached my resume. I'd welcome the chance to talk about how I could contribute to the team.\n\nThanks for your time,\n[Your Name]\n[Phone] | [LinkedIn/GitHub]"
+  },
+  {
+    "title": "Requesting a referral",
+    "template": "Subject: Quick question about [Company]\n\nHi [Name],\n\nI came across your profile and saw you work on [team/product] at [Company] - I'm currently applying for [Role Name] there and was hoping to get your perspective.\n\nWould you be open to a referral, or a quick 10-minute call about what the team is like? I've attached my resume in case it's useful either way.\n\nNo pressure at all if you're busy - I really appreciate you taking the time to read this.\n\nBest,\n[Your Name]"
+  },
+  {
+    "title": "Following up after applying with no response",
+    "template": "Subject: Following up - [Role Name] application\n\nHi [Hiring Manager's Name],\n\nI applied for the [Role Name] role on [date] and wanted to follow up, since I'm still very interested in the opportunity.\n\nHappy to share any additional information that would help - let me know if there's anything else you need from me.\n\nThanks,\n[Your Name]"
+  },
+  {
+    "title": "Thank-you note after an interview",
+    "template": "Subject: Thank you - [Role Name] interview\n\nHi [Interviewer's Name],\n\nThank you for taking the time to talk with me today about the [Role Name] position. I enjoyed learning more about [something specific from the conversation - a project, a team challenge, their tech stack].\n\nOur conversation made me even more excited about the opportunity. Please let me know if there's anything further I can provide.\n\nBest,\n[Your Name]"
+  },
+  {
+    "title": "Cold networking / informational interview request",
+    "template": "Subject: Student/grad interested in [Company]'s engineering team\n\nHi [Name],\n\nI'm a [student at X / recent CS graduate] interested in [Company], and I noticed you work on [team/product]. I'd love to learn more about your experience there and what the engineering culture is like.\n\nWould you have 15 minutes sometime in the next couple of weeks for a quick call? Completely understand if now isn't a good time.\n\nThanks either way,\n[Your Name]"
+  }
+]

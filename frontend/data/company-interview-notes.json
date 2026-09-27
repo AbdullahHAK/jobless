@@ -1,0 +1,63 @@
+[
+  {
+    "company": "Arbisoft",
+    "process": "Online MCQs covering DSA, OOP, databases, OS, and general aptitude, followed by a coding round - fresh-grad hiring has included a long onsite coding test.",
+    "topics": [
+      "OOP - all four pillars (encapsulation, inheritance, polymorphism, abstraction)",
+      "Data structures & algorithms - LeetCode-style problems",
+      "Operating systems - multithreading/multiprocessing",
+      "Databases",
+      "Your Final Year Project - be ready to explain it in real depth"
+    ],
+    "note": "Leans more technical than behavioral - solid DSA/OOP fundamentals matter more here than soft skills."
+  },
+  {
+    "company": "Devsinc",
+    "process": "A technical assessment, then an HR call, then a roughly 90-minute technical interview with the project manager.",
+    "topics": [
+      "OOP fundamentals",
+      "Data structures & algorithms",
+      "Databases",
+      "Every tool/technology listed on your resume - expect \"how, why, and when did you use this\"",
+      "Your Final Year Project"
+    ],
+    "note": "Expect to be quizzed in detail on anything you've listed on your resume - don't list a tool you can't discuss confidently."
+  },
+  {
+    "company": "NetSol Technologies",
+    "process": "A multi-round process (roughly 3 weeks): initial screening, technical assessments, multiple panel discussions, and a final onsite round.",
+    "topics": [
+      "OOP fundamentals - inheritance, polymorphism, interfaces",
+      "SQL basics, including joins",
+      "Data structures - e.g. array vs. linked list",
+      "Object-oriented vs. functional programming",
+      "Version control workflows",
+      "Describing a challenging bug you fixed",
+      "Optimizing a slow-running application"
+    ],
+    "note": "Problem-solving and communication questions (\"how do you learn a new technology quickly\") come up alongside the technical rounds, not just after them."
+  },
+  {
+    "company": "Contour Software",
+    "process": "An online assessment (OOP, SQL, JavaScript, HTML/CSS), then a technical interview with the local manager, an HR round, and a final interview with an offshore manager - notably one of the longer processes, often 5-6 rounds.",
+    "topics": [
+      "String/array manipulation problems",
+      "OOP MCQs - inheritance, polymorphism, encapsulation, overriding",
+      "SQL/DBMS - normalization, index types, writing functional queries",
+      "Angular and SQL Server (for relevant tracks)",
+      "General web fundamentals (HTML/CSS/JS)"
+    ],
+    "note": "One of the longer hiring processes among Pakistani software houses - budget time for multiple rounds."
+  },
+  {
+    "company": "10Pearls",
+    "process": "An HR call, a first technical interview, a second technical interview with an architect focused on system design, a conversation with a director on leadership/collaboration, and a final alignment/compensation call.",
+    "topics": [
+      "System design",
+      "Debugging processes",
+      "CI/CD pipelines",
+      "Writing clean, maintainable code"
+    ],
+    "note": "A more senior-leaning process with a dedicated system-design round - a stronger fit for candidates past entry level."
+  }
+]

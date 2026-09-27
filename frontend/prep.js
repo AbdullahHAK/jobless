@@ -2,6 +2,8 @@
 // daily scrape regenerates - see frontend/data/*.json for each category.
 const HR_QUESTIONS_URL = "data/hr-questions.json";
 const RESUME_TIPS_URL = "data/resume-tips.json";
+const COMPANY_QUESTIONS_URL = "data/company-interview-notes.json";
+const COLD_EMAIL_TEMPLATES_URL = "data/cold-email-templates.json";
 
 // Same escaping helper as app.js - duplicated rather than shared via a
 // module system, since this project deliberately has no build step.
@@ -32,12 +34,41 @@ function resumeTipCardHtml(item) {
   `;
 }
 
+function companyQuestionCardHtml(item) {
+  const topics = (item.topics || []).map((t) => `<li>${escapeHtml(t)}</li>`).join("");
+  return `
+    <li class="prep-card company-card">
+      <p class="prep-question">${escapeHtml(item.company)}</p>
+      <p class="prep-tip">${escapeHtml(item.process)}</p>
+      <ul class="company-topics">${topics}</ul>
+      <p class="company-note">${escapeHtml(item.note)}</p>
+    </li>
+  `;
+}
+
+// Cold-email templates are kept in memory (rather than round-tripped
+// through an HTML data-attribute) so the copy button always copies the
+// exact original text, whitespace included.
+let coldEmailTemplates = [];
+
+function coldEmailCardHtml(item, index) {
+  return `
+    <li class="prep-card">
+      <div class="cold-email-header">
+        <p class="prep-question">${escapeHtml(item.title)}</p>
+        <button type="button" class="copy-template-btn" data-index="${index}">Copy</button>
+      </div>
+      <pre class="cold-email-template">${escapeHtml(item.template)}</pre>
+    </li>
+  `;
+}
+
 // Shared by every prep-hub section (HR questions, resume tips, and
 // whatever category gets added next) rather than duplicating the same
 // fetch/render/error-handling block per category.
 async function loadPrepList(url, listId, cardHtml) {
   const list = document.getElementById(listId);
-  if (!list) return;
+  if (!list) return [];
 
   list.innerHTML = `<li class="status">Loading...</li>`;
   try {
@@ -45,10 +76,37 @@ async function loadPrepList(url, listId, cardHtml) {
     if (!response.ok) throw new Error(`${response.status}`);
     const items = await response.json();
     list.innerHTML = items.map(cardHtml).join("");
+    return items;
   } catch (err) {
     list.innerHTML = `<li class="status">Couldn't load content (${escapeHtml(err.message)}).</li>`;
+    return [];
   }
 }
 
+// Event delegation, same pattern as app.js's mark-applied button - cards
+// are inserted via innerHTML, so there's no per-card listener to attach.
+document.addEventListener("click", async (e) => {
+  const btn = e.target.closest(".copy-template-btn");
+  if (!btn) return;
+
+  const template = coldEmailTemplates[Number(btn.dataset.index)]?.template;
+  if (!template) return;
+
+  const originalLabel = btn.textContent;
+  try {
+    await navigator.clipboard.writeText(template);
+    btn.textContent = "Copied!";
+  } catch {
+    btn.textContent = "Couldn't copy";
+  }
+  setTimeout(() => {
+    btn.textContent = originalLabel;
+  }, 1500);
+});
+
 loadPrepList(HR_QUESTIONS_URL, "hr-questions-list", questionCardHtml);
 loadPrepList(RESUME_TIPS_URL, "resume-tips-list", resumeTipCardHtml);
+loadPrepList(COMPANY_QUESTIONS_URL, "company-questions-list", companyQuestionCardHtml);
+loadPrepList(COLD_EMAIL_TEMPLATES_URL, "cold-email-list", coldEmailCardHtml).then((items) => {
+  coldEmailTemplates = items;
+});

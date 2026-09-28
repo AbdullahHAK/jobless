@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Real, moderated employee reviews and salary ranges for Pakistani tech companies and software houses." />
+  <title>Jobless Reviews — Company Reviews for Pakistani Tech Jobs</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+  <aside class="sidebar">
+    <a class="site-logo" href="index.html">Jobless</a>
+    <nav class="sidebar-nav">
+      <a href="index.html">📋 Jobs</a>
+      <a href="prep.html">🎯 Prep</a>
+      <a href="reviews.html" class="site-nav-active">⭐ Reviews</a>
+    </nav>
+    <div class="sidebar-footer">
+      <p>Built by <a href="https://github.com/AbdullahHAK" target="_blank" rel="noopener">Abdullah</a></p>
+      <p><a href="https://github.com/AbdullahHAK/jobless" target="_blank" rel="noopener">Source on GitHub ↗</a></p>
+      <p>Free for everyone, updated daily</p>
+    </div>
+  </aside>
+
+  <div class="page-content">
+    <header>
+      <h1>Jobless Reviews</h1>
+      <p class="tagline">
+        Real employee reviews and salary ranges for Pakistani tech companies - written by the
+        people who actually worked there.
+      </p>
+    </header>
+
+    <main class="reviews-main prep-main">
+      <section class="prep-section reviews-disclaimer">
+        <p class="prep-section-intro">
+          Reviews are submitted by individuals and reflect their own opinions and experience -
+          Jobless doesn't verify the claims made in them. Every submission is checked by a
+          moderator before it's published, to filter out spam, fakes, and abuse - so a new
+          review won't appear instantly.
+        </p>
+      </section>
+
+      <section class="prep-section">
+        <h2>Submit a Review</h2>
+        <p class="prep-section-intro">
+          Share what it's actually like to work there - it helps the next person deciding
+          whether to apply.
+        </p>
+        <form id="review-form" class="review-form">
+          <label for="review-company">Company</label>
+          <input type="text" id="review-company" required maxlength="200" placeholder="e.g. Arbisoft" />
+
+          <label for="review-role">Role <span class="optional-label">(optional)</span></label>
+          <input type="text" id="review-role" maxlength="200" placeholder="e.g. Software Engineer" />
+
+          <label for="review-employment-status">Employment status</label>
+          <select id="review-employment-status" required>
+            <option value="current">Current employee</option>
+            <option value="former">Former employee</option>
+          </select>
+
+          <label for="review-rating">Overall rating</label>
+          <select id="review-rating" required>
+            <option value="5">★★★★★ Excellent</option>
+            <option value="4">★★★★☆ Good</option>
+            <option value="3" selected>★★★☆☆ Average</option>
+            <option value="2">★★☆☆☆ Below average</option>
+            <option value="1">★☆☆☆☆ Poor</option>
+          </select>
+
+          <label for="review-salary">Salary range <span class="optional-label">(optional - a range, not an exact figure)</span></label>
+          <input type="text" id="review-salary" maxlength="100" placeholder="e.g. 150k-200k PKR/month" />
+
+          <label for="review-text">Your review <span class="optional-label">(min 20 characters)</span></label>
+          <textarea id="review-text" required minlength="20" maxlength="3000" rows="5" placeholder="What's it really like to work there? Culture, growth, management, pay..."></textarea>
+
+          <button type="submit" class="submit-review-btn">Submit review</button>
+          <p id="review-form-status" class="status"></p>
+        </form>
+      </section>
+
+      <section class="prep-section">
+        <h2>Browse Reviews</h2>
+        <div class="controls">
+          <select id="review-company-filter">
+            <option value="">All companies</option>
+          </select>
+        </div>
+        <p id="reviews-status" class="status"></p>
+        <ul id="reviews-list" class="prep-card-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="sidebar.js"></script>
+  <script src="reviews.js"></script>
+</body>
+</html>

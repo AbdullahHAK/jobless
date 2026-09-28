@@ -1,13 +1,15 @@
+import hmac
+import os
 from collections.abc import Generator
 from datetime import date, datetime
 from typing import Literal
 
 import psycopg
-from fastapi import Depends, FastAPI, HTTPException, Query, Request
+from fastapi import Depends, FastAPI, Header, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from prometheus_fastapi_instrumentator import Instrumentator
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, Field
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
@@ -61,6 +63,38 @@ class SubscribeRequest(BaseModel):
     frequency: Literal["daily", "weekly"]
 
 
+class ReviewIn(BaseModel):
+    company: str = Field(min_length=1, max_length=200)
+    role: str | None = Field(default=None, max_length=200)
+    employment_status: Literal["current", "former"]
+    rating: int = Field(ge=1, le=5)
+    salary_range: str | None = Field(default=None, max_length=100)
+    # A floor on length is the cheapest available filter against drive-by
+    # spam/junk submissions before they ever reach the moderation queue.
+    review_text: str = Field(min_length=20, max_length=3000)
+
+
+class ReviewOut(BaseModel):
+    id: int
+    company: str
+    role: str | None
+    employment_status: str
+    rating: int
+    salary_range: str | None
+    review_text: str
+    submitted_at: datetime
+
+
+def require_admin(x_admin_token: str = Header(default="")) -> None:
+    # Read fresh per-request (not cached at import time) so it's mockable
+    # in tests and so a deployment can rotate the token without restarting.
+    # An unset ADMIN_TOKEN must refuse every request, not silently compare
+    # against an empty expected value.
+    admin_token = os.environ.get("ADMIN_TOKEN")
+    if not admin_token or not hmac.compare_digest(x_admin_token, admin_token):
+        raise HTTPException(status_code=403, detail="Not authorized.")
+
+
 def get_db_connection() -> Generator[psycopg.Connection]:
     conn = db.get_connection()
     try:
@@ -108,3 +142,55 @@ def unsubscribe(token: str, conn: psycopg.Connection = Depends(get_db_connection
     if not db.remove_subscriber(conn, token):
         raise HTTPException(status_code=404, detail="Subscription not found - it may already be removed.")
     return "<html><body><p>You've been unsubscribed. Sorry to see you go.</p></body></html>"
+
+
+@app.post("/reviews", status_code=201)
+@limiter.limit("5/hour")
+def submit_review(
+    request: Request,
+    body: ReviewIn,
+    conn: psycopg.Connection = Depends(get_db_connection),
+) -> dict:
+    review_id = db.add_review(
+        conn,
+        company=body.company,
+        employment_status=body.employment_status,
+        rating=body.rating,
+        review_text=body.review_text,
+        role=body.role,
+        salary_range=body.salary_range,
+    )
+    return {"status": "pending", "id": review_id}
+
+
+@app.get("/reviews", response_model=list[ReviewOut])
+@limiter.limit("60/minute")
+def get_reviews(
+    request: Request,
+    company: str | None = None,
+    conn: psycopg.Connection = Depends(get_db_connection),
+) -> list[dict]:
+    return db.list_reviews(conn, company=company)
+
+
+@app.get(
+    "/reviews/pending",
+    response_model=list[ReviewOut],
+    dependencies=[Depends(require_admin)],
+)
+def get_pending_reviews(conn: psycopg.Connection = Depends(get_db_connection)) -> list[dict]:
+    return db.list_pending_reviews(conn)
+
+
+@app.post("/reviews/{review_id}/approve", dependencies=[Depends(require_admin)])
+def approve_review_endpoint(review_id: int, conn: psycopg.Connection = Depends(get_db_connection)) -> dict:
+    if not db.approve_review(conn, review_id):
+        raise HTTPException(status_code=404, detail="Review not found or already moderated.")
+    return {"status": "approved"}
+
+
+@app.post("/reviews/{review_id}/reject", dependencies=[Depends(require_admin)])
+def reject_review_endpoint(review_id: int, conn: psycopg.Connection = Depends(get_db_connection)) -> dict:
+    if not db.reject_review(conn, review_id):
+        raise HTTPException(status_code=404, detail="Review not found or already moderated.")
+    return {"status": "rejected"}

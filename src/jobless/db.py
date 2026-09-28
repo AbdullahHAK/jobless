@@ -36,6 +36,23 @@ CREATE TABLE IF NOT EXISTS subscribers (
     unsubscribe_token TEXT NOT NULL UNIQUE,
     created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+
+-- is_approved defaults false: a submitted review is invisible to the
+-- public (see list_reviews) until a moderator approves it via
+-- approve_review. Hosting unmoderated claims/ratings about real companies
+-- carries real spam and defamation-risk exposure, unlike jobs/subscribers
+-- which are either scraped facts or private to the subscriber themselves.
+CREATE TABLE IF NOT EXISTS reviews (
+    id SERIAL PRIMARY KEY,
+    company TEXT NOT NULL,
+    role TEXT,
+    employment_status TEXT NOT NULL CHECK (employment_status IN ('current', 'former')),
+    rating SMALLINT NOT NULL CHECK (rating BETWEEN 1 AND 5),
+    salary_range TEXT,
+    review_text TEXT NOT NULL,
+    is_approved BOOLEAN NOT NULL DEFAULT false,
+    submitted_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
 """
 
 # apply_link is the natural dedup key: it's the one field every scraper
@@ -230,3 +247,93 @@ def list_subscribers(conn: psycopg.Connection, frequency: str) -> list[dict]:
             {"frequency": frequency},
         )
         return cur.fetchall()
+
+
+def add_review(
+    conn: psycopg.Connection,
+    company: str,
+    employment_status: str,
+    rating: int,
+    review_text: str,
+    role: str | None = None,
+    salary_range: str | None = None,
+) -> int:
+    """Insert a new review as unapproved. Returns the new row's id -
+    callers should tell submitters it's pending moderation, not live yet."""
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            INSERT INTO reviews (company, role, employment_status, rating, salary_range, review_text)
+            VALUES (
+                %(company)s, %(role)s, %(employment_status)s, %(rating)s, %(salary_range)s, %(review_text)s
+            )
+            RETURNING id;
+            """,
+            {
+                "company": company,
+                "role": role,
+                "employment_status": employment_status,
+                "rating": rating,
+                "salary_range": salary_range,
+                "review_text": review_text,
+            },
+        )
+        review_id = cur.fetchone()[0]
+    conn.commit()
+    return review_id
+
+
+def list_reviews(conn: psycopg.Connection, company: str | None = None) -> list[dict]:
+    """Approved reviews only, most recent first - see add_review/approve_review
+    for why unapproved submissions never reach this query."""
+    query = (
+        "SELECT id, company, role, employment_status, rating, salary_range, review_text, submitted_at "
+        "FROM reviews WHERE is_approved = true"
+    )
+    params: dict = {}
+    if company:
+        query += " AND company = %(company)s"
+        params["company"] = company
+    query += " ORDER BY submitted_at DESC;"
+
+    with conn.cursor(row_factory=dict_row) as cur:
+        cur.execute(query, params)
+        return cur.fetchall()
+
+
+def list_pending_reviews(conn: psycopg.Connection) -> list[dict]:
+    """Unapproved submissions awaiting moderation - admin-only, oldest first
+    so a moderator works through the backlog in submission order."""
+    with conn.cursor(row_factory=dict_row) as cur:
+        cur.execute(
+            "SELECT id, company, role, employment_status, rating, salary_range, review_text, submitted_at "
+            "FROM reviews WHERE is_approved = false ORDER BY submitted_at ASC;"
+        )
+        return cur.fetchall()
+
+
+def approve_review(conn: psycopg.Connection, review_id: int) -> bool:
+    """Mark a pending review approved, making it publicly visible via
+    list_reviews. Returns whether a matching pending review was found."""
+    with conn.cursor() as cur:
+        cur.execute(
+            "UPDATE reviews SET is_approved = true WHERE id = %(id)s AND is_approved = false;",
+            {"id": review_id},
+        )
+        approved = cur.rowcount > 0
+    conn.commit()
+    return approved
+
+
+def reject_review(conn: psycopg.Connection, review_id: int) -> bool:
+    """Delete a pending review a moderator rejected (spam/fake/abusive) -
+    rejected submissions aren't worth soft-deleting like closed jobs, there's
+    no future use for keeping them around. Returns whether one was found."""
+    with conn.cursor() as cur:
+        cur.execute(
+            "DELETE FROM reviews WHERE id = %(id)s AND is_approved = false;",
+            {"id": review_id},
+        )
+        rejected = cur.rowcount > 0
+    conn.commit()
+    return rejected

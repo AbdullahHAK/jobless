@@ -196,3 +196,89 @@ def test_list_companies_only_counts_active_jobs(mocker):
 
     sql = cursor.execute.call_args[0][0]
     assert "is_active = true" in sql
+
+
+def test_add_review_inserts_unapproved_and_returns_id(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchone.return_value = (7,)
+
+    review_id = db.add_review(
+        conn,
+        company="Arbisoft",
+        employment_status="current",
+        rating=4,
+        review_text="Solid place to work, decent WLB and mentorship for juniors.",
+        role="Software Engineer",
+        salary_range="150k-200k PKR/month",
+    )
+
+    assert review_id == 7
+    sql, params = cursor.execute.call_args[0]
+    assert "is_approved" not in sql.split("VALUES")[0]  # column list omits it - defaults to false
+    assert params["company"] == "Arbisoft"
+    assert params["rating"] == 4
+    conn.commit.assert_called_once()
+
+
+def test_list_reviews_only_returns_approved_reviews(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchall.return_value = []
+
+    db.list_reviews(conn)
+
+    sql = cursor.execute.call_args[0][0]
+    assert "is_approved = true" in sql
+
+
+def test_list_reviews_filters_by_company_when_given(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchall.return_value = []
+
+    db.list_reviews(conn, company="Arbisoft")
+
+    sql, params = cursor.execute.call_args[0]
+    assert "AND company = %(company)s" in sql
+    assert params == {"company": "Arbisoft"}
+
+
+def test_list_pending_reviews_only_returns_unapproved(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchall.return_value = []
+
+    db.list_pending_reviews(conn)
+
+    sql = cursor.execute.call_args[0][0]
+    assert "is_approved = false" in sql
+
+
+def test_approve_review_returns_true_when_a_pending_row_was_updated(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.rowcount = 1
+
+    assert db.approve_review(conn, 7) is True
+    conn.commit.assert_called_once()
+
+
+def test_approve_review_returns_false_when_not_found(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.rowcount = 0
+
+    assert db.approve_review(conn, 999) is False
+
+
+def test_reject_review_deletes_only_unapproved_rows(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.rowcount = 1
+
+    assert db.reject_review(conn, 7) is True
+    sql = cursor.execute.call_args[0][0]
+    assert "DELETE FROM reviews" in sql
+    assert "is_approved = false" in sql
+    conn.commit.assert_called_once()

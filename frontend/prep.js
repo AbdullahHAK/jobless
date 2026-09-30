@@ -63,6 +63,10 @@ function coldEmailCardHtml(item, index) {
   `;
 }
 
+function skeletonCardsHtml(count) {
+  return Array(count).fill('<li class="skeleton-card" aria-hidden="true"></li>').join("");
+}
+
 // Shared by every prep-hub section (HR questions, resume tips, and
 // whatever category gets added next) rather than duplicating the same
 // fetch/render/error-handling block per category.
@@ -70,7 +74,7 @@ async function loadPrepList(url, listId, cardHtml) {
   const list = document.getElementById(listId);
   if (!list) return [];
 
-  list.innerHTML = `<li class="status">Loading...</li>`;
+  list.innerHTML = skeletonCardsHtml(3);
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error(`${response.status}`);

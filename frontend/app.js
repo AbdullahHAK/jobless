@@ -238,8 +238,13 @@ function renderStats() {
     .join("");
 }
 
+function skeletonCardsHtml(count) {
+  return Array(count).fill('<li class="skeleton-card" aria-hidden="true"></li>').join("");
+}
+
 async function loadJobs() {
-  statusEl.textContent = "Loading...";
+  statusEl.textContent = "";
+  jobList.innerHTML = skeletonCardsHtml(6);
   try {
     const response = await fetch(JOBS_DATA_URL);
     if (!response.ok) throw new Error(`${response.status}`);
@@ -249,6 +254,7 @@ async function loadJobs() {
     renderStats();
     applyFilter();
   } catch (err) {
+    jobList.innerHTML = "";
     statusEl.textContent = `Couldn't load jobs (${err.message}). Try refreshing the page.`;
   }
 }

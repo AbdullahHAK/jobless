@@ -68,7 +68,8 @@ async function loadReviews() {
     return;
   }
 
-  status.textContent = "Loading...";
+  status.textContent = "";
+  list.innerHTML = Array(3).fill('<li class="skeleton-card" aria-hidden="true"></li>').join("");
   try {
     const response = await fetch(`${API_BASE}/reviews`);
     if (!response.ok) throw new Error(`${response.status}`);
@@ -82,6 +83,7 @@ async function loadReviews() {
 
     renderReviews();
   } catch (err) {
+    list.innerHTML = "";
     status.textContent = `Couldn't load reviews (${err.message}). Try refreshing the page.`;
   }
 }

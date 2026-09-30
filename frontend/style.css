@@ -151,13 +151,14 @@ body.sidebar-collapsed .sidebar {
   z-index: 50;
   width: 2.25rem;
   height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
   background: var(--card-bg);
   color: var(--fg);
   cursor: pointer;
-  font-size: 1.1rem;
-  line-height: 1;
   box-shadow: var(--shadow-sm);
   transition: left 0.2s ease;
 }
@@ -165,6 +166,11 @@ body.sidebar-collapsed .sidebar {
 .sidebar-toggle:hover {
   border-color: var(--accent);
   color: var(--accent-hover);
+}
+
+.sidebar-toggle svg {
+  width: 1.1rem;
+  height: 1.1rem;
 }
 
 @media (min-width: 769px) {
@@ -776,8 +782,41 @@ main {
 }
 
 .programs-section summary {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-weight: 600;
   cursor: pointer;
+  list-style: none;
+}
+
+/* Replaces the browser's default disclosure triangle (inconsistent across
+   browsers) with our own icon + a chevron that rotates on open. */
+.programs-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.programs-summary-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  color: var(--accent-hover);
+}
+
+.programs-section summary span {
+  flex: 1;
+}
+
+.programs-summary-chevron {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+  color: var(--muted);
+  transition: transform 0.2s ease;
+}
+
+.programs-section[open] .programs-summary-chevron {
+  transform: rotate(90deg);
 }
 
 .programs-intro {

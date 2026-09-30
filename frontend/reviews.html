@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Real, moderated employee reviews and salary ranges for Pakistani tech companies and software houses." />
   <title>Jobless Reviews — Company Reviews for Pakistani Tech Jobs</title>
+  <meta name="theme-color" content="#09090b" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -85,14 +86,16 @@
             <option value="former">Former employee</option>
           </select>
 
-          <label for="review-rating">Overall rating</label>
-          <select id="review-rating" required>
-            <option value="5">★★★★★ Excellent</option>
-            <option value="4">★★★★☆ Good</option>
-            <option value="3" selected>★★★☆☆ Average</option>
-            <option value="2">★★☆☆☆ Below average</option>
-            <option value="1">★☆☆☆☆ Poor</option>
-          </select>
+          <label id="review-rating-label">Overall rating</label>
+          <div class="star-rating" id="review-rating-group" role="radiogroup" aria-labelledby="review-rating-label">
+            <button type="button" class="star-btn" data-value="1" aria-label="1 star - Poor">★</button>
+            <button type="button" class="star-btn" data-value="2" aria-label="2 stars - Below average">★</button>
+            <button type="button" class="star-btn active" data-value="3" aria-label="3 stars - Average">★</button>
+            <button type="button" class="star-btn" data-value="4" aria-label="4 stars - Good">★</button>
+            <button type="button" class="star-btn" data-value="5" aria-label="5 stars - Excellent">★</button>
+            <span id="star-rating-label" class="star-rating-label">Average</span>
+          </div>
+          <input type="hidden" id="review-rating" value="3" />
 
           <label for="review-salary">Salary range <span class="optional-label">(optional - a range, not an exact figure)</span></label>
           <input type="text" id="review-salary" maxlength="100" placeholder="e.g. 150k-200k PKR/month" />

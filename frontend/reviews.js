@@ -88,6 +88,39 @@ async function loadReviews() {
   }
 }
 
+const STAR_LABELS = { 1: "Poor", 2: "Below average", 3: "Average", 4: "Good", 5: "Excellent" };
+
+// Clickable 1-5 star widget backed by a hidden input (#review-rating) so
+// the rest of the submit logic doesn't need to know it's not a <select>.
+function initStarRating() {
+  const group = document.getElementById("review-rating-group");
+  const hiddenInput = document.getElementById("review-rating");
+  const label = document.getElementById("star-rating-label");
+  if (!group || !hiddenInput) return;
+
+  const stars = [...group.querySelectorAll(".star-btn")];
+
+  function paint(value) {
+    for (const btn of stars) btn.classList.toggle("active", Number(btn.dataset.value) <= value);
+  }
+
+  group.addEventListener("click", (e) => {
+    const btn = e.target.closest(".star-btn");
+    if (!btn) return;
+    hiddenInput.value = btn.dataset.value;
+    paint(Number(btn.dataset.value));
+    if (label) label.textContent = STAR_LABELS[btn.dataset.value];
+  });
+
+  group.addEventListener("mouseover", (e) => {
+    const btn = e.target.closest(".star-btn");
+    if (!btn) return;
+    paint(Number(btn.dataset.value));
+  });
+
+  group.addEventListener("mouseleave", () => paint(Number(hiddenInput.value)));
+}
+
 // Disables the submission form entirely (rather than letting people fill
 // it out and only finding out on submit) when the API isn't configured yet.
 function initFormAvailability() {
@@ -134,6 +167,14 @@ document.getElementById("review-form")?.addEventListener("submit", async (e) => 
 
     statusEl.textContent = "Thanks! Your review is pending moderation and will appear once approved.";
     e.target.reset();
+    // form.reset() restores the hidden #review-rating input to its default
+    // value (3) but doesn't know about the star buttons' .active class -
+    // repaint them to match, and reset the "Average" text label too.
+    for (const btn of document.querySelectorAll(".star-btn")) {
+      btn.classList.toggle("active", Number(btn.dataset.value) <= 3);
+    }
+    const label = document.getElementById("star-rating-label");
+    if (label) label.textContent = STAR_LABELS[3];
   } catch (err) {
     statusEl.textContent = err.message;
   } finally {
@@ -141,5 +182,6 @@ document.getElementById("review-form")?.addEventListener("submit", async (e) => 
   }
 });
 
+initStarRating();
 initFormAvailability();
 loadReviews();

@@ -648,9 +648,49 @@ h1 {
 
 .review-form input:disabled,
 .review-form select:disabled,
-.review-form textarea:disabled {
+.review-form textarea:disabled,
+.review-form button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 0.35rem;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  padding: 0.1rem;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--border);
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    transform 0.1s ease;
+}
+
+.star-btn:hover {
+  transform: scale(1.15);
+}
+
+.star-btn.active {
+  color: var(--accent-hover);
+}
+
+.star-btn:disabled {
+  cursor: not-allowed;
+  transform: none;
+}
+
+.star-rating-label {
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
 .review-form textarea {

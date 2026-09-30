@@ -6,6 +6,9 @@
   <meta name="description" content="Software jobs and internships from Pakistani tech companies, aggregated daily from 15+ company career pages." />
   <title>Jobless — Pakistani Software Jobs</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -27,10 +30,23 @@
   </aside>
 
   <div class="page-content">
-    <header>
-      <h1>Jobless</h1>
-      <p class="tagline">Software jobs and internships from Pakistani tech companies, updated daily.</p>
-    </header>
+    <section class="hero">
+      <span class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Updated daily · <strong id="hero-company-count">34+</strong> Pakistani tech companies tracked
+      </span>
+      <h1>Your <span class="hero-accent">unfair advantage</span> for Pakistani tech jobs</h1>
+      <p class="hero-subtext">
+        Real openings aggregated daily, honest salary-transparent reviews, and company-specific
+        interview prep - all free, no login required.
+      </p>
+      <a href="#jobs" class="hero-cta">
+        <span>Browse Jobs</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </section>
 
     <section class="stats-section">
       <div class="stats-cards">
@@ -64,7 +80,7 @@
       <ul id="programs-list" class="programs-list"></ul>
     </details>
 
-    <main>
+    <main id="jobs">
       <div class="controls">
         <select id="company-filter">
           <option value="">All companies</option>

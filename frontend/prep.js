@@ -4,6 +4,8 @@ const HR_QUESTIONS_URL = "data/hr-questions.json";
 const RESUME_TIPS_URL = "data/resume-tips.json";
 const COMPANY_QUESTIONS_URL = "data/company-interview-notes.json";
 const COLD_EMAIL_TEMPLATES_URL = "data/cold-email-templates.json";
+const DSA_TOPICS_URL = "data/dsa-topics.json";
+const SQL_CONCEPTS_URL = "data/sql-concepts.json";
 
 // Same escaping helper as app.js - duplicated rather than shared via a
 // module system, since this project deliberately has no build step.
@@ -63,6 +65,30 @@ function coldEmailCardHtml(item, index) {
   `;
 }
 
+function dsaTopicCardHtml(item) {
+  return `
+    <li class="prep-card">
+      <p class="prep-question">${escapeHtml(item.topic)}</p>
+      <p class="prep-tip">${escapeHtml(item.note)}</p>
+      <a class="prep-card-link" href="${escapeHtml(item.link_url)}" target="_blank" rel="noopener">${escapeHtml(item.link_label)} &rarr;</a>
+    </li>
+  `;
+}
+
+function sqlConceptCardHtml(item) {
+  const example = item.example
+    ? `<pre class="cold-email-template">${escapeHtml(item.example)}</pre>`
+    : "";
+  return `
+    <li class="prep-card">
+      <p class="prep-question">${escapeHtml(item.concept)}</p>
+      <p class="prep-tip">${escapeHtml(item.note)}</p>
+      ${example}
+      <a class="prep-card-link" href="${escapeHtml(item.link_url)}" target="_blank" rel="noopener">${escapeHtml(item.link_label)} &rarr;</a>
+    </li>
+  `;
+}
+
 function skeletonCardsHtml(count) {
   return Array(count).fill('<li class="skeleton-card" aria-hidden="true"></li>').join("");
 }
@@ -114,3 +140,5 @@ loadPrepList(COMPANY_QUESTIONS_URL, "company-questions-list", companyQuestionCar
 loadPrepList(COLD_EMAIL_TEMPLATES_URL, "cold-email-list", coldEmailCardHtml).then((items) => {
   coldEmailTemplates = items;
 });
+loadPrepList(DSA_TOPICS_URL, "dsa-topics-list", dsaTopicCardHtml);
+loadPrepList(SQL_CONCEPTS_URL, "sql-concepts-list", sqlConceptCardHtml);

@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Arrays & Strings",
+    "note": "The starting point for almost every technical interview. Get comfortable with prefix sums and in-place manipulation before moving on - most 'easy' problems live here, and most 'medium' problems build on it.",
+    "link_label": "Read: Arrays (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/dsa/array/"
+  },
+  {
+    "topic": "Two Pointers & Sliding Window",
+    "note": "A huge share of array and string problems reduce to one of these two patterns once you see their shape. Recognizing 'this is a sliding window problem' is often more valuable than knowing ten different algorithms.",
+    "link_label": "Read: Sliding Window Technique (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/dsa/window-sliding-technique/"
+  },
+  {
+    "topic": "Linked Lists",
+    "note": "Fewer problems show up here than arrays, but interviewers return to them constantly to test pointer manipulation under pressure - reversing a list, detecting a cycle, and merging two sorted lists come up everywhere.",
+    "link_label": "Read: Linked List (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/dsa/linked-list/"
+  },
+  {
+    "topic": "Stacks & Queues",
+    "note": "Beyond the basic operations, know the classic use cases: balanced-parentheses checking, monotonic stacks for 'next greater element' style problems, and queues for breadth-first search.",
+    "link_label": "Read: Stack Data Structure (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/dsa/stack-data-structure/"
+  },
+  {
+    "topic": "Trees & Binary Search Trees",
+    "note": "Traversals - inorder, preorder, postorder, both recursive and iterative - need to be automatic. Almost every other tree question is a variation on 'compute something while traversing' once that's solid.",
+    "link_label": "Read: Binary Tree (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/dsa/binary-tree-data-structure/"
+  },
+  {
+    "topic": "Graphs (BFS & DFS)",
+    "note": "Most graph problems are breadth-first or depth-first search wearing a disguise - grids, dependency lists, and word-ladder style problems are all graphs underneath. Spotting that first is half the battle.",
+    "link_label": "Read: Graph Data Structure (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/dsa/graph-data-structure-and-algorithms/"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "note": "The topic most candidates dread, and the one that separates strong performers from the rest. Start with simple 1D DP (climbing stairs, house robber) before moving on to 2D grid and string problems.",
+    "link_label": "Read: Dynamic Programming (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/dsa/dynamic-programming/"
+  },
+  {
+    "topic": "Backtracking",
+    "note": "Permutations, combinations, and subset generation all follow the same choose-explore-undo template. Once that template clicks, most backtracking problems come down to defining the right constraints.",
+    "link_label": "Read: Backtracking Algorithms (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/dsa/backtracking-algorithms/"
+  },
+  {
+    "topic": "Heaps & Priority Queues",
+    "note": "The structure to reach for whenever a problem asks for the top K or the smallest/largest N of something. Know how to build one from scratch and recognize when it beats sorting the whole array.",
+    "link_label": "Read: Heap Data Structure (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/dsa/heap-data-structure/"
+  },
+  {
+    "topic": "Binary Search",
+    "note": "Not just for searching sorted arrays - a large class of 'minimize the maximum' or 'find the boundary' problems are solved by binary searching over the space of possible answers, not the array itself.",
+    "link_label": "Read: Binary Search (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/dsa/binary-search/"
+  }
+]

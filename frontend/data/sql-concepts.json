@@ -1,0 +1,58 @@
+[
+  {
+    "concept": "SELECT & Filtering Basics",
+    "note": "Everything else builds on this. Get comfortable filtering with WHERE, sorting with ORDER BY, and limiting results - interviewers often start here just to see how cleanly you write a query.",
+    "example": "SELECT name, salary\nFROM employees\nWHERE department = 'Engineering'\nORDER BY salary DESC\nLIMIT 5;",
+    "link_label": "Read: SQL SELECT (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/sql/sql-select-query/"
+  },
+  {
+    "concept": "JOINs (INNER / LEFT / RIGHT)",
+    "note": "The single most-tested SQL concept in interviews. Know the difference between INNER, LEFT, and RIGHT joins cold, and be ready to explain what happens to unmatched rows in each.",
+    "example": "SELECT o.id, c.name\nFROM orders o\nLEFT JOIN customers c ON o.customer_id = c.id;",
+    "link_label": "Read: SQL JOINs (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/sql/sql-join-set-1-inner-left-right-and-full-joins/"
+  },
+  {
+    "concept": "GROUP BY & Aggregations",
+    "note": "Pairs with COUNT, SUM, AVG, MIN, and MAX to answer 'how many / how much per group' questions. The common trap: WHERE filters rows before grouping, HAVING filters groups after.",
+    "example": "SELECT department, COUNT(*) AS headcount\nFROM employees\nGROUP BY department\nHAVING COUNT(*) > 5;",
+    "link_label": "Read: SQL GROUP BY (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/sql/sql-group-by/"
+  },
+  {
+    "concept": "Subqueries",
+    "note": "A query nested inside another - useful when you need a value or a filtered set before the outer query can run. Know the difference between a subquery that returns one value versus one that returns a list.",
+    "example": "SELECT name\nFROM employees\nWHERE salary > (SELECT AVG(salary) FROM employees);",
+    "link_label": "Read: SQL Subqueries (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/sql/sql-subquery/"
+  },
+  {
+    "concept": "Window Functions",
+    "note": "The concept that separates intermediate from advanced SQL users. ROW_NUMBER, RANK, and running totals via OVER() compute per-row values across a group without collapsing rows the way GROUP BY does.",
+    "example": "SELECT name, salary,\n  RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank\nFROM employees;",
+    "link_label": "Read: Window Functions (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/sql/window-functions-in-sql/"
+  },
+  {
+    "concept": "Common Table Expressions (CTEs)",
+    "note": "A WITH clause that names a temporary result set, making a long query readable by breaking it into labeled steps instead of nesting subqueries five levels deep.",
+    "example": "WITH high_earners AS (\n  SELECT * FROM employees WHERE salary > 100000\n)\nSELECT department, COUNT(*) FROM high_earners GROUP BY department;",
+    "link_label": "Read: SQL CTEs (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/sql/cte-in-sql/"
+  },
+  {
+    "concept": "Normalization",
+    "note": "Less about writing queries and more about schema design - interviewers ask about 1NF/2NF/3NF to see if you understand why data gets split across tables instead of duplicated everywhere.",
+    "example": null,
+    "link_label": "Read: Normal Forms in DBMS (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/dbms/normal-forms-in-dbms/"
+  },
+  {
+    "concept": "Indexes & Query Performance",
+    "note": "Knowing a query's output isn't enough - be ready to explain how an index speeds up a WHERE or JOIN, and the tradeoff it creates on writes. A common follow-up: 'how would you speed up this slow query?'",
+    "example": null,
+    "link_label": "Read: Indexing in Databases (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/dbms/indexing-in-databases-set-1/"
+  }
+]

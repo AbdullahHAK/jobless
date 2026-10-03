@@ -571,6 +571,14 @@ h1 {
   --card-accent: #ec4899;
 }
 
+.prep-section--dsa {
+  --card-accent: #3b82f6;
+}
+
+.prep-section--sql {
+  --card-accent: #14b8a6;
+}
+
 .prep-section-intro {
   color: var(--muted);
   font-size: 0.9rem;
@@ -625,6 +633,19 @@ h1 {
   font-size: 0.9rem;
   line-height: 1.55;
   margin: 0;
+}
+
+.prep-card-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: var(--card-accent, var(--accent-hover));
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.prep-card-link:hover {
+  text-decoration: underline;
 }
 
 .company-topics {

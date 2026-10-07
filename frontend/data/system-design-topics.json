@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Load Balancing",
+    "note": "Usually the first building block in any system design answer. Know the common algorithms (round robin, least connections, consistent hashing) and where a load balancer sits - in front of your app servers, not your database.",
+    "link_label": "Read: Load Balancer (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/system-design/what-is-load-balancer-system-design/"
+  },
+  {
+    "topic": "Caching",
+    "note": "The single highest-leverage answer to 'how would you make this faster' in almost every design interview. Know cache-aside vs write-through, and be ready to discuss eviction policies (LRU) and cache invalidation.",
+    "link_label": "Read: Caching (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/system-design/caching-system-design-concept-for-beginners/"
+  },
+  {
+    "topic": "Database Sharding",
+    "note": "How you split one database into many once a single machine can't hold or serve all your data. Know the common sharding keys and the real tradeoff: cross-shard queries and joins get much harder.",
+    "link_label": "Read: Database Sharding (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/system-design/database-sharding-a-system-design-concept/"
+  },
+  {
+    "topic": "Database Replication",
+    "note": "How you copy data across multiple machines for availability and read scaling. Know the difference between leader-follower (primary-replica) setups and the replication-lag tradeoff that comes with them.",
+    "link_label": "Reference: System Design Primer (GitHub)",
+    "link_url": "https://github.com/donnemartin/system-design-primer"
+  },
+  {
+    "topic": "CAP Theorem",
+    "note": "A distributed system can't give you Consistency, Availability, and Partition tolerance all at once - network partitions are a fact of life, so the real question interviewers want is: does your system favor C or A when one happens?",
+    "link_label": "Read: CAP Theorem (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/system-design/cap-theorem-in-system-design/"
+  },
+  {
+    "topic": "Message Queues",
+    "note": "The standard way to decouple two services so a slow or failing consumer doesn't take down the producer. Know when you'd reach for a queue (async work, buffering spikes) versus a direct API call.",
+    "link_label": "Read: Message Queues (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/system-design/message-queues-system-design/"
+  },
+  {
+    "topic": "Content Delivery Networks (CDNs)",
+    "note": "How static content gets served from a server physically close to the user instead of your origin server every time. Know what belongs on a CDN (images, video, static assets) and what doesn't (personalized, frequently-changing data).",
+    "link_label": "Reference: System Design Primer (GitHub)",
+    "link_url": "https://github.com/donnemartin/system-design-primer"
+  },
+  {
+    "topic": "Rate Limiting",
+    "note": "How an API protects itself from being overwhelmed by one client, whether by accident or on purpose. Know the common algorithms - token bucket and sliding window come up most - and where you'd enforce it (gateway vs. per-service).",
+    "link_label": "Read: Rate Limiting Algorithms (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/system-design/rate-limiting-algorithms-system-design/"
+  },
+  {
+    "topic": "Consistent Hashing",
+    "note": "The technique that lets you add or remove servers from a distributed cache or database without having to re-shuffle almost all of your data - the detail that separates a strong distributed-systems answer from a shaky one.",
+    "link_label": "Read: Consistent Hashing (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/system-design/consistent-hashing/"
+  },
+  {
+    "topic": "Monoliths vs. Microservices",
+    "note": "Less a technical question than a judgment one - interviewers want to see you weigh the real tradeoffs (deployment independence and fault isolation vs. operational complexity and network overhead), not just declare microservices 'better.'",
+    "link_label": "Read: Monolithic vs Microservices (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/system-design/monolithic-vs-microservices-architecture/"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "subject": "Computer Networks",
+    "note": "Comes up more than people expect, especially for backend and infra roles. Know the OSI/TCP-IP layers at a high level, the TCP three-way handshake, the difference between TCP and UDP, and what actually happens between typing a URL and a page loading (DNS lookup, TCP/TLS handshake, HTTP request/response).",
+    "link_label": "Read: Computer Networks Tutorials (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/"
+  },
+  {
+    "subject": "AWS Fundamentals",
+    "note": "You don't need every service - know the core four cold: EC2 (compute), S3 (object storage), RDS (managed relational databases), and IAM (permissions). Understanding the difference between a security group and a VPC is a common follow-up.",
+    "link_label": "Read: AWS Documentation",
+    "link_url": "https://docs.aws.amazon.com/"
+  },
+  {
+    "subject": "Java Core Concepts",
+    "note": "Beyond OOP basics, be ready to explain the JVM memory model (stack vs. heap), how garbage collection actually works at a high level, and the difference between an interface and an abstract class - a question that comes up constantly.",
+    "link_label": "Read: Java (GeeksforGeeks)",
+    "link_url": "https://www.geeksforgeeks.org/java/java/"
+  },
+  {
+    "subject": "Kubernetes",
+    "note": "Increasingly expected even outside pure DevOps roles. Know what a Pod, a Deployment, and a Service actually are and how they relate to each other - that's usually enough to hold your own in a general technical screen.",
+    "link_label": "Read: Kubernetes Concepts (Official Docs)",
+    "link_url": "https://kubernetes.io/docs/concepts/overview/"
+  }
+]

@@ -1,0 +1,27 @@
+name: Suggest a company
+description: Suggest a Pakistani tech company whose job openings should be tracked on Jobless
+title: "Add company: "
+labels: ["company-suggestion"]
+body:
+  - type: input
+    id: company-name
+    attributes:
+      label: Company name
+      placeholder: e.g. Acme Software
+    validations:
+      required: true
+  - type: input
+    id: careers-url
+    attributes:
+      label: Careers page URL
+      description: The company's own careers/jobs page, if you know it
+      placeholder: https://example.com/careers
+    validations:
+      required: false
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this company?
+      description: Anything that helps - e.g. it's actively hiring software engineers, it's a well-known Pakistani software house, etc.
+    validations:
+      required: false

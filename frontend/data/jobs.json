@@ -1,5 +1,149 @@
 [
   {
+    "id": 56353,
+    "title": "Technical Recruiter",
+    "company": "Remotebase",
+    "location": "Not specified",
+    "apply_link": "https://apply.workable.com/j/50EC0E9B99/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56257,
+    "title": "Systems Engineer - IT Support",
+    "company": "Pakistan Single Window",
+    "location": "Islamabad",
+    "apply_link": "https://apply.workable.com/j/3F5278EBDE/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56256,
+    "title": "SVP - Enterprise Data, Business Intelligence & Analytics",
+    "company": "Pakistan Single Window",
+    "location": "Karachi",
+    "apply_link": "https://apply.workable.com/j/BA56E7EE52/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56255,
+    "title": "HR Operations Intern",
+    "company": "Pakistan Single Window",
+    "location": "Islamabad",
+    "apply_link": "https://apply.workable.com/j/3DA92050EA/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56142,
+    "title": "Technical Support Officer - Data Support",
+    "company": "Inbox Business Technologies",
+    "location": "Karachi",
+    "apply_link": "https://apply.workable.com/j/4619213B72/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56141,
+    "title": "Technical Support Officer",
+    "company": "Inbox Business Technologies",
+    "location": "Lahore",
+    "apply_link": "https://apply.workable.com/j/DDE9664A41/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56140,
+    "title": "Technical Support Officer",
+    "company": "Inbox Business Technologies",
+    "location": "Karachi",
+    "apply_link": "https://apply.workable.com/j/83CCBC8466/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56139,
+    "title": "Technical Support Officer",
+    "company": "Inbox Business Technologies",
+    "location": "Islamabad",
+    "apply_link": "https://apply.workable.com/j/1CF1F675B4/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56138,
+    "title": "Team Lead Onsite IT Support",
+    "company": "Inbox Business Technologies",
+    "location": "Islamabad",
+    "apply_link": "https://apply.workable.com/j/BAB124716E/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56137,
+    "title": "Printing Officer",
+    "company": "Inbox Business Technologies",
+    "location": "Lahore",
+    "apply_link": "https://apply.workable.com/j/512777871C/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56136,
+    "title": "PreSales Lead - Central Region",
+    "company": "Inbox Business Technologies",
+    "location": "Lahore",
+    "apply_link": "https://apply.workable.com/j/C5A731D19E/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56135,
+    "title": "Maintenance Technician",
+    "company": "Inbox Business Technologies",
+    "location": "Lahore",
+    "apply_link": "https://apply.workable.com/j/D390392D4A/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56134,
+    "title": "Junior Oracle DBA",
+    "company": "Inbox Business Technologies",
+    "location": "Lahore",
+    "apply_link": "https://apply.workable.com/j/8CD1181D31/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56133,
+    "title": "Junior Oracle Apps DBA - EBS 12.2",
+    "company": "Inbox Business Technologies",
+    "location": "Lahore",
+    "apply_link": "https://apply.workable.com/j/E1F6CC15F2/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56132,
+    "title": "IBTL Ability Forward Program 2026",
+    "company": "Inbox Business Technologies",
+    "location": "Karachi",
+    "apply_link": "https://apply.workable.com/j/C49D52BB2B/apply",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
+    "id": 56033,
+    "title": "Prior Authorization Associate",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Prior-Authorization-Associate_JR102249",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
     "id": 55424,
     "title": "Technical Specialist - Backup/Restoration",
     "company": "Prime System Solutions",
@@ -59,15 +203,6 @@
     "company": "CureMD",
     "location": "Lahore",
     "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Data-Engineer---ETL_JR102365",
-    "date_scraped": "2026-10-08",
-    "first_seen_at": "2026-10-07T12:57:33.312340+00:00"
-  },
-  {
-    "id": 53942,
-    "title": "Senior Technical Project Manager",
-    "company": "Codup",
-    "location": "Karachi, Sindh, Pakistan",
-    "apply_link": "https://codup.applytojob.com/apply/wcKY2IjCgF/Senior-Technical-Project-Manager",
     "date_scraped": "2026-10-08",
     "first_seen_at": "2026-10-07T12:57:33.312340+00:00"
   },
@@ -1620,15 +1755,6 @@
     "first_seen_at": "2026-10-05T09:49:13.140407+00:00"
   },
   {
-    "id": 51919,
-    "title": "Senior HR Executive",
-    "company": "Nextbridge",
-    "location": "Lahore,Pakistan",
-    "apply_link": "https://nextbridge.com/job-detail?job_id=6ac36a67f533385b7016000d",
-    "date_scraped": "2026-10-08",
-    "first_seen_at": "2026-10-05T09:49:13.140407+00:00"
-  },
-  {
     "id": 51917,
     "title": "GRC Specialist (Governance, Risk & Compliance)",
     "company": "NetSol Technologies",
@@ -1920,7 +2046,7 @@
     "id": 47780,
     "title": "Intermediate Software Developer",
     "company": "Contour Software",
-    "location": "3 Locations",
+    "location": "PER - Karachi, PK",
     "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FIntermediate-Software-Developer_R54548&jobTitle=Intermediate%20Software%20Developer",
     "date_scraped": "2026-10-08",
     "first_seen_at": "2026-10-01T09:38:15.059975+00:00"
@@ -2565,15 +2691,6 @@
     "first_seen_at": "2026-09-20T08:04:31.706616+00:00"
   },
   {
-    "id": 38806,
-    "title": "Sr. Implementation Consultant",
-    "company": "Motive",
-    "location": "Pakistan - Remote",
-    "apply_link": "https://job-boards.greenhouse.io/gomotive/jobs/8481746002",
-    "date_scraped": "2026-10-08",
-    "first_seen_at": "2026-09-20T08:04:31.706616+00:00"
-  },
-  {
     "id": 38804,
     "title": "SMB Account Executive - Outbound Sales",
     "company": "Motive",
@@ -2853,15 +2970,6 @@
     "first_seen_at": "2026-09-16T08:04:21.325579+00:00"
   },
   {
-    "id": 35456,
-    "title": "Microsoft Dynamics - Associate Angular Developer",
-    "company": "Devsinc",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://apply.workable.com/j/D3FB13505A",
-    "date_scraped": "2026-10-08",
-    "first_seen_at": "2026-09-16T08:04:21.325579+00:00"
-  },
-  {
     "id": 35303,
     "title": "Data Engineer",
     "company": "Contour Software",
@@ -2930,15 +3038,6 @@
     "company": "Devsinc",
     "location": "Lahore, Pakistan",
     "apply_link": "https://apply.workable.com/j/4A7DB2ECF6",
-    "date_scraped": "2026-10-08",
-    "first_seen_at": "2026-09-15T08:10:07.468217+00:00"
-  },
-  {
-    "id": 34458,
-    "title": "Trainee Software Developer",
-    "company": "Contour Software",
-    "location": "PER - Islamabad, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Islamabad-PK%2FTrainee-Software-Developer_R54278&jobTitle=Trainee%20Software%20Developer",
     "date_scraped": "2026-10-08",
     "first_seen_at": "2026-09-15T08:10:07.468217+00:00"
   },
@@ -4950,15 +5049,6 @@
     "first_seen_at": "2026-08-20T03:40:48.805383+00:00"
   },
   {
-    "id": 15326,
-    "title": "Technical Consultant",
-    "company": "Contour Software",
-    "location": "2 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FTechnical-Consultant_R53722&jobTitle=Technical%20Consultant",
-    "date_scraped": "2026-10-08",
-    "first_seen_at": "2026-08-20T03:40:48.805383+00:00"
-  },
-  {
     "id": 15025,
     "title": "Pre-Sales & Solutions Consultant",
     "company": "Abacus Consulting",
@@ -5031,15 +5121,6 @@
     "first_seen_at": "2026-08-19T03:41:37.448551+00:00"
   },
   {
-    "id": 14781,
-    "title": "Application Security Intern",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Application-Security-Intern_JR102148",
-    "date_scraped": "2026-10-08",
-    "first_seen_at": "2026-08-19T03:41:37.448551+00:00"
-  },
-  {
     "id": 14392,
     "title": "Talent Analytics Consultant",
     "company": "Abacus Consulting",
@@ -5081,6 +5162,15 @@
     "company": "Ovex Technologies",
     "location": "Lahore",
     "apply_link": "https://www.ovextech.com/jobDetail/Vm0xMFlWbFdTbkpQVm1SU1lrVndVbFpyVWtKUFVUMDk=",
+    "date_scraped": "2026-10-08",
+    "first_seen_at": "2026-08-18T03:39:59.396483+00:00"
+  },
+  {
+    "id": 14306,
+    "title": "Procurement Executive",
+    "company": "Nextbridge",
+    "location": "Lahore,Pakistan",
+    "apply_link": "https://nextbridge.com/job-detail?job_id=67165902405c84a6d0277bc9",
     "date_scraped": "2026-10-08",
     "first_seen_at": "2026-08-18T03:39:59.396483+00:00"
   },
@@ -6197,15 +6287,6 @@
     "company": "Devsinc",
     "location": "Riyadh, Saudi Arabia",
     "apply_link": "https://apply.workable.com/j/6C4B811895",
-    "date_scraped": "2026-10-08",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 415,
-    "title": "Associate Microsoft Dynamics CRM & Power Platform Consultant",
-    "company": "Devsinc",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://apply.workable.com/j/6128946ACD",
     "date_scraped": "2026-10-08",
     "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
   },

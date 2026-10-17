@@ -166,3 +166,32 @@ loadPrepList(DSA_TOPICS_URL, "dsa-topics-list", dsaTopicCardHtml);
 loadPrepList(SQL_CONCEPTS_URL, "sql-concepts-list", sqlConceptCardHtml);
 loadPrepList(SYSTEM_DESIGN_URL, "system-design-list", systemDesignCardHtml);
 loadPrepList(STUDY_NOTES_URL, "study-notes-list", studyNoteCardHtml);
+
+// Highlights whichever section-nav button matches the section currently
+// scrolled near the top of the viewport, so the nav bar reflects where you
+// actually are on the page, not just where you last clicked.
+function initSectionNavScrollSpy() {
+  const navLinks = [...document.querySelectorAll(".prep-section-nav-btn")];
+  if (!navLinks.length || !("IntersectionObserver" in window)) return;
+
+  const sections = navLinks
+    .map((link) => document.getElementById(link.getAttribute("href").slice(1)))
+    .filter(Boolean);
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        const id = entry.target.id;
+        for (const link of navLinks) {
+          link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+        }
+      }
+    },
+    { rootMargin: "-10% 0px -70% 0px" },
+  );
+
+  for (const section of sections) observer.observe(section);
+}
+
+initSectionNavScrollSpy();

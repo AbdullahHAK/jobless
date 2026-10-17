@@ -56,6 +56,13 @@ textarea {
    interactive elements here (cards, pill buttons) don't have one at all
    without this. :focus-visible (not :focus) so it only shows for keyboard
    navigation, not every mouse click. */
+/* Smooth-scrolls to a section when a .prep-section-nav-btn anchor link is
+   clicked - the reduced-motion block below forces this back to instant
+   jumps for anyone who's opted out of non-essential motion. */
+html {
+  scroll-behavior: smooth;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -585,6 +592,96 @@ h1 {
 
 .prep-section--notes {
   --card-accent: #6366f1;
+}
+
+/* Dedicated per-section jump buttons - without these, 8 stacked sections
+   with dozens of cards between them read as one long undifferentiated
+   scroll no matter how well each individual card is styled. Each button
+   carries the same accent color as its section (via --nav-accent, same
+   hex values as the --card-accent tokens above) so the nav itself
+   previews the page's structure before you've scrolled anywhere. */
+.prep-section-nav {
+  max-width: 720px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.prep-section-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease,
+    background-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.prep-section-nav-btn svg {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.prep-section-nav-btn:hover {
+  border-color: var(--nav-accent);
+  color: var(--fg);
+  transform: translateY(-1px);
+}
+
+.prep-section-nav-btn.active {
+  border-color: var(--nav-accent);
+  background: var(--nav-accent);
+  color: #fff;
+}
+
+.prep-section-nav-btn--hr {
+  --nav-accent: #8b6eff;
+}
+
+.prep-section-nav-btn--resume {
+  --nav-accent: #22c55e;
+}
+
+.prep-section-nav-btn--company {
+  --nav-accent: #f59e0b;
+}
+
+.prep-section-nav-btn--email {
+  --nav-accent: #ec4899;
+}
+
+.prep-section-nav-btn--dsa {
+  --nav-accent: #3b82f6;
+}
+
+.prep-section-nav-btn--sql {
+  --nav-accent: #14b8a6;
+}
+
+.prep-section-nav-btn--design {
+  --nav-accent: #f43f5e;
+}
+
+.prep-section-nav-btn--notes {
+  --nav-accent: #6366f1;
+}
+
+/* Lands the target section a little below the viewport top (not jammed
+   against the edge) when a nav button is clicked. */
+.prep-section {
+  scroll-margin-top: 1.5rem;
 }
 
 .prep-section-intro {

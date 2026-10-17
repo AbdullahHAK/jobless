@@ -1,5 +1,167 @@
 [
   {
+    "id": 65397,
+    "title": "Data Engineer",
+    "company": "SadaPay",
+    "location": "Karachi (preferred), Islamabad, Lahore.",
+    "apply_link": "https://sadapay.pk/jobs-listing/data-engineer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65396,
+    "title": "Officer / Assistant Manager, Internal Audit",
+    "company": "SadaPay",
+    "location": "Karachi, Lahore, Islamabad",
+    "apply_link": "https://sadapay.pk/jobs-listing/officer-assistant-manager-internal-audit",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65395,
+    "title": "Senior Product Manager",
+    "company": "SadaPay",
+    "location": "Karachi, Lahore or Islamabad",
+    "apply_link": "https://sadapay.pk/jobs-listing/senior-product-manager",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65394,
+    "title": "Full Stack Product Engineer",
+    "company": "SadaPay",
+    "location": "Karachi (preferred) | Remote (considered)",
+    "apply_link": "https://sadapay.pk/jobs-listing/full-stack-product-engineer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65393,
+    "title": "AI-First Product Designer",
+    "company": "SadaPay",
+    "location": "Karachi, Lahore, Islamabad",
+    "apply_link": "https://sadapay.pk/jobs-listing/ai-first-product-designer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65188,
+    "title": "Senior Data Engineer",
+    "company": "Joblogic",
+    "location": "Lahore, Punjab, Pakistan",
+    "apply_link": "https://job-boards.eu.greenhouse.io/joblogic/jobs/4938720101",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65187,
+    "title": "QC Automation Engineer",
+    "company": "Joblogic",
+    "location": "Lahore, Punjab, Pakistan",
+    "apply_link": "https://job-boards.eu.greenhouse.io/joblogic/jobs/4906827101",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65186,
+    "title": ".Net Developer",
+    "company": "Joblogic",
+    "location": "Lahore, Punjab, Pakistan",
+    "apply_link": "https://job-boards.eu.greenhouse.io/joblogic/jobs/4973645101",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65185,
+    "title": "MLOps Engineer",
+    "company": "Joblogic",
+    "location": "Pakistan",
+    "apply_link": "https://job-boards.eu.greenhouse.io/joblogic/jobs/4977133101",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65184,
+    "title": "Flutter Developer",
+    "company": "Joblogic",
+    "location": "Lahore, Punjab, Pakistan",
+    "apply_link": "https://job-boards.eu.greenhouse.io/joblogic/jobs/4982739101",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65183,
+    "title": "Data Analyst",
+    "company": "Joblogic",
+    "location": "Lahore, Punjab, Pakistan",
+    "apply_link": "https://job-boards.eu.greenhouse.io/joblogic/jobs/4965347101",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65182,
+    "title": "Azure Cloud Engineer",
+    "company": "Joblogic",
+    "location": "Lahore, Punjab, Pakistan",
+    "apply_link": "https://job-boards.eu.greenhouse.io/joblogic/jobs/4906857101",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65181,
+    "title": "Automation Engineer",
+    "company": "Joblogic",
+    "location": "Lahore, Punjab, Pakistan",
+    "apply_link": "https://job-boards.eu.greenhouse.io/joblogic/jobs/4906839101",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65180,
+    "title": "Associate Data Engineer",
+    "company": "Joblogic",
+    "location": "Lahore, Punjab, Pakistan",
+    "apply_link": "https://job-boards.eu.greenhouse.io/joblogic/jobs/4944182101",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65179,
+    "title": "AI/ML Engineer",
+    "company": "Joblogic",
+    "location": "Lahore, Punjab, Pakistan; Pakistan",
+    "apply_link": "https://job-boards.eu.greenhouse.io/joblogic/jobs/4927594101",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65178,
+    "title": "AI Evaluation Engineer",
+    "company": "Joblogic",
+    "location": "Pakistan",
+    "apply_link": "https://job-boards.eu.greenhouse.io/joblogic/jobs/4977137101",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65123,
+    "title": "Recruitment Intern",
+    "company": "Devsinc",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://apply.workable.com/j/AF1946D830",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
+    "id": 65064,
+    "title": "Front-End Developer",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Front-End-Developer_JR102362",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
+  },
+  {
     "id": 64353,
     "title": "Embedded Systems Engineer",
     "company": "Nextbridge",
@@ -144,6 +306,33 @@
     "first_seen_at": "2026-10-16T07:41:04.581253+00:00"
   },
   {
+    "id": 63355,
+    "title": "Associate DevOps Engineer",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-DevOps-Engineer_JR102380",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-16T07:41:04.581253+00:00"
+  },
+  {
+    "id": 63130,
+    "title": "Data Engineer",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FData-Engineer_R54763&jobTitle=Data%20Engineer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-16T07:41:04.581253+00:00"
+  },
+  {
+    "id": 63129,
+    "title": "Client Experience Specialist",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FClient-Experience-Specialist_R54765&jobTitle=Client%20Experience%20Specialist",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-16T07:41:04.581253+00:00"
+  },
+  {
     "id": 62823,
     "title": "Senior Data Engineer",
     "company": "Tkxel",
@@ -252,6 +441,24 @@
     "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
   },
   {
+    "id": 62433,
+    "title": "Director - Engineering",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Director---Engineering_JR102382",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
+  },
+  {
+    "id": 62209,
+    "title": "Senior Full Stack Developer",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSenior-Full-Stack-Developer_R54747-1&jobTitle=Senior%20Full%20Stack%20Developer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
+  },
+  {
     "id": 62206,
     "title": "Sr. Product Manager - Adobe Journey Optimizer",
     "company": "Confiz",
@@ -293,6 +500,33 @@
     "company": "Dubizzle",
     "location": "Lahore, PK",
     "apply_link": "https://dubizzlelabs.breezy.hr/p/7a649386de0f01-assistant-accountant",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-14T08:11:30.658300+00:00"
+  },
+  {
+    "id": 61326,
+    "title": "Front Desk Officer/Receptionist",
+    "company": "Contour Software",
+    "location": "PER - Islamabad, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Islamabad-PK%2FFront-Desk-Officer_R51061&jobTitle=Front%20Desk%20Officer%2FReceptionist",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-14T08:11:30.658300+00:00"
+  },
+  {
+    "id": 61324,
+    "title": "SysOps Engineer",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSysOps-Engineer_R54652&jobTitle=SysOps%20Engineer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-14T08:11:30.658300+00:00"
+  },
+  {
+    "id": 61323,
+    "title": "Junior Financial Analyst",
+    "company": "Contour Software",
+    "location": "2 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FJunior-Financial-Analyst_R54734&jobTitle=Junior%20Financial%20Analyst",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-10-14T08:11:30.658300+00:00"
   },
@@ -405,6 +639,33 @@
     "first_seen_at": "2026-10-12T10:00:44.501615+00:00"
   },
   {
+    "id": 59478,
+    "title": "Junior Financial Analyst",
+    "company": "Contour Software",
+    "location": "2 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FJunior-Financial-Analyst_R54683&jobTitle=Junior%20Financial%20Analyst",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-12T10:00:44.501615+00:00"
+  },
+  {
+    "id": 59477,
+    "title": "Accounting Trainee",
+    "company": "Contour Software",
+    "location": "2 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FAccounting-Trainee_R54735&jobTitle=Accounting%20Trainee",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-12T10:00:44.501615+00:00"
+  },
+  {
+    "id": 59475,
+    "title": "Assistant Accountant",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FAssistant-Accountant_R54678-1&jobTitle=Assistant%20Accountant",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-12T10:00:44.501615+00:00"
+  },
+  {
     "id": 58996,
     "title": "Deputy Director General (Scientific Advisory & Policy Wing - SAPW) | NAFSA",
     "company": "Pakistan Single Window",
@@ -446,6 +707,15 @@
     "company": "Mindstorm Studios",
     "location": "Lahore, Pakistan",
     "apply_link": "https://mindstormstudios.simplicant.com/jobs/50905-sqa-engineer/detail",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-09T09:50:15.179126+00:00"
+  },
+  {
+    "id": 56737,
+    "title": "IT Support Engineer",
+    "company": "Contour Software",
+    "location": "PER - Islamabad, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Islamabad-PK%2FIT-Support-Engineer_R54611&jobTitle=IT%20Support%20Engineer",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-10-09T09:50:15.179126+00:00"
   },
@@ -558,11 +828,29 @@
     "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
   },
   {
+    "id": 56033,
+    "title": "Prior Authorization Associate",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Prior-Authorization-Associate_JR102249",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
+  },
+  {
     "id": 55424,
     "title": "Technical Specialist - Backup/Restoration",
     "company": "Prime System Solutions",
     "location": "Islamabad, Lahore",
     "apply_link": "https://apply.workable.com/j/66A406B76A/apply",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-08T09:41:24.552613+00:00"
+  },
+  {
+    "id": 55121,
+    "title": "Senior Business Analyst",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-Business-Analyst_JR102140",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-10-08T09:41:24.552613+00:00"
   },
@@ -592,6 +880,15 @@
     "apply_link": "https://confiz.simplicant.com/jobs/62662-senior-data-platform-engineer-python-gcp-airflow-terraform-level-iii-mexico-only/detail",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-10-08T09:41:24.552613+00:00"
+  },
+  {
+    "id": 54206,
+    "title": "Content Manager",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Content-Manager_JR102257",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-07T12:57:33.312340+00:00"
   },
   {
     "id": 53662,
@@ -2034,6 +2331,24 @@
     "first_seen_at": "2026-10-07T09:34:58.133344+00:00"
   },
   {
+    "id": 52410,
+    "title": "Software Support Representative",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FTechnical-Support-Specialist_R54602&jobTitle=Software%20Support%20Representative",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-07T09:34:58.133344+00:00"
+  },
+  {
+    "id": 52409,
+    "title": "Cloud Systems Administrator",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FCloud-Systems-Administrator_R54459&jobTitle=Cloud%20Systems%20Administrator",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-07T09:34:58.133344+00:00"
+  },
+  {
     "id": 52408,
     "title": "Product Manager",
     "company": "Confiz",
@@ -2106,6 +2421,15 @@
     "first_seen_at": "2026-10-05T09:49:13.140407+00:00"
   },
   {
+    "id": 51677,
+    "title": "USA Tax Analyst (Contract)",
+    "company": "Contour Software",
+    "location": "2 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FUSA-Tax-Analyst--Contract-_R54308&jobTitle=USA%20Tax%20Analyst%20%28Contract%29",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-05T09:49:13.140407+00:00"
+  },
+  {
     "id": 51301,
     "title": "Sales Operations Associate",
     "company": "Tkxel",
@@ -2131,6 +2455,24 @@
     "apply_link": "https://dplit.zohorecruit.com/jobs/Careers/651851000024604325?source=CareerSite",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-10-04T08:59:11.854321+00:00"
+  },
+  {
+    "id": 50143,
+    "title": "Tax Analyst",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Tax-Analyst_JR102369",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-03T08:45:14.478029+00:00"
+  },
+  {
+    "id": 50060,
+    "title": "M&A Research Associate",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FM-A-Research-Associate_R54584&jobTitle=M%26A%20Research%20Associate",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-03T08:45:14.478029+00:00"
   },
   {
     "id": 49696,
@@ -2313,6 +2655,24 @@
     "first_seen_at": "2026-10-01T09:38:15.059975+00:00"
   },
   {
+    "id": 47781,
+    "title": "FP&A Analyst",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FPayments-Business-Analyst_R54425&jobTitle=FP%26A%20Analyst",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-01T09:38:15.059975+00:00"
+  },
+  {
+    "id": 47780,
+    "title": "Intermediate Software Developer",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FIntermediate-Software-Developer_R54548&jobTitle=Intermediate%20Software%20Developer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-10-01T09:38:15.059975+00:00"
+  },
+  {
     "id": 47698,
     "title": "Senior Account Executive \u2013 Customer Success",
     "company": "Confiz",
@@ -2345,6 +2705,42 @@
     "company": "Motive",
     "location": "Pakistan - Remote",
     "apply_link": "https://job-boards.greenhouse.io/gomotive/jobs/8742388002",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
+  },
+  {
+    "id": 46958,
+    "title": "Trainee Software Developer (AI Focused)",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FTrainee-Software-Developer--AI-Focused-_R54509-1&jobTitle=Trainee%20Software%20Developer%20%28AI%20Focused%29",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
+  },
+  {
+    "id": 46956,
+    "title": "Senior SQA Analyst",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-SQA-Analyst_R54519-1&jobTitle=Senior%20SQA%20Analyst",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
+  },
+  {
+    "id": 46955,
+    "title": "Software Developer (Support)",
+    "company": "Contour Software",
+    "location": "2 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSoftware-Developer--Support-_R54506&jobTitle=Software%20Developer%20%28Support%29",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
+  },
+  {
+    "id": 46954,
+    "title": "SQA Analyst",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSQA-Analyst_R54521&jobTitle=SQA%20Analyst",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
   },
@@ -2457,6 +2853,15 @@
     "first_seen_at": "2026-09-26T08:08:58.444893+00:00"
   },
   {
+    "id": 43563,
+    "title": "Finance Operations Specialist",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FFinance-Operations-Specialist_R54458&jobTitle=Finance%20Operations%20Specialist",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-26T08:08:58.444893+00:00"
+  },
+  {
     "id": 43198,
     "title": "AI Engineer",
     "company": "Tkxel",
@@ -2489,6 +2894,15 @@
     "company": "Devsinc",
     "location": "Riyadh, Saudi Arabia",
     "apply_link": "https://apply.workable.com/j/658CAA1224",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-25T08:21:17.746650+00:00"
+  },
+  {
+    "id": 42710,
+    "title": "Senior Staff Accountant",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-Staff-Accountant_R54440&jobTitle=Senior%20Staff%20Accountant",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-09-25T08:21:17.746650+00:00"
   },
@@ -2556,6 +2970,24 @@
     "first_seen_at": "2026-09-23T08:06:31.387174+00:00"
   },
   {
+    "id": 41044,
+    "title": "Assistant Manager Finance",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FAssistant-Manager-Finance_R54385-1&jobTitle=Assistant%20Manager%20Finance",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-23T08:06:31.387174+00:00"
+  },
+  {
+    "id": 41043,
+    "title": "SQA Automation Analyst",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-SQA-Automation-Analyst_R54302&jobTitle=SQA%20Automation%20Analyst",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-23T08:06:31.387174+00:00"
+  },
+  {
     "id": 40666,
     "title": "Software Consultant - .Net",
     "company": "10Pearls",
@@ -2597,6 +3029,42 @@
     "company": "Devsinc",
     "location": "Lahore, Pakistan",
     "apply_link": "https://apply.workable.com/j/28C90DC56C",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-22T08:06:07.539359+00:00"
+  },
+  {
+    "id": 40219,
+    "title": "Cloud Operations Engineer",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FCloud-Operations-Engineer_R54390&jobTitle=Cloud%20Operations%20Engineer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-22T08:06:07.539359+00:00"
+  },
+  {
+    "id": 40218,
+    "title": "Financial Accountant",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FFinancial-Accountant_R54402&jobTitle=Financial%20Accountant",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-22T08:06:07.539359+00:00"
+  },
+  {
+    "id": 40216,
+    "title": "Associate Inhouse Counsel",
+    "company": "Contour Software",
+    "location": "2 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FAssociate-Inhouse-Counsel_R54384&jobTitle=Associate%20Inhouse%20Counsel",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-22T08:06:07.539359+00:00"
+  },
+  {
+    "id": 40214,
+    "title": "Senior Software Developer (PHP)",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-Software-Developer--PHP-_R54391&jobTitle=Senior%20Software%20Developer%20%28PHP%29",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-09-22T08:06:07.539359+00:00"
   },
@@ -2669,6 +3137,24 @@
     "company": "PakWheels",
     "location": "Islamabad / Rawalpindi, Pakistan",
     "apply_link": "https://pakeventures.simplicant.com/jobs/62454-branch-manager-islamabad/detail",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-21T08:23:18.572581+00:00"
+  },
+  {
+    "id": 39382,
+    "title": "Financial Analyst",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FFinancial-Analyst_R54335-1&jobTitle=Financial%20Analyst",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-21T08:23:18.572581+00:00"
+  },
+  {
+    "id": 39381,
+    "title": "Manager Finance Operation and Control",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FManager-Finance-Operation-and-Control_R54344&jobTitle=Manager%20Finance%20Operation%20and%20Control",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-09-21T08:23:18.572581+00:00"
   },
@@ -2781,6 +3267,24 @@
     "first_seen_at": "2026-09-19T07:41:31.205146+00:00"
   },
   {
+    "id": 37747,
+    "title": "Assistant Accountant",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FAssistant-Accountant_R54377&jobTitle=Assistant%20Accountant",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-19T07:41:31.205146+00:00"
+  },
+  {
+    "id": 37746,
+    "title": "Customer Education Specialist",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Islamabad-PK%2FCustomer-Education-Specialist_R54362&jobTitle=Customer%20Education%20Specialist",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-19T07:41:31.205146+00:00"
+  },
+  {
     "id": 37654,
     "title": "Senior Business Analyst",
     "company": "Codup",
@@ -2804,6 +3308,33 @@
     "company": "Remotebase",
     "location": "Not specified",
     "apply_link": "https://apply.workable.com/j/F67D13E250/apply",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-18T07:45:12.247902+00:00"
+  },
+  {
+    "id": 37002,
+    "title": "SOC L2 Analyst",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/SOC-L2-Analyst_JR102084",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-18T07:45:12.247902+00:00"
+  },
+  {
+    "id": 36909,
+    "title": "Senior Financial Analyst",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-Financial-Analyst_R54306&jobTitle=Senior%20Financial%20Analyst",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-18T07:45:12.247902+00:00"
+  },
+  {
+    "id": 36908,
+    "title": "Staff Accountant",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FStaff-Accountant_R54346&jobTitle=Staff%20Accountant",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-09-18T07:45:12.247902+00:00"
   },
@@ -2858,6 +3389,15 @@
     "company": "Kualitatem",
     "location": "Lahore",
     "apply_link": "https://new.careers.kualitatem.com/job/349",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-16T08:04:21.325579+00:00"
+  },
+  {
+    "id": 35303,
+    "title": "Data Engineer",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FData-Engineer_R54253&jobTitle=Data%20Engineer",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-09-16T08:04:21.325579+00:00"
   },
@@ -2970,6 +3510,15 @@
     "first_seen_at": "2026-09-12T07:29:58.991082+00:00"
   },
   {
+    "id": 32053,
+    "title": "AP & AR Analyst",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FAR-AP-Analyst_R54194&jobTitle=AP%20%26%20AR%20Analyst",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-12T07:29:58.991082+00:00"
+  },
+  {
     "id": 31673,
     "title": "IT Change & Transition Specialist",
     "company": "Tkxel",
@@ -3011,6 +3560,15 @@
     "company": "PakWheels",
     "location": "Karachi, Pakistan",
     "apply_link": "https://pakeventures.simplicant.com/jobs/62315-key-account-executive-e-commerce-karachi/detail",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-11T07:38:06.618853+00:00"
+  },
+  {
+    "id": 31225,
+    "title": "AI Engineer",
+    "company": "Contour Software",
+    "location": "2 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FAI-Engineer_R54250&jobTitle=AI%20Engineer",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-09-11T07:38:06.618853+00:00"
   },
@@ -3110,6 +3668,42 @@
     "company": "Devsinc",
     "location": "Islamabad, Pakistan",
     "apply_link": "https://apply.workable.com/j/A67752E09A",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-10T07:39:47.597226+00:00"
+  },
+  {
+    "id": 30531,
+    "title": "Associate Clinical Consultant",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-Clinical-Consultant_JR102210",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-10T07:39:47.597226+00:00"
+  },
+  {
+    "id": 30530,
+    "title": "Branding Associate",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Branding-Associate_JR102351",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-10T07:39:47.597226+00:00"
+  },
+  {
+    "id": 30527,
+    "title": "Product Owner",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Product-Owner_JR102135",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-10T07:39:47.597226+00:00"
+  },
+  {
+    "id": 30434,
+    "title": "Senior Financial Analyst",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-Financial-Analyst_R54193&jobTitle=Senior%20Financial%20Analyst",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-09-10T07:39:47.597226+00:00"
   },
@@ -3227,6 +3821,15 @@
     "company": "Devsinc",
     "location": "Lahore, Pakistan",
     "apply_link": "https://apply.workable.com/j/2014EBDB84",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-08T07:35:16.906320+00:00"
+  },
+  {
+    "id": 28959,
+    "title": "Associate - Learning & Development",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate---Learning---Development_JR102339",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-09-08T07:35:16.906320+00:00"
   },
@@ -3825,6 +4428,42 @@
     "first_seen_at": "2026-09-03T07:32:49.842605+00:00"
   },
   {
+    "id": 25490,
+    "title": "Project Manager - AI",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Project-Manager---AI_JR102209",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-03T07:32:49.842605+00:00"
+  },
+  {
+    "id": 25397,
+    "title": "Cash Application Assistant",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FCash-Application-Assistant_R54070&jobTitle=Cash%20Application%20Assistant",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-03T07:32:49.842605+00:00"
+  },
+  {
+    "id": 25396,
+    "title": "Backend Developer",
+    "company": "Contour Software",
+    "location": "2 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FBackend-Developer_R53971&jobTitle=Backend%20Developer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-03T07:32:49.842605+00:00"
+  },
+  {
+    "id": 25394,
+    "title": "Front Desk Officer",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FFront-Desk-Officer_R54128-1&jobTitle=Front%20Desk%20Officer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-03T07:32:49.842605+00:00"
+  },
+  {
     "id": 25365,
     "title": "Data Platform Engineer (Python, GCP, Airflow & Terraform) Level III - Costa Rica Only",
     "company": "Confiz",
@@ -4032,6 +4671,15 @@
     "first_seen_at": "2026-09-02T07:28:41.802851+00:00"
   },
   {
+    "id": 24703,
+    "title": "Workday Analyst",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FWorkday-Analyst_R54050&jobTitle=Workday%20Analyst",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-02T07:28:41.802851+00:00"
+  },
+  {
     "id": 24345,
     "title": "Senior Cloud Engineer - AWS (Remote, Full-Time) [AS314] (PK)",
     "company": "Smart Working Solutions",
@@ -4064,6 +4712,15 @@
     "company": "InvoZone",
     "location": "Lahore",
     "apply_link": "https://next.invozone.com/devops-engineer-1788178270407-t8vp3p",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-09-01T08:08:21.330970+00:00"
+  },
+  {
+    "id": 24076,
+    "title": "AI DevOps Engineer",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FDevOps-Engineer_R53916&jobTitle=AI%20DevOps%20Engineer",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-09-01T08:08:21.330970+00:00"
   },
@@ -4257,6 +4914,33 @@
     "first_seen_at": "2026-08-28T14:45:26.458004+00:00"
   },
   {
+    "id": 20272,
+    "title": "SQA Trainee",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSQA-Trainee_R54064&jobTitle=SQA%20Trainee",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-28T14:45:26.458004+00:00"
+  },
+  {
+    "id": 20270,
+    "title": "Trainee Software Developer",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FTrainee-Software-Developer_R54069&jobTitle=Trainee%20Software%20Developer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-28T14:45:26.458004+00:00"
+  },
+  {
+    "id": 20269,
+    "title": "SDET Trainee",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSDET-Trainee_R54054&jobTitle=SDET%20Trainee",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-28T14:45:26.458004+00:00"
+  },
+  {
     "id": 19898,
     "title": "Director Finance",
     "company": "10Pearls",
@@ -4284,6 +4968,24 @@
     "first_seen_at": "2026-08-27T13:20:20.839108+00:00"
   },
   {
+    "id": 19717,
+    "title": "Project Manager",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Project-Manager_JR102207",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-27T13:20:20.839108+00:00"
+  },
+  {
+    "id": 19629,
+    "title": "Salesforce Support Specialist - Contractual",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSalesforce-Support-Specialist---Contractual_R53946&jobTitle=Salesforce%20Support%20Specialist%20-%20Contractual",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-27T13:20:20.839108+00:00"
+  },
+  {
     "id": 19568,
     "title": "Full Stack Developer - Level IV (React/Java/AWS/Kafka) Mexico",
     "company": "Confiz",
@@ -4298,6 +5000,15 @@
     "company": "Devsinc",
     "location": "Islamabad, Pakistan",
     "apply_link": "https://apply.workable.com/j/2F4E6C1B40",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-26T03:48:45.149678+00:00"
+  },
+  {
+    "id": 19021,
+    "title": "AI Engineering & Enablement Lead",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FLead-AI-Engineer_R53947&jobTitle=AI%20Engineering%20%26%20Enablement%20Lead",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-08-26T03:48:45.149678+00:00"
   },
@@ -4343,6 +5054,24 @@
     "company": "Nextbridge",
     "location": "Lahore,Pakistan",
     "apply_link": "https://nextbridge.com/job-detail?job_id=68caad28c31dd114be3bd0c1",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-22T03:37:41.378472+00:00"
+  },
+  {
+    "id": 16661,
+    "title": "Manager - Sales",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Manager---Sales_JR102237",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-22T03:37:41.378472+00:00"
+  },
+  {
+    "id": 16567,
+    "title": "VoIP and AI Communications Developer",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FVoIP-and-AI-Communications-Developer_R53968&jobTitle=VoIP%20and%20AI%20Communications%20Developer",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-08-22T03:37:41.378472+00:00"
   },
@@ -4410,6 +5139,15 @@
     "first_seen_at": "2026-08-21T03:45:29.563899+00:00"
   },
   {
+    "id": 16017,
+    "title": "Associate Marketing Analyst\u00a0",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-Marketing-Analyst-_JR102256",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-21T03:45:29.563899+00:00"
+  },
+  {
     "id": 15619,
     "title": "Atlassian Certified ITSM Consultant",
     "company": "Abacus Consulting",
@@ -4433,6 +5171,24 @@
     "company": "10Pearls",
     "location": "London",
     "apply_link": "https://10pearls.applytojob.com/apply/jobs/details/job_20260819115600_YZRREYEPGEOFXAKK",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-20T03:40:48.805383+00:00"
+  },
+  {
+    "id": 15328,
+    "title": "OneStream Administrator",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FOneStream-Administrator_R53742&jobTitle=OneStream%20Administrator",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-20T03:40:48.805383+00:00"
+  },
+  {
+    "id": 15327,
+    "title": "Senior Hubspot Engineer",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSenior-Hubspot-Engineer_R53917&jobTitle=Senior%20Hubspot%20Engineer",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-08-20T03:40:48.805383+00:00"
   },
@@ -4487,6 +5243,24 @@
     "company": "KalSoft",
     "location": "Canada (Remote/Hybrid)",
     "apply_link": "https://www.kalsoft.com/careers/?job=22f30ce1-cd33-44f9-83d4-b1022f82dc66",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-19T03:41:37.448551+00:00"
+  },
+  {
+    "id": 14783,
+    "title": "Software Engineer- Site Reliability",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Software-Engineer--Site-Reliability_JR102284",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-19T03:41:37.448551+00:00"
+  },
+  {
+    "id": 14782,
+    "title": "Legal Associate",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Legal-Associate_JR102220",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-08-19T03:41:37.448551+00:00"
   },
@@ -4608,6 +5382,285 @@
     "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
   },
   {
+    "id": 11857,
+    "title": "PMO Analyst",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/PMO-Analyst_JR102075",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11856,
+    "title": "International Recruiter",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/International-Recruiter_JR102161",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11855,
+    "title": "Sales Executive",
+    "company": "CureMD",
+    "location": "North Carolina",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/North-Carolina/Sales-Executive_JR102145",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11854,
+    "title": "Senior Sales Executive",
+    "company": "CureMD",
+    "location": "North Carolina",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/North-Carolina/Senior-Sales-Executive_JR102146",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11852,
+    "title": "Associate SOC Manager",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-SOC-Manager_JR102154",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11851,
+    "title": "Principal AI Engineer",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Principal-AI-Engineer_JR102208",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11850,
+    "title": "SQA Engineer",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/SQA-Engineer_JR102206",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11849,
+    "title": "Principal DevOps Engineer",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Principal-DevOps-Engineer_JR102178",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11847,
+    "title": "Implementation Specialist",
+    "company": "CureMD",
+    "location": "New York",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/New-York/Implementation-Specialist_JR102130",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11844,
+    "title": "Sales Development Associate",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Sales-Development-Associate_JR102238",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11843,
+    "title": "Implementation Associate",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Implementation-Associate_JR102250",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11838,
+    "title": "RCM Analyst",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/RCM-Analyst_JR102287",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11837,
+    "title": "Senior Marketing Analyst",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-Marketing-Analyst_JR102259",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11836,
+    "title": "Payer Support Associate",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Payer-Support-Associate_JR102223",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11835,
+    "title": "Branding Lead",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Branding-Lead_JR102268",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11834,
+    "title": "Senior Manager - Digital Marketing",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-Manager---Digital-Marketing_JR102271",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11830,
+    "title": "Senior Database Administrator",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-Database-Administrator_JR102280",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11829,
+    "title": "Senior BI Engineer",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-BI-Engineer_JR102279",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11824,
+    "title": "Implementation Specialist",
+    "company": "CureMD",
+    "location": "North Carolina",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/North-Carolina/Implementation-Specialist_JR102192",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11822,
+    "title": "Associate Manager - Digital Marketing",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-Manager---Digital-Marketing_JR102258",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11821,
+    "title": "Associate - Talent Enablement (Workday HRIS)",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate---Talent-Enablement--Workday-HRIS-_JR102336",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11820,
+    "title": "Associate - Talent Enablement (Audit & Compliance)",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate---Talent-Enablement--Audit---Compliance-_JR102337",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11819,
+    "title": "Associate - HR Business Partner",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate---HR-Business-Partner_JR102338",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11818,
+    "title": "Senior VoIP Engineer \u2014 VoIP Operations",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-VoIP-Engineer---VoIP-Operations_JR102175",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11816,
+    "title": "SOC Analyst L1",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/SOC-Analyst-L1_JR102296",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11814,
+    "title": "Associate Enrollment Executive",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-Enrollment-Executive_JR102244",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11813,
+    "title": "Associate Credentialing Executive",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-Credentialing-Executive_JR102248",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11811,
+    "title": "Customer Success Associate",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Customer-Success-Associate_JR102216",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11810,
+    "title": "Digital Adoption Associate",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Digital-Adoption-Associate_JR102246",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11809,
+    "title": "Senior Medical Coder",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-Medical-Coder_JR102325",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11808,
+    "title": "Associate Business Analyst",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-Business-Analyst_JR102203",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
     "id": 11380,
     "title": "Senior Devops Engineer/Azure",
     "company": "Tkxel",
@@ -4635,6 +5688,15 @@
     "first_seen_at": "2026-08-12T04:44:01.658693+00:00"
   },
   {
+    "id": 8405,
+    "title": "Full Stack Developer",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FFull-Stack-Developer_R53603-1&jobTitle=Full%20Stack%20Developer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-08T04:07:46.506877+00:00"
+  },
+  {
     "id": 8089,
     "title": "Sr. Data Visualisation Engineer",
     "company": "Abacus Consulting",
@@ -4658,6 +5720,24 @@
     "company": "InvoZone",
     "location": "Lahore",
     "apply_link": "https://next.invozone.com/aiml-engineer-1786006490106-7igexe",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-07T04:50:51.289619+00:00"
+  },
+  {
+    "id": 7829,
+    "title": "Trainee Software Developer",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FTrainee-Software-Developer_R53250&jobTitle=Trainee%20Software%20Developer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-07T04:50:51.289619+00:00"
+  },
+  {
+    "id": 7828,
+    "title": "Intermediate Software Developer",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FIntermediate-Software-Developer_R53255&jobTitle=Intermediate%20Software%20Developer",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-08-07T04:50:51.289619+00:00"
   },
@@ -4707,6 +5787,15 @@
     "first_seen_at": "2026-08-04T05:42:08.589517+00:00"
   },
   {
+    "id": 3241,
+    "title": "Senior Front-End Developer",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-Front-End-Developer_R53204&jobTitle=Senior%20Front-End%20Developer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-08-01T05:49:40.968613+00:00"
+  },
+  {
     "id": 2211,
     "title": "SEO Growth Specialist",
     "company": "Kualitatem",
@@ -4739,6 +5828,15 @@
     "company": "Nextbridge",
     "location": "Lahore,Pakistan",
     "apply_link": "https://nextbridge.com/job-detail?job_id=6a68a73ecad05e8b88cf390d",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-29T05:46:01.148373+00:00"
+  },
+  {
+    "id": 1412,
+    "title": "SEO Analyst",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSEO-Analyst_R53145&jobTitle=SEO%20Analyst",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-07-29T05:46:01.148373+00:00"
   },
@@ -5297,6 +6395,159 @@
     "company": "Devsinc",
     "location": "Lahore, Pakistan",
     "apply_link": "https://apply.workable.com/j/5ED79D7648",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 403,
+    "title": "Data Conversion Analyst",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FData-Conversion-Analyst_R40969&jobTitle=Data%20Conversion%20Analyst",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 393,
+    "title": "Trainee Software Developer",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FTrainee-Software-Developer_R47373&jobTitle=Trainee%20Software%20Developer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 392,
+    "title": "Childcare Assistant",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FChildcare-Assistant_R47406&jobTitle=Childcare%20Assistant",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 371,
+    "title": "Workday (HRMS) Trainee",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FWorkday--HRMS--Trainee_R49690&jobTitle=Workday%20%28HRMS%29%20Trainee",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 369,
+    "title": "Manager R&D Services",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FManager-R-D-Services_R51504&jobTitle=Manager%20R%26D%20Services",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 361,
+    "title": "Technical Support Analyst",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FTechnical-Support-Analyst_R52235-1&jobTitle=Technical%20Support%20Analyst",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 360,
+    "title": "Senior SQA Analyst",
+    "company": "Contour Software",
+    "location": "2 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSenior-SQA-Analyst_R51179&jobTitle=Senior%20SQA%20Analyst",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 358,
+    "title": "Manager - M&A Business Development",
+    "company": "Contour Software",
+    "location": "Remote-Contour",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FRemote-Contour%2FManager---M-A-Business-Development_R52360&jobTitle=Manager%20-%20M%26A%20Business%20Development",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 354,
+    "title": "Product Designer",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FProduct-Designer_R52423&jobTitle=Product%20Designer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 353,
+    "title": "HR Trainee",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FHR-Trainee_R52476&jobTitle=HR%20Trainee",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 350,
+    "title": "Operations Automation Specialist (Contract)",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FOperations-Automation-Specialist--Contract-_R52362&jobTitle=Operations%20Automation%20Specialist%20%28Contract%29",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 348,
+    "title": "Product Support Associate",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FProduct-Support-Associate_R52588&jobTitle=Product%20Support%20Associate",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 343,
+    "title": "Associate Director / Director, M&A Execution",
+    "company": "Contour Software",
+    "location": "Remote-Contour",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FRemote-Contour%2FAssociate-Director---Director--M-A-Execution_R52709&jobTitle=Associate%20Director%20%2F%20Director%2C%20M%26A%20Execution",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 338,
+    "title": "Implementation Specialist",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FImplementation-Specialist_R52742&jobTitle=Implementation%20Specialist",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 331,
+    "title": "Senior Financial Accountant",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-Financial-Accountant_R52938&jobTitle=Senior%20Financial%20Accountant",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 317,
+    "title": "Senior ROR Developer",
+    "company": "Contour Software",
+    "location": "3 Locations",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSenior-ROR-Developer_R52769-1&jobTitle=Senior%20ROR%20Developer",
+    "date_scraped": "2026-10-17",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 316,
+    "title": "Intermediate Full Stack Developer",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FIntermediate-Full-Stack-Developer_R53063&jobTitle=Intermediate%20Full%20Stack%20Developer",
     "date_scraped": "2026-10-17",
     "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
   },
@@ -7143,1077 +8394,6 @@
     "location": "Lahore, Pakistan",
     "apply_link": "https://abacus-consulting-3.careers-page.com/jobs/fd8461b1-e536-4164-939f-041f8be1c9b8",
     "date_scraped": "2026-10-17",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 63355,
-    "title": "Associate DevOps Engineer",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-DevOps-Engineer_JR102380",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-16T07:41:04.581253+00:00"
-  },
-  {
-    "id": 63130,
-    "title": "Data Engineer",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FData-Engineer_R54763&jobTitle=Data%20Engineer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-16T07:41:04.581253+00:00"
-  },
-  {
-    "id": 63129,
-    "title": "Client Experience Specialist",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FClient-Experience-Specialist_R54765&jobTitle=Client%20Experience%20Specialist",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-16T07:41:04.581253+00:00"
-  },
-  {
-    "id": 62433,
-    "title": "Director - Engineering",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Director---Engineering_JR102382",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 62209,
-    "title": "Senior Full Stack Developer",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSenior-Full-Stack-Developer_R54747-1&jobTitle=Senior%20Full%20Stack%20Developer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 61326,
-    "title": "Front Desk Officer/Receptionist",
-    "company": "Contour Software",
-    "location": "PER - Islamabad, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Islamabad-PK%2FFront-Desk-Officer_R51061&jobTitle=Front%20Desk%20Officer%2FReceptionist",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-14T08:11:30.658300+00:00"
-  },
-  {
-    "id": 61324,
-    "title": "SysOps Engineer",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSysOps-Engineer_R54652&jobTitle=SysOps%20Engineer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-14T08:11:30.658300+00:00"
-  },
-  {
-    "id": 61323,
-    "title": "Junior Financial Analyst",
-    "company": "Contour Software",
-    "location": "2 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FJunior-Financial-Analyst_R54734&jobTitle=Junior%20Financial%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-14T08:11:30.658300+00:00"
-  },
-  {
-    "id": 59478,
-    "title": "Junior Financial Analyst",
-    "company": "Contour Software",
-    "location": "2 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FJunior-Financial-Analyst_R54683&jobTitle=Junior%20Financial%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-12T10:00:44.501615+00:00"
-  },
-  {
-    "id": 59477,
-    "title": "Accounting Trainee",
-    "company": "Contour Software",
-    "location": "2 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FAccounting-Trainee_R54735&jobTitle=Accounting%20Trainee",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-12T10:00:44.501615+00:00"
-  },
-  {
-    "id": 59475,
-    "title": "Assistant Accountant",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FAssistant-Accountant_R54678-1&jobTitle=Assistant%20Accountant",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-12T10:00:44.501615+00:00"
-  },
-  {
-    "id": 56737,
-    "title": "IT Support Engineer",
-    "company": "Contour Software",
-    "location": "PER - Islamabad, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Islamabad-PK%2FIT-Support-Engineer_R54611&jobTitle=IT%20Support%20Engineer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-09T09:50:15.179126+00:00"
-  },
-  {
-    "id": 56033,
-    "title": "Prior Authorization Associate",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Prior-Authorization-Associate_JR102249",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-08T15:37:10.684083+00:00"
-  },
-  {
-    "id": 55121,
-    "title": "Senior Business Analyst",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-Business-Analyst_JR102140",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-08T09:41:24.552613+00:00"
-  },
-  {
-    "id": 54206,
-    "title": "Content Manager",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Content-Manager_JR102257",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-07T12:57:33.312340+00:00"
-  },
-  {
-    "id": 52410,
-    "title": "Software Support Representative",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FTechnical-Support-Specialist_R54602&jobTitle=Software%20Support%20Representative",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-07T09:34:58.133344+00:00"
-  },
-  {
-    "id": 52409,
-    "title": "Cloud Systems Administrator",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FCloud-Systems-Administrator_R54459&jobTitle=Cloud%20Systems%20Administrator",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-07T09:34:58.133344+00:00"
-  },
-  {
-    "id": 51677,
-    "title": "USA Tax Analyst (Contract)",
-    "company": "Contour Software",
-    "location": "2 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FUSA-Tax-Analyst--Contract-_R54308&jobTitle=USA%20Tax%20Analyst%20%28Contract%29",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-05T09:49:13.140407+00:00"
-  },
-  {
-    "id": 50143,
-    "title": "Tax Analyst",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Tax-Analyst_JR102369",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-03T08:45:14.478029+00:00"
-  },
-  {
-    "id": 50060,
-    "title": "M&A Research Associate",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FM-A-Research-Associate_R54584&jobTitle=M%26A%20Research%20Associate",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-03T08:45:14.478029+00:00"
-  },
-  {
-    "id": 47781,
-    "title": "FP&A Analyst",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FPayments-Business-Analyst_R54425&jobTitle=FP%26A%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-01T09:38:15.059975+00:00"
-  },
-  {
-    "id": 47780,
-    "title": "Intermediate Software Developer",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FIntermediate-Software-Developer_R54548&jobTitle=Intermediate%20Software%20Developer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-10-01T09:38:15.059975+00:00"
-  },
-  {
-    "id": 46958,
-    "title": "Trainee Software Developer (AI Focused)",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FTrainee-Software-Developer--AI-Focused-_R54509-1&jobTitle=Trainee%20Software%20Developer%20%28AI%20Focused%29",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
-  },
-  {
-    "id": 46956,
-    "title": "Senior SQA Analyst",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-SQA-Analyst_R54519-1&jobTitle=Senior%20SQA%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
-  },
-  {
-    "id": 46955,
-    "title": "Software Developer (Support)",
-    "company": "Contour Software",
-    "location": "2 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSoftware-Developer--Support-_R54506&jobTitle=Software%20Developer%20%28Support%29",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
-  },
-  {
-    "id": 46954,
-    "title": "SQA Analyst",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSQA-Analyst_R54521&jobTitle=SQA%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
-  },
-  {
-    "id": 43563,
-    "title": "Finance Operations Specialist",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FFinance-Operations-Specialist_R54458&jobTitle=Finance%20Operations%20Specialist",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-26T08:08:58.444893+00:00"
-  },
-  {
-    "id": 42710,
-    "title": "Senior Staff Accountant",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-Staff-Accountant_R54440&jobTitle=Senior%20Staff%20Accountant",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-25T08:21:17.746650+00:00"
-  },
-  {
-    "id": 41045,
-    "title": "Financial Analyst",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FFinancial-Analyst_R54354&jobTitle=Financial%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-23T08:06:31.387174+00:00"
-  },
-  {
-    "id": 41044,
-    "title": "Assistant Manager Finance",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FAssistant-Manager-Finance_R54385-1&jobTitle=Assistant%20Manager%20Finance",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-23T08:06:31.387174+00:00"
-  },
-  {
-    "id": 41043,
-    "title": "SQA Automation Analyst",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-SQA-Automation-Analyst_R54302&jobTitle=SQA%20Automation%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-23T08:06:31.387174+00:00"
-  },
-  {
-    "id": 40219,
-    "title": "Cloud Operations Engineer",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FCloud-Operations-Engineer_R54390&jobTitle=Cloud%20Operations%20Engineer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-22T08:06:07.539359+00:00"
-  },
-  {
-    "id": 40218,
-    "title": "Financial Accountant",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FFinancial-Accountant_R54402&jobTitle=Financial%20Accountant",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-22T08:06:07.539359+00:00"
-  },
-  {
-    "id": 40216,
-    "title": "Associate Inhouse Counsel",
-    "company": "Contour Software",
-    "location": "2 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FAssociate-Inhouse-Counsel_R54384&jobTitle=Associate%20Inhouse%20Counsel",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-22T08:06:07.539359+00:00"
-  },
-  {
-    "id": 40214,
-    "title": "Senior Software Developer (PHP)",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-Software-Developer--PHP-_R54391&jobTitle=Senior%20Software%20Developer%20%28PHP%29",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-22T08:06:07.539359+00:00"
-  },
-  {
-    "id": 39382,
-    "title": "Financial Analyst",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FFinancial-Analyst_R54335-1&jobTitle=Financial%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-21T08:23:18.572581+00:00"
-  },
-  {
-    "id": 39381,
-    "title": "Manager Finance Operation and Control",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FManager-Finance-Operation-and-Control_R54344&jobTitle=Manager%20Finance%20Operation%20and%20Control",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-21T08:23:18.572581+00:00"
-  },
-  {
-    "id": 37747,
-    "title": "Assistant Accountant",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FAssistant-Accountant_R54377&jobTitle=Assistant%20Accountant",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-19T07:41:31.205146+00:00"
-  },
-  {
-    "id": 37746,
-    "title": "Customer Education Specialist",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Islamabad-PK%2FCustomer-Education-Specialist_R54362&jobTitle=Customer%20Education%20Specialist",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-19T07:41:31.205146+00:00"
-  },
-  {
-    "id": 37002,
-    "title": "SOC L2 Analyst",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/SOC-L2-Analyst_JR102084",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-18T07:45:12.247902+00:00"
-  },
-  {
-    "id": 36909,
-    "title": "Senior Financial Analyst",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-Financial-Analyst_R54306&jobTitle=Senior%20Financial%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-18T07:45:12.247902+00:00"
-  },
-  {
-    "id": 36908,
-    "title": "Staff Accountant",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FStaff-Accountant_R54346&jobTitle=Staff%20Accountant",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-18T07:45:12.247902+00:00"
-  },
-  {
-    "id": 35303,
-    "title": "Data Engineer",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FData-Engineer_R54253&jobTitle=Data%20Engineer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-16T08:04:21.325579+00:00"
-  },
-  {
-    "id": 32053,
-    "title": "AP & AR Analyst",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FAR-AP-Analyst_R54194&jobTitle=AP%20%26%20AR%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-12T07:29:58.991082+00:00"
-  },
-  {
-    "id": 31226,
-    "title": "Staff Accountant",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FStaff-Accountant_R54208&jobTitle=Staff%20Accountant",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-11T07:38:06.618853+00:00"
-  },
-  {
-    "id": 31225,
-    "title": "AI Engineer",
-    "company": "Contour Software",
-    "location": "2 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FAI-Engineer_R54250&jobTitle=AI%20Engineer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-11T07:38:06.618853+00:00"
-  },
-  {
-    "id": 30531,
-    "title": "Associate Clinical Consultant",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-Clinical-Consultant_JR102210",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-10T07:39:47.597226+00:00"
-  },
-  {
-    "id": 30530,
-    "title": "Branding Associate",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Branding-Associate_JR102351",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-10T07:39:47.597226+00:00"
-  },
-  {
-    "id": 30527,
-    "title": "Product Owner",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Product-Owner_JR102135",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-10T07:39:47.597226+00:00"
-  },
-  {
-    "id": 30434,
-    "title": "Senior Financial Analyst",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-Financial-Analyst_R54193&jobTitle=Senior%20Financial%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-10T07:39:47.597226+00:00"
-  },
-  {
-    "id": 28959,
-    "title": "Associate - Learning & Development",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate---Learning---Development_JR102339",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-08T07:35:16.906320+00:00"
-  },
-  {
-    "id": 25490,
-    "title": "Project Manager - AI",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Project-Manager---AI_JR102209",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-03T07:32:49.842605+00:00"
-  },
-  {
-    "id": 25397,
-    "title": "Cash Application Assistant",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FCash-Application-Assistant_R54070&jobTitle=Cash%20Application%20Assistant",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-03T07:32:49.842605+00:00"
-  },
-  {
-    "id": 25396,
-    "title": "Backend Developer",
-    "company": "Contour Software",
-    "location": "2 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FBackend-Developer_R53971&jobTitle=Backend%20Developer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-03T07:32:49.842605+00:00"
-  },
-  {
-    "id": 25394,
-    "title": "Front Desk Officer",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FFront-Desk-Officer_R54128-1&jobTitle=Front%20Desk%20Officer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-03T07:32:49.842605+00:00"
-  },
-  {
-    "id": 24703,
-    "title": "Workday Analyst",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FWorkday-Analyst_R54050&jobTitle=Workday%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-02T07:28:41.802851+00:00"
-  },
-  {
-    "id": 24076,
-    "title": "AI DevOps Engineer",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FDevOps-Engineer_R53916&jobTitle=AI%20DevOps%20Engineer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-09-01T08:08:21.330970+00:00"
-  },
-  {
-    "id": 20272,
-    "title": "SQA Trainee",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSQA-Trainee_R54064&jobTitle=SQA%20Trainee",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-28T14:45:26.458004+00:00"
-  },
-  {
-    "id": 20270,
-    "title": "Trainee Software Developer",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FTrainee-Software-Developer_R54069&jobTitle=Trainee%20Software%20Developer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-28T14:45:26.458004+00:00"
-  },
-  {
-    "id": 20269,
-    "title": "SDET Trainee",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSDET-Trainee_R54054&jobTitle=SDET%20Trainee",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-28T14:45:26.458004+00:00"
-  },
-  {
-    "id": 19717,
-    "title": "Project Manager",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Project-Manager_JR102207",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-27T13:20:20.839108+00:00"
-  },
-  {
-    "id": 19629,
-    "title": "Salesforce Support Specialist - Contractual",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSalesforce-Support-Specialist---Contractual_R53946&jobTitle=Salesforce%20Support%20Specialist%20-%20Contractual",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-27T13:20:20.839108+00:00"
-  },
-  {
-    "id": 19021,
-    "title": "AI Engineering & Enablement Lead",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FLead-AI-Engineer_R53947&jobTitle=AI%20Engineering%20%26%20Enablement%20Lead",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-26T03:48:45.149678+00:00"
-  },
-  {
-    "id": 16661,
-    "title": "Manager - Sales",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Manager---Sales_JR102237",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-22T03:37:41.378472+00:00"
-  },
-  {
-    "id": 16567,
-    "title": "VoIP and AI Communications Developer",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FVoIP-and-AI-Communications-Developer_R53968&jobTitle=VoIP%20and%20AI%20Communications%20Developer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-22T03:37:41.378472+00:00"
-  },
-  {
-    "id": 16017,
-    "title": "Associate Marketing Analyst\u00a0",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-Marketing-Analyst-_JR102256",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-21T03:45:29.563899+00:00"
-  },
-  {
-    "id": 15328,
-    "title": "OneStream Administrator",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FOneStream-Administrator_R53742&jobTitle=OneStream%20Administrator",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-20T03:40:48.805383+00:00"
-  },
-  {
-    "id": 15327,
-    "title": "Senior Hubspot Engineer",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSenior-Hubspot-Engineer_R53917&jobTitle=Senior%20Hubspot%20Engineer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-20T03:40:48.805383+00:00"
-  },
-  {
-    "id": 14783,
-    "title": "Software Engineer- Site Reliability",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Software-Engineer--Site-Reliability_JR102284",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-19T03:41:37.448551+00:00"
-  },
-  {
-    "id": 11857,
-    "title": "PMO Analyst",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/PMO-Analyst_JR102075",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11855,
-    "title": "Sales Executive",
-    "company": "CureMD",
-    "location": "North Carolina",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/North-Carolina/Sales-Executive_JR102145",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11854,
-    "title": "Senior Sales Executive",
-    "company": "CureMD",
-    "location": "North Carolina",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/North-Carolina/Senior-Sales-Executive_JR102146",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11852,
-    "title": "Associate SOC Manager",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-SOC-Manager_JR102154",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11851,
-    "title": "Principal AI Engineer",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Principal-AI-Engineer_JR102208",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11850,
-    "title": "SQA Engineer",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/SQA-Engineer_JR102206",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11849,
-    "title": "Principal DevOps Engineer",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Principal-DevOps-Engineer_JR102178",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11847,
-    "title": "Implementation Specialist",
-    "company": "CureMD",
-    "location": "New York",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/New-York/Implementation-Specialist_JR102130",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11843,
-    "title": "Implementation Associate",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Implementation-Associate_JR102250",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11838,
-    "title": "RCM Analyst",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/RCM-Analyst_JR102287",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11837,
-    "title": "Senior Marketing Analyst",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-Marketing-Analyst_JR102259",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11836,
-    "title": "Payer Support Associate",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Payer-Support-Associate_JR102223",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11835,
-    "title": "Branding Lead",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Branding-Lead_JR102268",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11834,
-    "title": "Senior Manager - Digital Marketing",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-Manager---Digital-Marketing_JR102271",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11830,
-    "title": "Senior Database Administrator",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-Database-Administrator_JR102280",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11829,
-    "title": "Senior BI Engineer",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-BI-Engineer_JR102279",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11824,
-    "title": "Implementation Specialist",
-    "company": "CureMD",
-    "location": "North Carolina",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/North-Carolina/Implementation-Specialist_JR102192",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11822,
-    "title": "Associate Manager - Digital Marketing",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-Manager---Digital-Marketing_JR102258",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11820,
-    "title": "Associate - Talent Enablement (Audit & Compliance)",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate---Talent-Enablement--Audit---Compliance-_JR102337",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11819,
-    "title": "Associate - HR Business Partner",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate---HR-Business-Partner_JR102338",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11818,
-    "title": "Senior VoIP Engineer \u2014 VoIP Operations",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-VoIP-Engineer---VoIP-Operations_JR102175",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11816,
-    "title": "SOC Analyst L1",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/SOC-Analyst-L1_JR102296",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11814,
-    "title": "Associate Enrollment Executive",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-Enrollment-Executive_JR102244",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11813,
-    "title": "Associate Credentialing Executive",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-Credentialing-Executive_JR102248",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11811,
-    "title": "Customer Success Associate",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Customer-Success-Associate_JR102216",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11810,
-    "title": "Digital Adoption Associate",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Digital-Adoption-Associate_JR102246",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11809,
-    "title": "Senior Medical Coder",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Senior-Medical-Coder_JR102325",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11808,
-    "title": "Associate Business Analyst",
-    "company": "CureMD",
-    "location": "Lahore",
-    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-Business-Analyst_JR102203",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 8405,
-    "title": "Full Stack Developer",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FFull-Stack-Developer_R53603-1&jobTitle=Full%20Stack%20Developer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-08T04:07:46.506877+00:00"
-  },
-  {
-    "id": 7829,
-    "title": "Trainee Software Developer",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FTrainee-Software-Developer_R53250&jobTitle=Trainee%20Software%20Developer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-07T04:50:51.289619+00:00"
-  },
-  {
-    "id": 7828,
-    "title": "Intermediate Software Developer",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FIntermediate-Software-Developer_R53255&jobTitle=Intermediate%20Software%20Developer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-07T04:50:51.289619+00:00"
-  },
-  {
-    "id": 3241,
-    "title": "Senior Front-End Developer",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-Front-End-Developer_R53204&jobTitle=Senior%20Front-End%20Developer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-08-01T05:49:40.968613+00:00"
-  },
-  {
-    "id": 1412,
-    "title": "SEO Analyst",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSEO-Analyst_R53145&jobTitle=SEO%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-29T05:46:01.148373+00:00"
-  },
-  {
-    "id": 403,
-    "title": "Data Conversion Analyst",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FData-Conversion-Analyst_R40969&jobTitle=Data%20Conversion%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 393,
-    "title": "Trainee Software Developer",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FTrainee-Software-Developer_R47373&jobTitle=Trainee%20Software%20Developer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 392,
-    "title": "Childcare Assistant",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FChildcare-Assistant_R47406&jobTitle=Childcare%20Assistant",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 371,
-    "title": "Workday (HRMS) Trainee",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FWorkday--HRMS--Trainee_R49690&jobTitle=Workday%20%28HRMS%29%20Trainee",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 369,
-    "title": "Manager R&D Services",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FManager-R-D-Services_R51504&jobTitle=Manager%20R%26D%20Services",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 361,
-    "title": "Technical Support Analyst",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FTechnical-Support-Analyst_R52235-1&jobTitle=Technical%20Support%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 360,
-    "title": "Senior SQA Analyst",
-    "company": "Contour Software",
-    "location": "2 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSenior-SQA-Analyst_R51179&jobTitle=Senior%20SQA%20Analyst",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 358,
-    "title": "Manager - M&A Business Development",
-    "company": "Contour Software",
-    "location": "Remote-Contour",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FRemote-Contour%2FManager---M-A-Business-Development_R52360&jobTitle=Manager%20-%20M%26A%20Business%20Development",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 354,
-    "title": "Product Designer",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FProduct-Designer_R52423&jobTitle=Product%20Designer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 353,
-    "title": "HR Trainee",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FHR-Trainee_R52476&jobTitle=HR%20Trainee",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 350,
-    "title": "Operations Automation Specialist (Contract)",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FOperations-Automation-Specialist--Contract-_R52362&jobTitle=Operations%20Automation%20Specialist%20%28Contract%29",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 348,
-    "title": "Product Support Associate",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FProduct-Support-Associate_R52588&jobTitle=Product%20Support%20Associate",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 343,
-    "title": "Associate Director / Director, M&A Execution",
-    "company": "Contour Software",
-    "location": "Remote-Contour",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FRemote-Contour%2FAssociate-Director---Director--M-A-Execution_R52709&jobTitle=Associate%20Director%20%2F%20Director%2C%20M%26A%20Execution",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 338,
-    "title": "Implementation Specialist",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FImplementation-Specialist_R52742&jobTitle=Implementation%20Specialist",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 331,
-    "title": "Senior Financial Accountant",
-    "company": "Contour Software",
-    "location": "PER - Karachi, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FSenior-Financial-Accountant_R52938&jobTitle=Senior%20Financial%20Accountant",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 317,
-    "title": "Senior ROR Developer",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSenior-ROR-Developer_R52769-1&jobTitle=Senior%20ROR%20Developer",
-    "date_scraped": "2026-10-16",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 316,
-    "title": "Intermediate Full Stack Developer",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FIntermediate-Full-Stack-Developer_R53063&jobTitle=Intermediate%20Full%20Stack%20Developer",
-    "date_scraped": "2026-10-16",
     "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
   }
 ]

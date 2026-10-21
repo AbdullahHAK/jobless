@@ -422,6 +422,115 @@ h1 {
   letter-spacing: -0.02em;
 }
 
+/* Full-bleed "trusted by"-style logo strip, Anthropic/modern-SaaS-homepage
+   style - an infinite auto-scrolling row of every company Jobless currently
+   has listings from. Deliberately framed as "jobs aggregated daily from",
+   never "partnered with" - these are real public job postings we scrape,
+   not a formal partnership, and the copy shouldn't imply otherwise. Negative
+   margins cancel out .page-content's side padding so the strip (and its
+   edge fade) spans the true viewport width rather than stopping at the
+   content column like every other section here. */
+.logo-marquee {
+  margin: 0 -1.5rem 1.5rem;
+  padding: 0.5rem 0 1.5rem;
+}
+
+.logo-marquee-label {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 1.25rem;
+}
+
+/* The mask fades the strip's left/right edges to transparent rather than
+   cutting off mid-logo, so the infinite scroll reads as emerging from/
+   fading into nothing instead of a hard clipped edge. */
+.logo-marquee-track-wrap {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+/* The JS renders the company list twice back to back, then this animates
+   exactly one list-length (-50%) before looping - since the two halves are
+   identical, the loop point is invisible. */
+.logo-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  width: max-content;
+  list-style: none;
+  margin: 0;
+  padding: 0 1.5rem;
+  animation: logo-marquee-scroll 50s linear infinite;
+}
+
+.logo-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes logo-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* A white chip behind every logo, regardless of whether that company's own
+   logo file is dark-on-transparent or light-on-transparent - sidesteps
+   needing to track a light/dark variant per company, and doubles as a
+   small premium-feeling card against the dark page background. */
+.logo-marquee-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 52px;
+  min-width: 100px;
+  padding: 0 1.1rem;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.logo-marquee-item img {
+  max-height: 26px;
+  max-width: 110px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.75);
+  transition: filter 0.2s ease;
+}
+
+.logo-marquee-item:hover img {
+  filter: grayscale(0%) opacity(1);
+}
+
+/* Fallback for the rare company with no clean logo asset sourced yet -
+   same chip shape, company name as text instead of a broken image. */
+.logo-marquee-item .logo-fallback-text {
+  display: none;
+}
+
+.logo-marquee-item.logo-fallback {
+  color: var(--bg);
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.logo-marquee-item.logo-fallback img {
+  display: none;
+}
+
+.logo-marquee-item.logo-fallback .logo-fallback-text {
+  display: block;
+}
+
 .stats-section {
   max-width: 720px;
   margin: 0 auto 1.5rem;

@@ -59,5 +59,38 @@
       "Writing clean, maintainable code"
     ],
     "note": "A more senior-leaning process with a dedicated system-design round - a stronger fit for candidates past entry level."
+  },
+  {
+    "company": "Confiz",
+    "process": "An HR resume screen, an online test (MCQs or a coding assessment depending on the track), two back-to-back technical interviews, a management/VP round, and often a final round billed as \"HR\" that several candidates report turned out to still be technical. Most reports put the whole process at 1-2 weeks.",
+    "topics": [
+      "OOP concepts and common design patterns",
+      "Data structures & algorithms",
+      "SQL - writing queries across multiple tables",
+      "Agile/project-management concepts (for PM-track roles)",
+      "Stack-specific questions matching the role (e.g. Android-specific questions for mobile roles)"
+    ],
+    "note": "Don't let your guard down on the \"final HR round\" - multiple candidates report it turned out to still include technical questions."
+  },
+  {
+    "company": "Careem",
+    "process": "A recruiter screen, an online coding test, and then several back-to-back technical interviews with the engineering team, followed by a hiring-manager round.",
+    "topics": [
+      "Live coding - LeetCode-medium-style problems",
+      "System design basics (e.g. designing a simplified dispatch or tracking system)",
+      "Core CS fundamentals behind your resume's stack"
+    ],
+    "note": "Pakistan-specific reports are limited, but the loop mirrors Careem's standard process at its other regional offices - expect genuine coding and system-design rounds, not just behavioral screening."
+  },
+  {
+    "company": "VentureDive",
+    "process": "An online application, an HR call, and an online technical interview with a QA engineer.",
+    "topics": [
+      "Manual testing fundamentals - SDLC, regression testing, bug lifecycle",
+      "Automation locator types",
+      "Writing a test case for a given flow",
+      "Basic SQL (e.g. second-highest value from a table)"
+    ],
+    "note": "Available reports specifically cover the SQA/QA track, not general software engineering roles - most useful if you're applying to that track."
   }
 ]

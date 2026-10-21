@@ -1,0 +1,100 @@
+[
+  {
+    "role": "Frontend Developer",
+    "focus": "Core JavaScript fundamentals, framework-specific questions (usually React in the Pakistani market), and a practical UI round - often live coding a small component rather than an abstract algorithm problem.",
+    "topics": [
+      "JavaScript fundamentals - closures, the event loop, prototypal inheritance",
+      "React - hooks, reconciliation/rendering, state management",
+      "CSS layout - flexbox/grid, responsive design",
+      "Browser performance - the rendering pipeline, lazy loading, bundle size",
+      "Accessibility basics - semantic HTML, ARIA roles"
+    ],
+    "note": "Many interviews build a small real component live (a debounced search box, a todo list) instead of a LeetCode-style puzzle - practice building things quickly under a timer, not just solving algorithms.",
+    "link_url": "https://roadmap.sh/frontend",
+    "link_label": "roadmap.sh frontend roadmap"
+  },
+  {
+    "role": "Backend Developer",
+    "focus": "API design, data modeling, and the fundamentals behind how a server handles load - usually a mix of conceptual questions and a hands-on design or coding task.",
+    "topics": [
+      "REST API design - status codes, versioning, pagination",
+      "Database design - normalization, indexing, transactions",
+      "Authentication/authorization basics - JWT, OAuth flows",
+      "Caching strategies - Redis, CDN, HTTP cache headers",
+      "Concurrency and async request handling"
+    ],
+    "note": "Expect to be asked why you made a design choice, not just what the choice was - e.g. why you indexed a particular column, or chose a queue over a direct call.",
+    "link_url": "https://roadmap.sh/backend",
+    "link_label": "roadmap.sh backend roadmap"
+  },
+  {
+    "role": "Fullstack Developer",
+    "focus": "Breadth across the whole stack rather than deep specialization in one layer - interviewers probe how you reason about where logic belongs.",
+    "topics": [
+      "Client-server data flow and API contracts",
+      "State management - client-side vs. server-side, and when to use each",
+      "Basic database design alongside UI/UX tradeoffs",
+      "Authentication across the full stack (session/token handling end to end)",
+      "Deployment basics - how your code actually reaches production"
+    ],
+    "note": "A common question style is 'where would you put this logic - client or server, and why?' - be ready to justify tradeoffs across layers, not just describe each layer in isolation.",
+    "link_url": "https://roadmap.sh/full-stack",
+    "link_label": "roadmap.sh full-stack roadmap"
+  },
+  {
+    "role": "Mobile Developer (Android/iOS)",
+    "focus": "Platform lifecycle, UI state management, and increasingly - given how many Pakistani teams ship cross-platform - comfort with Flutter or React Native alongside native fundamentals.",
+    "topics": [
+      "Activity/Fragment or ViewController lifecycle",
+      "State management - native (ViewModel/LiveData, Combine) or cross-platform (Provider/Bloc, Redux)",
+      "Offline-first design - local storage, sync strategies",
+      "Native vs. cross-platform tradeoffs (performance, platform API access)",
+      "App performance - memory leaks, frame drops, startup time"
+    ],
+    "note": "Many Pakistani mobile roles are actually Flutter or React Native roles, not pure native - check the job post's stack before assuming you'll be quizzed on Swift or Kotlin specifically.",
+    "link_url": "https://roadmap.sh/android",
+    "link_label": "roadmap.sh Android roadmap"
+  },
+  {
+    "role": "DevOps / Cloud Engineer",
+    "focus": "CI/CD pipelines, containerization, and cloud fundamentals - often with a scenario question about diagnosing an outage or scaling an existing system.",
+    "topics": [
+      "CI/CD pipelines - build/test/deploy stages, rollback strategies",
+      "Containers - Docker fundamentals, basic Kubernetes concepts",
+      "Infrastructure as code - Terraform/CloudFormation basics",
+      "Monitoring and logging - what to alert on, how to debug from logs alone",
+      "Core cloud concepts - networking, load balancing, auto-scaling (AWS/Azure/GCP, whichever the team uses)"
+    ],
+    "note": "Scenario questions are common - e.g. 'a deploy just broke prod, walk me through how you'd find and fix it' - practice narrating a debugging process out loud, not just naming tools.",
+    "link_url": "https://roadmap.sh/devops",
+    "link_label": "roadmap.sh DevOps roadmap"
+  },
+  {
+    "role": "Data / AI-ML Engineer",
+    "focus": "A mix of applied statistics, data manipulation in Python, and practical model-evaluation judgment - most Pakistani roles in this category are applied/ML-engineering, not pure research.",
+    "topics": [
+      "Python data tooling - pandas/numpy fundamentals",
+      "SQL for analysis - aggregations, window functions",
+      "Model evaluation - precision/recall, overfitting, train/test/validation splits",
+      "Core ML concepts - supervised vs. unsupervised, common algorithm tradeoffs",
+      "Data pipeline basics - cleaning, feature engineering, handling missing data"
+    ],
+    "note": "Most roles tagged \"AI/ML\" in the local market are applied-engineering positions (integrating or fine-tuning existing models) rather than research positions - expect practical data-handling questions more than theory-heavy ones.",
+    "link_url": "https://roadmap.sh/ai-data-scientist",
+    "link_label": "roadmap.sh AI & data scientist roadmap"
+  },
+  {
+    "role": "QA / Automation Engineer",
+    "focus": "Manual testing fundamentals first, then automation tooling - a strong grasp of how to design a test case matters more than knowing every tool.",
+    "topics": [
+      "SDLC/STLC and the bug lifecycle",
+      "Test case design - equivalence partitioning, boundary value analysis",
+      "Automation tools - Selenium/Playwright/Cypress fundamentals",
+      "API testing - status codes, payload validation, tools like Postman",
+      "Basic SQL for data verification"
+    ],
+    "note": "Interviewers often hand you a vague feature (\"test this login form\") and want to see how many edge cases you think of, not just whether you know a tool - practice narrating your test-case thinking out loud.",
+    "link_url": "https://roadmap.sh/qa",
+    "link_label": "roadmap.sh QA roadmap"
+  }
+]

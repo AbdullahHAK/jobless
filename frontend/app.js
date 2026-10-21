@@ -5,6 +5,8 @@ const JOBS_DATA_URL = "data/jobs.json";
 // the employers here run generic or bot-blocked HR portals we can't scrape,
 // but the program info itself is stable enough to maintain by hand.
 const PROGRAMS_DATA_URL = "data/programs.json";
+const COMPANY_LOGOS_URL = "data/company-logos.json";
+const LOGO_ASSET_PATH = "assets/logos/";
 const PAGE_SIZE = 50;
 
 // Matches job titles aimed at recent grads - the audience this portal is
@@ -130,6 +132,45 @@ async function loadPrograms() {
   } catch (err) {
     programsLoaded = false;
     programsList.innerHTML = `<li class="status">Couldn't load programs (${escapeHtml(err.message)}).</li>`;
+  }
+}
+
+function logoChipHtml({ company, logo }) {
+  const img = logo
+    ? `<img src="${escapeHtml(LOGO_ASSET_PATH + logo)}" alt="${escapeHtml(company)}" loading="lazy" onerror="this.closest('.logo-marquee-item').classList.add('logo-fallback')" />`
+    : "";
+  return `
+    <li class="logo-marquee-item${logo ? "" : " logo-fallback"}">
+      ${img}
+      <span class="logo-fallback-text">${escapeHtml(company)}</span>
+    </li>
+  `;
+}
+
+// A purely decorative "trusted by"-style strip - if it fails to load, the
+// page is still fully usable without it, so failures just hide the section
+// rather than showing an error state like the job list/programs sections do.
+async function loadCompanyLogos() {
+  const section = document.querySelector(".logo-marquee");
+  const track = document.getElementById("logo-marquee-track");
+  if (!section || !track) return;
+
+  try {
+    const response = await fetch(COMPANY_LOGOS_URL);
+    if (!response.ok) throw new Error(`${response.status}`);
+    const companies = await response.json();
+    if (!companies.length) {
+      section.hidden = true;
+      return;
+    }
+
+    // Rendered twice back to back so the CSS animation can scroll exactly
+    // one list-length and loop seamlessly - see .logo-marquee-track's
+    // keyframes in style.css.
+    const items = companies.map(logoChipHtml).join("");
+    track.innerHTML = items + items;
+  } catch {
+    section.hidden = true;
   }
 }
 
@@ -315,3 +356,4 @@ document.querySelector(".programs-section").addEventListener("toggle", (e) => {
 });
 
 loadJobs();
+loadCompanyLogos();

@@ -1,21 +1,471 @@
 [
   {
-    "id": 70078,
-    "title": "Solution Architect",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043731145/Solution-Architect?source=CareerSite",
+    "id": 71027,
+    "title": "Technical SEO Manager - React/Next.js (Remote, Full - Time) [HR210] (PK)",
+    "company": "Smart Working Solutions",
+    "location": "Pakistan",
+    "apply_link": "https://jobs.lever.co/smart-working-solutions/66620be1-3b74-4841-af51-58cd302a0341",
     "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-21T08:09:42.313302+00:00"
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
   },
   {
-    "id": 70077,
-    "title": "Senior Account Executive - Sales",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043731160/Senior-Account-Executive-Sales?source=CareerSite",
+    "id": 71007,
+    "title": "Associate Legal Counsel",
+    "company": "SadaPay",
+    "location": "Karachi, Islamabad or Lahore",
+    "apply_link": "https://sadapay.pk/jobs-listing/associate-legal-counsel",
     "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-21T08:09:42.313302+00:00"
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70895,
+    "title": "Manager SQA - I",
+    "company": "Pakistan Single Window",
+    "location": "Karachi",
+    "apply_link": "https://apply.workable.com/j/8259351982/apply",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70892,
+    "title": "Data Protection Officer",
+    "company": "Pakistan Single Window",
+    "location": "Karachi",
+    "apply_link": "https://apply.workable.com/j/A666242684/apply",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70447,
+    "title": "Lead SQA Automation Analyst",
+    "company": "Contour Software",
+    "location": "PER - Karachi, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FLead-SQA-Automation-Analyst_R55017&jobTitle=Lead%20SQA%20Automation%20Analyst",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70446,
+    "title": "Trainee Software Developer",
+    "company": "Contour Software",
+    "location": "PER - Islamabad, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Islamabad-PK%2FTrainee-Software-Developer_R55032&jobTitle=Trainee%20Software%20Developer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70399,
+    "title": "QA/QC Engineer",
+    "company": "Avanceon",
+    "location": "Sheikhupura, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/ffb9dd70a2bb-qa-qc-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70398,
+    "title": "Travel Coordinator",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/0015071654dd-travel-coordinator",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70397,
+    "title": "Testing & Comissioning Engineer",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/b9a6e6952224-testing-comissioning-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70396,
+    "title": "Technical Lead",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/3fd7ffa2dc73-technical-lead",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70395,
+    "title": "Talent & Operations Partner",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/8446d06e2437-talent-operations-partner",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70394,
+    "title": "Supply Chain Intern",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/ef1e7aea685b-supply-chain-intern",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70393,
+    "title": "Solution Engineering Intern (Leading to Job)",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/af922ba5a877-solution-engineering-intern-leading-to-job",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70392,
+    "title": "Solution Architect \u2013 Proposals",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/6e8d255483a1-solution-architect-proposals",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70391,
+    "title": "Senior ELV Draftsman",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/aff221b7f4bf-senior-elv-draftsman",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70390,
+    "title": "Senior Accounts Executive",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/f86b51864dde-senior-accounts-executive",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70389,
+    "title": "RPS Internship",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/0704c4222ecd-rps-internship",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70388,
+    "title": "Project Engineer",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/3584a3a31629-project-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70387,
+    "title": "Pre-Sales Engineer",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/50d3eaab13d5-pre-sales-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70386,
+    "title": "Planning Engineer",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/7e0ac5836056-planning-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70385,
+    "title": "Marketing & Communications Executive",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/6ecc22adabe7-marketing-communications-executive",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70384,
+    "title": "Lead Package Engineer",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/84776cba7f5b-lead-package-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70383,
+    "title": "Lead Design & Proposal Engineer",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/7c660742f232-lead-design-proposal-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70382,
+    "title": "Inside Sales Intern",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/e692b0082135-inside-sales-intern",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70381,
+    "title": "Human Resource Intern",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/310eeeeb8a73-human-resource-intern",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70380,
+    "title": "Financial Analyst",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/60eb1d172a2a-financial-analyst",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70379,
+    "title": "Electrical Technician",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/a2fa83fb3923-electrical-technician",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70378,
+    "title": "E & I Engineer",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/90668a428071-e-i-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70377,
+    "title": "Document Controller",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/f48a574845da-document-controller",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70376,
+    "title": "Design and Proposal Lead(Qatar Region)",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/7402c673e2fe-design-and-proposal-lead-qatar-region",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70375,
+    "title": "Design and Proposal Engineer",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/eed2cdd0bf09-design-and-proposal-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70374,
+    "title": "Design & Application Engineer (PMT)",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/3c97f9704a13-design-application-engineer-pmt",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70373,
+    "title": "Design & Application Engineer",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/5743b37fd4ff-design-application-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70372,
+    "title": "Delivery Manager (ELV Systems Execution)",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/3c819e008b61-delivery-manager-elv-systems-execution",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70371,
+    "title": "Day Care Assistant",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/0252295119a5-day-care-assistant",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70370,
+    "title": "Creative Design Intern",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/caea03af0f8c-creative-design-intern",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70369,
+    "title": "Content Marketing Specialist",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/2ae299033545-content-marketing-specialist",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70368,
+    "title": "Construction Manager",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/e935d33337c1-construction-manager",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70367,
+    "title": "Business Development Manager",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/eff975b950a5-business-development-manager",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70366,
+    "title": "Associate Engineer",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/24163dc8c4fc-associate-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70365,
+    "title": "Application Engineer",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/99a7a6378939-application-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70364,
+    "title": "Accounts Intern",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/9b93f8130585-accounts-intern",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70363,
+    "title": "Accounts Executive",
+    "company": "Avanceon",
+    "location": "Lahore, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/ce8c226e8b2e-accounts-executive",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70362,
+    "title": "Sr. Design & Application Engineer (PMT)",
+    "company": "Avanceon",
+    "location": "Karachi, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/ffe23832c1c8-sr-design-application-engineer-pmt",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70361,
+    "title": "Senior Technical / Project Lead",
+    "company": "Avanceon",
+    "location": "Karachi, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/38eb25175f45-senior-technical-project-lead",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70360,
+    "title": "Senior Design & Application Engineer",
+    "company": "Avanceon",
+    "location": "Karachi, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/ee8b9286a98b-senior-design-application-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70359,
+    "title": "Sales & Business Development Officer",
+    "company": "Avanceon",
+    "location": "Karachi, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/e59763812039-sales-business-development-officer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70358,
+    "title": "QA/QC Engineer",
+    "company": "Avanceon",
+    "location": "Karachi, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/ff383dcaefc1-qa-qc-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70357,
+    "title": "Project Engineer (PLC/SCADA, Electrical, ATG & Site Works)",
+    "company": "Avanceon",
+    "location": "Karachi, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/4755e917f901-project-engineer-plc-scada-electrical-atg-site-works",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70356,
+    "title": "Electrical Technician",
+    "company": "Avanceon",
+    "location": "Karachi, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/f71ccc2d394f-electrical-technician",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70355,
+    "title": "Digital Sales Engineer",
+    "company": "Avanceon",
+    "location": "Karachi, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/741454b18c00-digital-sales-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
+  },
+  {
+    "id": 70354,
+    "title": "Design & Application Engineer",
+    "company": "Avanceon",
+    "location": "Karachi, PK",
+    "apply_link": "https://avanceon.breezy.hr/p/1d3423c3ea8f-design-application-engineer",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
   },
   {
     "id": 70012,
@@ -90,24 +540,6 @@
     "first_seen_at": "2026-10-21T08:09:42.313302+00:00"
   },
   {
-    "id": 69155,
-    "title": "Senior PHP Developer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043689013/Senior-PHP-Developer?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-20T08:04:32.493275+00:00"
-  },
-  {
-    "id": 69151,
-    "title": "Technical Project Manager",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043727095/Technical-Project-Manager?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-20T08:04:32.493275+00:00"
-  },
-  {
     "id": 69123,
     "title": "Test Manager - Morning Shift",
     "company": "10Pearls",
@@ -178,15 +610,6 @@
     "apply_link": "https://confiz.simplicant.com/jobs/62766-ai-app-lead/detail",
     "date_scraped": "2026-10-21",
     "first_seen_at": "2026-10-20T08:04:32.493275+00:00"
-  },
-  {
-    "id": 68214,
-    "title": "Principal Java Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043727089/Principal-Java-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-19T08:17:07.369320+00:00"
   },
   {
     "id": 68104,
@@ -484,69 +907,6 @@
     "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FClient-Experience-Specialist_R54765&jobTitle=Client%20Experience%20Specialist",
     "date_scraped": "2026-10-21",
     "first_seen_at": "2026-10-16T07:41:04.581253+00:00"
-  },
-  {
-    "id": 62823,
-    "title": "Senior Data Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041796001/Senior-Data-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 62808,
-    "title": "Front Desk/People Experience Specialist",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043684034/Front-Desk-People-Experience-Specialist?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 62807,
-    "title": "AI First WordPress Developer",
-    "company": "Tkxel",
-    "location": "Lahore G.P.O., Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043684045/AI-First-Wordpress-Developer?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 62806,
-    "title": "Sales Development Representative",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043684053/Sales-Development-Representative?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 62805,
-    "title": "AI Lead / AI Architect",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043720003/AI-Lead-AI-Architect?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 62804,
-    "title": "Senior Network & Security Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043720012/Senior-Network-Security-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 62803,
-    "title": "Associate SEO Executive",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043731004/Associate-SEO-Executive?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
   },
   {
     "id": 62773,
@@ -855,15 +1215,6 @@
     "first_seen_at": "2026-10-10T09:15:32.241983+00:00"
   },
   {
-    "id": 57127,
-    "title": "SQA Engineer",
-    "company": "Mindstorm Studios",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://mindstormstudios.simplicant.com/jobs/50905-sqa-engineer/detail",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-09T09:50:15.179126+00:00"
-  },
-  {
     "id": 56737,
     "title": "IT Support Engineer",
     "company": "Contour Software",
@@ -1051,15 +1402,6 @@
     "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Data-Engineer---ETL_JR102365",
     "date_scraped": "2026-10-21",
     "first_seen_at": "2026-10-07T12:57:33.312340+00:00"
-  },
-  {
-    "id": 53662,
-    "title": "Sales  Development Representative",
-    "company": "Tkxel",
-    "location": "Lahore G.P.O., Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043429026/Sales-Development-Representative?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-07T12:29:16.721529+00:00"
   },
   {
     "id": 53325,
@@ -2376,6 +2718,24 @@
     "first_seen_at": "2026-10-07T09:34:58.133344+00:00"
   },
   {
+    "id": 52790,
+    "title": "Sr. Machine Learning Engineer (Remote, Contract) [HR216] (PK)",
+    "company": "Smart Working Solutions",
+    "location": "Pakistan",
+    "apply_link": "https://jobs.lever.co/smart-working-solutions/935fa25e-fd79-42c5-8e55-805e455c5082",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-07T09:34:58.133344+00:00"
+  },
+  {
+    "id": 52788,
+    "title": "Senior PHP Engineer (Remote, Full-Time) [AR025] (PK)",
+    "company": "Smart Working Solutions",
+    "location": "Pakistan",
+    "apply_link": "https://jobs.lever.co/smart-working-solutions/078112bd-2d26-4313-b46f-a0f65822d6fd",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-10-07T09:34:58.133344+00:00"
+  },
+  {
     "id": 52746,
     "title": "SAP S/4HANA Migration Consultant",
     "company": "Prime System Solutions",
@@ -2520,15 +2880,6 @@
     "first_seen_at": "2026-10-07T09:34:58.133344+00:00"
   },
   {
-    "id": 52375,
-    "title": "Account Executive",
-    "company": "Codup",
-    "location": "Karachi, Pakistan",
-    "apply_link": "https://codup.applytojob.com/apply/raCkpXwakM/Account-Executive",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-07T09:34:58.133344+00:00"
-  },
-  {
     "id": 52357,
     "title": "Informatica Developer",
     "company": "Arbisoft",
@@ -2572,33 +2923,6 @@
     "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FUSA-Tax-Analyst--Contract-_R54308&jobTitle=USA%20Tax%20Analyst%20%28Contract%29",
     "date_scraped": "2026-10-21",
     "first_seen_at": "2026-10-05T09:49:13.140407+00:00"
-  },
-  {
-    "id": 51301,
-    "title": "Sales Operations Associate",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043530032/Sales-Operations-Associate?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-04T08:59:11.854321+00:00"
-  },
-  {
-    "id": 51008,
-    "title": "Technical Architect\u00a0(Sports and Venue Technology Platforms)",
-    "company": "DPL",
-    "location": "Riyadh",
-    "apply_link": "https://dplit.zohorecruit.com/jobs/Careers/651851000024604310?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-04T08:59:11.854321+00:00"
-  },
-  {
-    "id": 51007,
-    "title": "Sports Business Strategist",
-    "company": "DPL",
-    "location": "Riyadh",
-    "apply_link": "https://dplit.zohorecruit.com/jobs/Careers/651851000024604325?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-10-04T08:59:11.854321+00:00"
   },
   {
     "id": 50143,
@@ -2799,15 +3123,6 @@
     "first_seen_at": "2026-10-01T09:38:15.059975+00:00"
   },
   {
-    "id": 47404,
-    "title": "Senior Data Engineer \u2013 Cloud Platforms (Azure | GCP)",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043463004/Senior-Data-Engineer-Cloud-Platforms-Azure-GCP?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
-  },
-  {
     "id": 47380,
     "title": "Delivery Director",
     "company": "10Pearls",
@@ -2970,24 +3285,6 @@
     "first_seen_at": "2026-09-26T08:08:58.444893+00:00"
   },
   {
-    "id": 43198,
-    "title": "AI Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042905020/AI-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-09-25T08:21:17.746650+00:00"
-  },
-  {
-    "id": 43189,
-    "title": "Gen AI Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043279008/Gen-AI-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-09-25T08:21:17.746650+00:00"
-  },
-  {
     "id": 43097,
     "title": "Collections Specialist",
     "company": "Prime System Solutions",
@@ -3040,24 +3337,6 @@
     "apply_link": "https://nextbridge.com/job-detail?job_id=6ab4cf391e445c2268dfb4c2",
     "date_scraped": "2026-10-21",
     "first_seen_at": "2026-09-24T07:58:38.288280+00:00"
-  },
-  {
-    "id": 41532,
-    "title": "Product Marketer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043090206/Product-Marketer?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-09-23T08:06:31.387174+00:00"
-  },
-  {
-    "id": 41528,
-    "title": "SEO Lead",
-    "company": "Tkxel",
-    "location": "Lahore G.P.O., Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043227056/SEO-Lead?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-09-23T08:06:31.387174+00:00"
   },
   {
     "id": 41322,
@@ -3600,15 +3879,6 @@
     "first_seen_at": "2026-09-12T07:29:58.991082+00:00"
   },
   {
-    "id": 31673,
-    "title": "IT Change & Transition Specialist",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042905013/IT-Change-Transition-Specialist?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-09-11T07:38:06.618853+00:00"
-  },
-  {
     "id": 31544,
     "title": "Senior SEO Executive",
     "company": "PakWheels",
@@ -3922,15 +4192,6 @@
     "apply_link": "https://abacus-consulting-3.careers-page.com/jobs/f7ff37a8-a361-444b-ac80-178686f8c893",
     "date_scraped": "2026-10-21",
     "first_seen_at": "2026-09-08T07:35:16.906320+00:00"
-  },
-  {
-    "id": 27711,
-    "title": "Forward Deployed Engineer, Agentic Platform",
-    "company": "Tkxel",
-    "location": "Riyadh, Saudi Arabia",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042760067/Forward-Deployed-Engineer-Agentic-Platform?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-09-06T07:27:35.028935+00:00"
   },
   {
     "id": 27660,
@@ -4527,24 +4788,6 @@
     "first_seen_at": "2026-09-03T07:32:49.842605+00:00"
   },
   {
-    "id": 25031,
-    "title": "Account Receivable Specialist",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042628088/Account-Receivable-Specialist?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-09-02T07:28:41.802851+00:00"
-  },
-  {
-    "id": 25030,
-    "title": "Account Payable Specialist",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042628099/Account-Payable-Specialist?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-09-02T07:28:41.802851+00:00"
-  },
-  {
     "id": 25005,
     "title": "Lead Finance - Night Shift",
     "company": "10Pearls",
@@ -4705,6 +4948,24 @@
     "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FWorkday-Analyst_R54050&jobTitle=Workday%20Analyst",
     "date_scraped": "2026-10-21",
     "first_seen_at": "2026-09-02T07:28:41.802851+00:00"
+  },
+  {
+    "id": 24345,
+    "title": "Senior Cloud Engineer - AWS (Remote, Full-Time) [AS314] (PK)",
+    "company": "Smart Working Solutions",
+    "location": "Pakistan",
+    "apply_link": "https://jobs.lever.co/smart-working-solutions/778afc13-adfe-4733-902b-77e4bff95a3b",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-09-01T08:08:21.330970+00:00"
+  },
+  {
+    "id": 24338,
+    "title": "Cloud Engineer - Frontend-Focused(Remote, Full-Time) [AS315] (PK)",
+    "company": "Smart Working Solutions",
+    "location": "Pakistan",
+    "apply_link": "https://jobs.lever.co/smart-working-solutions/e7a8642a-d598-4cdf-9695-68f7254f5aa5",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-09-01T08:08:21.330970+00:00"
   },
   {
     "id": 24264,
@@ -4914,15 +5175,6 @@
     "first_seen_at": "2026-08-29T09:34:37.832338+00:00"
   },
   {
-    "id": 20564,
-    "title": "Project Manager",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042569042/Project-Manager?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-08-28T14:45:26.458004+00:00"
-  },
-  {
     "id": 20272,
     "title": "SQA Trainee",
     "company": "Contour Software",
@@ -5090,6 +5342,24 @@
     "company": "Trango Tech",
     "location": "Karachi",
     "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1489&BranchId=4",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-08-21T03:45:29.563899+00:00"
+  },
+  {
+    "id": 16192,
+    "title": "Senior Backend Engineer \u2013 PHP/Symfony (Remote, Full-Time), PK - [HR191]",
+    "company": "Smart Working Solutions",
+    "location": "Pakistan",
+    "apply_link": "https://jobs.lever.co/smart-working-solutions/a735f7c3-ad96-4c02-89b9-7c879f3543da",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-08-21T03:45:29.563899+00:00"
+  },
+  {
+    "id": 16189,
+    "title": "Lead PHP/Symfony Engineer (Remote, Full-Time) - [HR191] (PK)",
+    "company": "Smart Working Solutions",
+    "location": "Lahore",
+    "apply_link": "https://jobs.lever.co/smart-working-solutions/2c914f64-f1f7-47c7-b81c-b1357965d7bd",
     "date_scraped": "2026-10-21",
     "first_seen_at": "2026-08-21T03:45:29.563899+00:00"
   },
@@ -5535,6 +5805,15 @@
     "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
   },
   {
+    "id": 11821,
+    "title": "Associate - Talent Enablement (Workday HRIS)",
+    "company": "CureMD",
+    "location": "Lahore",
+    "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate---Talent-Enablement--Workday-HRIS-_JR102336",
+    "date_scraped": "2026-10-21",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
     "id": 11820,
     "title": "Associate - Talent Enablement (Audit & Compliance)",
     "company": "CureMD",
@@ -5623,15 +5902,6 @@
     "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Associate-Business-Analyst_JR102203",
     "date_scraped": "2026-10-21",
     "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11380,
-    "title": "Senior Devops Engineer/Azure",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042197191/Senior-Devops-Engineer-Azure?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-08-13T04:48:23.212177+00:00"
   },
   {
     "id": 11293,
@@ -5821,150 +6091,6 @@
     "apply_link": "https://abacus-consulting-3.careers-page.com/jobs/e333aa41-a657-4d54-a306-b29790390b9e",
     "date_scraped": "2026-10-21",
     "first_seen_at": "2026-07-29T05:46:01.148373+00:00"
-  },
-  {
-    "id": 598,
-    "title": "Microsoft Dynamics 365 Functional Consultant",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000037877025/Microsoft-Dynamics-365-Functional-Consultant?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 597,
-    "title": "Senior Python Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000038042595/Senior-Python-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 596,
-    "title": "Senior Data Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000038099114/Senior-Data-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 594,
-    "title": "CEO Intelligence & Communications Associate",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000038929008/CEO-Intelligence-Communications-Associate?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 592,
-    "title": "Senior Account Manager",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039601151/Senior-Account-Manager?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 591,
-    "title": "Junior Account Manager",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039601163/Junior-Account-Manager?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 588,
-    "title": "UIUX Designer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039700188/UIUX-Designer?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 587,
-    "title": "Account Executive - EU",
-    "company": "Tkxel",
-    "location": "Lisboa, Portugal",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039720001/Account-Executive-EU?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 586,
-    "title": "Account Executive - North America",
-    "company": "Tkxel",
-    "location": "Reston, United States",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039837053/Account-Executive-North-America?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 585,
-    "title": "Power BI Developer Microsoft Dynamics 365/Contractor",
-    "company": "Tkxel",
-    "location": "N/A",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039837066/Power-BI-Developer-Microsoft-Dynamics-365-Contractor?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 583,
-    "title": "Senior Business Analyst",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000040422258/Senior-Business-Analyst?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 579,
-    "title": "Senior UIUX Designer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000040951625/Senior-UIUX-Designer?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 577,
-    "title": "Senior Data Engineer - Azure",
-    "company": "Tkxel",
-    "location": "N/A",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041052813/Senior-Data-Engineer-Azure?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 575,
-    "title": "HR Intern",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041291403/HR-Intern?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 571,
-    "title": "GenAI Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041525643/GenAI-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 568,
-    "title": "Senior Data Engineer - Azure",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041692468/Senior-Data-Engineer-Azure?source=CareerSite",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
   },
   {
     "id": 565,
@@ -6530,24 +6656,6 @@
     "company": "Confiz",
     "location": "Monterrey, Nuevo Le\u00f3n, Mexico",
     "apply_link": "https://confiz.simplicant.com/jobs/60884-java-react-full-stack-engineer-level-ii-production-experience-required/detail",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 214,
-    "title": "Golang Developers - Full time Contractual",
-    "company": "Codup",
-    "location": "Remote",
-    "apply_link": "https://codup.applytojob.com/apply/fqDsbx66IF/Golang-Developers-Full-Time-Contractual",
-    "date_scraped": "2026-10-21",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 213,
-    "title": "Golang Developers - Full time Contractual",
-    "company": "Codup",
-    "location": "Pakistan",
-    "apply_link": "https://codup.applytojob.com/apply/ChzQCIIAQ5/Golang-Developers-Full-Time-Contractual",
     "date_scraped": "2026-10-21",
     "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
   },
@@ -8350,59 +8458,5 @@
     "apply_link": "https://abacus-consulting-3.careers-page.com/jobs/fd8461b1-e536-4164-939f-041f8be1c9b8",
     "date_scraped": "2026-10-21",
     "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 52790,
-    "title": "Sr. Machine Learning Engineer (Remote, Contract) [HR216] (PK)",
-    "company": "Smart Working Solutions",
-    "location": "Pakistan",
-    "apply_link": "https://jobs.lever.co/smart-working-solutions/935fa25e-fd79-42c5-8e55-805e455c5082",
-    "date_scraped": "2026-10-20",
-    "first_seen_at": "2026-10-07T09:34:58.133344+00:00"
-  },
-  {
-    "id": 52788,
-    "title": "Senior PHP Engineer (Remote, Full-Time) [AR025] (PK)",
-    "company": "Smart Working Solutions",
-    "location": "Pakistan",
-    "apply_link": "https://jobs.lever.co/smart-working-solutions/078112bd-2d26-4313-b46f-a0f65822d6fd",
-    "date_scraped": "2026-10-20",
-    "first_seen_at": "2026-10-07T09:34:58.133344+00:00"
-  },
-  {
-    "id": 24345,
-    "title": "Senior Cloud Engineer - AWS (Remote, Full-Time) [AS314] (PK)",
-    "company": "Smart Working Solutions",
-    "location": "Pakistan",
-    "apply_link": "https://jobs.lever.co/smart-working-solutions/778afc13-adfe-4733-902b-77e4bff95a3b",
-    "date_scraped": "2026-10-20",
-    "first_seen_at": "2026-09-01T08:08:21.330970+00:00"
-  },
-  {
-    "id": 24338,
-    "title": "Cloud Engineer - Frontend-Focused(Remote, Full-Time) [AS315] (PK)",
-    "company": "Smart Working Solutions",
-    "location": "Pakistan",
-    "apply_link": "https://jobs.lever.co/smart-working-solutions/e7a8642a-d598-4cdf-9695-68f7254f5aa5",
-    "date_scraped": "2026-10-20",
-    "first_seen_at": "2026-09-01T08:08:21.330970+00:00"
-  },
-  {
-    "id": 16192,
-    "title": "Senior Backend Engineer \u2013 PHP/Symfony (Remote, Full-Time), PK - [HR191]",
-    "company": "Smart Working Solutions",
-    "location": "Pakistan",
-    "apply_link": "https://jobs.lever.co/smart-working-solutions/a735f7c3-ad96-4c02-89b9-7c879f3543da",
-    "date_scraped": "2026-10-20",
-    "first_seen_at": "2026-08-21T03:45:29.563899+00:00"
-  },
-  {
-    "id": 16189,
-    "title": "Lead PHP/Symfony Engineer (Remote, Full-Time) - [HR191] (PK)",
-    "company": "Smart Working Solutions",
-    "location": "Lahore",
-    "apply_link": "https://jobs.lever.co/smart-working-solutions/2c914f64-f1f7-47c7-b81c-b1357965d7bd",
-    "date_scraped": "2026-10-20",
-    "first_seen_at": "2026-08-21T03:45:29.563899+00:00"
   }
 ]

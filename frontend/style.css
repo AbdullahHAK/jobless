@@ -594,6 +594,10 @@ h1 {
   --card-accent: #6366f1;
 }
 
+.prep-section--role {
+  --card-accent: #06b6d4;
+}
+
 /* Dedicated per-section jump buttons - without these, 8 stacked sections
    with dozens of cards between them read as one long undifferentiated
    scroll no matter how well each individual card is styled. Each button
@@ -676,6 +680,10 @@ h1 {
 
 .prep-section-nav-btn--notes {
   --nav-accent: #6366f1;
+}
+
+.prep-section-nav-btn--role {
+  --nav-accent: #06b6d4;
 }
 
 /* Lands the target section a little below the viewport top (not jammed

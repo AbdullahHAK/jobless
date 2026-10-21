@@ -8,6 +8,7 @@ const DSA_TOPICS_URL = "data/dsa-topics.json";
 const SQL_CONCEPTS_URL = "data/sql-concepts.json";
 const SYSTEM_DESIGN_URL = "data/system-design-topics.json";
 const STUDY_NOTES_URL = "data/study-notes.json";
+const ROLE_GUIDES_URL = "data/role-interview-guides.json";
 
 // Same escaping helper as app.js - duplicated rather than shared via a
 // module system, since this project deliberately has no build step.
@@ -111,6 +112,19 @@ function studyNoteCardHtml(item) {
   `;
 }
 
+function roleGuideCardHtml(item) {
+  const topics = (item.topics || []).map((t) => `<li>${escapeHtml(t)}</li>`).join("");
+  return `
+    <li class="prep-card company-card">
+      <p class="prep-question">${escapeHtml(item.role)}</p>
+      <p class="prep-tip">${escapeHtml(item.focus)}</p>
+      <ul class="company-topics">${topics}</ul>
+      <p class="company-note">${escapeHtml(item.note)}</p>
+      <a class="prep-card-link" href="${escapeHtml(item.link_url)}" target="_blank" rel="noopener">${escapeHtml(item.link_label)} &rarr;</a>
+    </li>
+  `;
+}
+
 function skeletonCardsHtml(count) {
   return Array(count).fill('<li class="skeleton-card" aria-hidden="true"></li>').join("");
 }
@@ -166,6 +180,7 @@ loadPrepList(DSA_TOPICS_URL, "dsa-topics-list", dsaTopicCardHtml);
 loadPrepList(SQL_CONCEPTS_URL, "sql-concepts-list", sqlConceptCardHtml);
 loadPrepList(SYSTEM_DESIGN_URL, "system-design-list", systemDesignCardHtml);
 loadPrepList(STUDY_NOTES_URL, "study-notes-list", studyNoteCardHtml);
+loadPrepList(ROLE_GUIDES_URL, "role-guides-list", roleGuideCardHtml);
 
 // Highlights whichever section-nav button matches the section currently
 // scrolled near the top of the viewport, so the nav bar reflects where you

@@ -2,7 +2,7 @@
 
 A daily-updated job board for the Pakistani software industry. Scrapes career pages of
 software houses and aggregates every opening into one place, so job seekers can browse and
-apply directly instead of checking 40+ company sites individually.
+apply directly instead of checking 42+ company sites individually.
 
 ## How it works
 
@@ -13,13 +13,13 @@ add a new one. Each scraper has isolated error handling, so one company's site c
 doesn't take down the rest of the run. Results are upserted into PostgreSQL keyed on
 `apply_link`, so re-scraping a still-open job updates it in place instead of duplicating it.
 
-Currently scraping 40 companies: Arbisoft, Devsinc, Folio3, Confiz, Codup, Tkxel, 10Pearls,
+Currently scraping 42 companies: Arbisoft, Devsinc, Folio3, Confiz, Codup, Tkxel, 10Pearls,
 Contour Software, VentureDive, NetSol Technologies, Abacus Consulting, Kualitatem, EurosHub,
 InvoZone, Nextbridge, Trango Tech, CureMD, Genetech Solutions, DPL, Ovex Technologies,
 KalSoft, Smart Working Solutions, Bazaar Technologies, NayaPay, Careem, Prime System
 Solutions, JS Bank, Mindstorm Studios, Strategic Systems International, Remotebase,
 PakWheels, 7Vals, Motive, Securiti (Veeam), Dubizzle, Creative Chaos, Inbox Business
-Technologies, Pakistan Single Window, SadaPay, and Joblogic. Each scraper picks whatever data source is actually cleanest for
+Technologies, Pakistan Single Window, SadaPay, Joblogic, Avanceon, and Educative. Each scraper picks whatever data source is actually cleanest for
 that site - static HTML, a public JSON API discovered via network inspection, or (rarely) a
 JS payload embedded in the page - documented in a comment at the top of each scraper module.
 
@@ -83,5 +83,5 @@ helm install jobless charts/jobless --create-namespace --namespace jobless
 
 `scripts/smoke-test.sh` runs the full build → KinD cluster → Helm install → trigger a scrape
 → verify the API sequence end to end; it's also wired up as a manually-triggered GitHub
-Actions workflow (`smoke-test.yml`) since it does a real scrape of all 40 companies' live
+Actions workflow (`smoke-test.yml`) since it does a real scrape of all 42 companies' live
 sites and shouldn't run automatically on every push.

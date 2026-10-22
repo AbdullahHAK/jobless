@@ -76,6 +76,7 @@ const state = {
   allJobs: [],
   filtered: [],
   shown: 0,
+  search: "",
   company: "",
   location: "",
   jobType: "",
@@ -88,6 +89,7 @@ const jobList = document.getElementById("job-list");
 const statusEl = document.getElementById("status");
 const resultCount = document.getElementById("result-count");
 const loadMoreBtn = document.getElementById("load-more");
+const searchInput = document.getElementById("search-input");
 const companyFilter = document.getElementById("company-filter");
 const locationFilter = document.getElementById("location-filter");
 const jobTypeFilter = document.getElementById("job-type-filter");
@@ -255,7 +257,21 @@ function renderPage({ reset = false } = {}) {
 }
 
 function applyFilter() {
-  let jobs = state.company ? state.allJobs.filter((j) => j.company === state.company) : state.allJobs;
+  let jobs = state.allJobs;
+  if (state.search) {
+    const needle = state.search.trim().toLowerCase();
+    if (needle) {
+      jobs = jobs.filter(
+        (j) =>
+          j.title.toLowerCase().includes(needle) ||
+          j.company.toLowerCase().includes(needle) ||
+          j.location.toLowerCase().includes(needle),
+      );
+    }
+  }
+  if (state.company) {
+    jobs = jobs.filter((j) => j.company === state.company);
+  }
   if (state.location) {
     const keywords = LOCATION_MATCHERS[state.location];
     jobs = jobs.filter((j) => keywords.some((kw) => j.location.toLowerCase().includes(kw)));
@@ -333,6 +349,19 @@ async function loadJobs() {
     statusEl.textContent = `Couldn't load jobs (${err.message}). Try refreshing the page.`;
   }
 }
+
+// Debounced rather than filtering on every keystroke - irrelevant at
+// today's dataset size, but keeps typing feeling instant rather than
+// re-filtering (and re-rendering skeleton-free job cards) on every letter
+// as the dataset grows toward the 100-company target.
+let searchDebounceTimer;
+searchInput.addEventListener("input", () => {
+  clearTimeout(searchDebounceTimer);
+  searchDebounceTimer = setTimeout(() => {
+    state.search = searchInput.value;
+    applyFilter();
+  }, 250);
+});
 
 companyFilter.addEventListener("change", () => {
   state.company = companyFilter.value;

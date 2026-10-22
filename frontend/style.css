@@ -1182,6 +1182,43 @@ main {
   margin-top: 0.2rem;
 }
 
+.search-bar {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.1rem;
+  height: 1.1rem;
+  color: var(--muted);
+  pointer-events: none;
+}
+
+.search-input {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.75rem 1rem 0.75rem 2.6rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--fg);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.search-input::placeholder {
+  color: var(--muted);
+}
+
 .controls {
   display: flex;
   flex-wrap: wrap;

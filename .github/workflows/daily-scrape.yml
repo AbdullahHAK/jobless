@@ -51,11 +51,16 @@ jobs:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: uv run python -m jobless.export_static
 
-      - name: Commit the updated jobs.json
+      - name: Generate job/company pages and sitemap
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: uv run python -m jobless.export_pages
+
+      - name: Commit the updated jobs.json, pages, and sitemap
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add frontend/data/jobs.json
+          git add frontend/data/jobs.json frontend/data/meta.json frontend/jobs/ frontend/companies/ frontend/sitemap.xml
           git diff --staged --quiet && echo "no changes to commit" && exit 0
           git commit -m "Update job listings"
           git push

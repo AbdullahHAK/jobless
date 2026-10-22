@@ -72,11 +72,32 @@ function saveAppliedLinks(links) {
   }
 }
 
+// Each pattern is checked against the title only (no scraper exposes a
+// separate description/skills field) - picked by checking real counts
+// against the live dataset first, not guessed, so every chip here actually
+// surfaces results rather than being a plausible-sounding dead end.
+const STACK_PATTERNS = {
+  react: /react/i,
+  angular: /angular/i,
+  node: /\bnode(\.?js)?\b/i,
+  python: /python/i,
+  dotnet: /\.net/i,
+  php: /php|laravel/i,
+  android: /android/i,
+  ios: /\bios\b/i,
+  aws: /\baws\b/i,
+  devops: /devops/i,
+  data: /\bdata\b|database/i,
+  qa: /\bqa\b|quality assurance|\bsqa\b/i,
+  sap: /\bsap\b/i,
+};
+
 const state = {
   allJobs: [],
   filtered: [],
   shown: 0,
   search: "",
+  stack: "",
   company: "",
   location: "",
   jobType: "",
@@ -269,6 +290,9 @@ function applyFilter() {
       );
     }
   }
+  if (state.stack && STACK_PATTERNS[state.stack]) {
+    jobs = jobs.filter((j) => STACK_PATTERNS[state.stack].test(j.title));
+  }
   if (state.company) {
     jobs = jobs.filter((j) => j.company === state.company);
   }
@@ -349,6 +373,21 @@ async function loadJobs() {
     statusEl.textContent = `Couldn't load jobs (${err.message}). Try refreshing the page.`;
   }
 }
+
+// Single-select, click-to-toggle - clicking the already-active chip clears
+// it back to "all stacks" rather than requiring a separate clear control.
+document.getElementById("stack-chips").addEventListener("click", (e) => {
+  const chip = e.target.closest(".stack-chip");
+  if (!chip) return;
+
+  const stack = chip.dataset.stack;
+  state.stack = state.stack === stack ? "" : stack;
+
+  for (const btn of document.querySelectorAll(".stack-chip")) {
+    btn.classList.toggle("active", btn.dataset.stack === state.stack);
+  }
+  applyFilter();
+});
 
 // Debounced rather than filtering on every keystroke - irrelevant at
 // today's dataset size, but keeps typing feeling instant rather than

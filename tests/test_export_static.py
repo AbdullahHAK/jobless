@@ -38,3 +38,16 @@ def test_export_creates_parent_directory_if_missing(mocker, tmp_path):
     export_static.export(output_path)
 
     assert output_path.exists()
+
+
+def test_export_meta_writes_iso_timestamp(tmp_path):
+    output_path = tmp_path / "data" / "meta.json"
+
+    export_static.export_meta(output_path)
+
+    assert output_path.exists()
+    written = json.loads(output_path.read_text(encoding="utf-8"))
+    # Round-tripping through fromisoformat is the real assertion - a
+    # malformed/non-ISO string would raise here rather than just checking
+    # the key exists.
+    assert datetime.fromisoformat(written["generated_at"]).tzinfo is not None

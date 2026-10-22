@@ -49,3 +49,8 @@ select = ["E", "F", "I", "W"]
 # actual markup each scraper parses) - wrapping those lines would hurt
 # readability without catching any real issue.
 "tests/*" = ["E501"]
+# Same reasoning - embeds the site's shared sidebar/header markup verbatim
+# (kept byte-identical to every hand-written frontend/*.html page on
+# purpose, for visual consistency) so generated job/company pages render
+# with the same navigation as the rest of the site.
+"src/jobless/export_pages.py" = ["E501"]

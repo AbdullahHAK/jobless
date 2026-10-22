@@ -6,6 +6,7 @@ const JOBS_DATA_URL = "data/jobs.json";
 // but the program info itself is stable enough to maintain by hand.
 const PROGRAMS_DATA_URL = "data/programs.json";
 const COMPANY_LOGOS_URL = "data/company-logos.json";
+const META_URL = "data/meta.json";
 const LOGO_ASSET_PATH = "assets/logos/";
 const PAGE_SIZE = 50;
 
@@ -174,6 +175,36 @@ async function loadCompanyLogos() {
   }
 }
 
+// Deliberately coarse buckets rather than exact minutes - the scrape runs
+// once a day, so "Updated 3h ago" vs "Updated 4h ago" isn't meaningfully
+// different information, and coarse buckets stay accurate for longer
+// without needing to re-render on a timer.
+function formatUpdatedAgo(isoString) {
+  const ms = Date.now() - new Date(isoString).getTime();
+  const hours = ms / (60 * 60 * 1000);
+  if (hours < 1) return "Updated minutes ago";
+  if (hours < 24) return `Updated ${Math.floor(hours)}h ago`;
+  const days = Math.floor(hours / 24);
+  return `Updated ${days} day${days === 1 ? "" : "s"} ago`;
+}
+
+// Purely decorative freshness text - if it fails to load, the hero badge
+// just keeps its static "Updated daily" fallback rather than showing an
+// error in a spot this prominent.
+async function loadFreshness() {
+  const el = document.getElementById("hero-updated-text");
+  if (!el) return;
+
+  try {
+    const response = await fetch(META_URL);
+    if (!response.ok) throw new Error(`${response.status}`);
+    const meta = await response.json();
+    el.textContent = formatUpdatedAgo(meta.generated_at);
+  } catch {
+    // leave the static fallback text in place
+  }
+}
+
 function populateCompanyOptions() {
   const companies = [...new Set(state.allJobs.map((j) => j.company))].sort();
   companyFilter.innerHTML =
@@ -263,6 +294,9 @@ function renderStats() {
   totalJobsEl.textContent = state.allJobs.length;
   totalCompaniesEl.textContent = counts.size;
   newJobsEl.textContent = newCount;
+
+  const heroCompanyCount = document.getElementById("hero-company-count");
+  if (heroCompanyCount) heroCompanyCount.textContent = `${counts.size}+`;
 
   const top = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, TOP_COMPANIES_SHOWN);
   const max = top.length ? top[0][1] : 1;
@@ -357,3 +391,4 @@ document.querySelector(".programs-section").addEventListener("toggle", (e) => {
 
 loadJobs();
 loadCompanyLogos();
+loadFreshness();

@@ -1,6 +1,6 @@
 import json
 import logging
-from datetime import date, datetime
+from datetime import UTC, date, datetime
 from pathlib import Path
 
 from . import db
@@ -10,6 +10,9 @@ logger = logging.getLogger(__name__)
 # frontend/ is served directly by GitHub Pages, so this file becomes a plain
 # static asset the page fetches with no backend involved at all.
 OUTPUT_PATH = Path(__file__).resolve().parent.parent.parent / "frontend" / "data" / "jobs.json"
+# Lets the frontend show a real "updated X ago" freshness indicator instead
+# of a hardcoded "updated daily" claim it can't actually back up.
+META_OUTPUT_PATH = Path(__file__).resolve().parent.parent.parent / "frontend" / "data" / "meta.json"
 
 
 def _json_default(value):
@@ -33,9 +36,16 @@ def export(output_path: Path = OUTPUT_PATH) -> int:
     return len(jobs)
 
 
+def export_meta(output_path: Path = META_OUTPUT_PATH) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open("w", encoding="utf-8") as f:
+        json.dump({"generated_at": datetime.now(UTC).isoformat()}, f, indent=2)
+
+
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
     export()
+    export_meta()
 
 
 if __name__ == "__main__":

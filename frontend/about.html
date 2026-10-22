@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="How Jobless works: daily scraping methodology, why the data stays fresh and honest, and what makes it different from a LinkedIn job scrape." />
+  <title>About Jobless — How It Works</title>
+  <link rel="canonical" href="https://abdullahhak.github.io/jobless/about.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://abdullahhak.github.io/jobless/about.html" />
+  <meta property="og:title" content="About Jobless — How It Works" />
+  <meta property="og:description" content="How Jobless works: daily scraping methodology, why the data stays fresh and honest, and what makes it different from a LinkedIn job scrape." />
+  <meta property="og:image" content="https://abdullahhak.github.io/jobless/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Jobless — How It Works" />
+  <meta name="twitter:description" content="How Jobless works: daily scraping methodology, why the data stays fresh and honest, and what makes it different from a LinkedIn job scrape." />
+  <meta name="twitter:image" content="https://abdullahhak.github.io/jobless/assets/og-image.png" />
+  <meta name="theme-color" content="#09090b" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle navigation">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+  <aside class="sidebar">
+    <a class="site-logo" href="index.html">Jobless</a>
+    <nav class="sidebar-nav">
+      <a href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="14" rx="2" />
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+        </svg>
+        Jobs
+      </a>
+      <a href="prep.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <circle cx="12" cy="12" r="6" />
+          <circle cx="12" cy="12" r="2" />
+        </svg>
+        Prep
+      </a>
+      <a href="reviews.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+        </svg>
+        Reviews
+      </a>
+      <a href="about.html" class="site-nav-active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 16v-4M12 8h.01" />
+        </svg>
+        About
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <p>Built by <a href="https://github.com/AbdullahHAK" target="_blank" rel="noopener">Abdullah</a></p>
+      <p><a href="https://github.com/AbdullahHAK/jobless" target="_blank" rel="noopener">Source on GitHub ↗</a></p>
+      <p><a href="https://github.com/AbdullahHAK/jobless/issues/new?template=company-suggestion.yml" target="_blank" rel="noopener">Suggest a company ↗</a></p>
+      <p>Free for everyone, updated daily</p>
+    </div>
+  </aside>
+
+  <div class="page-content">
+    <header class="page-hero">
+      <h1>About Jobless</h1>
+      <p class="tagline">
+        Why this exists, how the data actually gets here, and why it stays trustworthy.
+      </p>
+    </header>
+
+    <main class="prep-main">
+      <section class="prep-section">
+        <h2>The problem</h2>
+        <p class="prep-section-intro">
+          Finding a tech job in Pakistan usually means checking dozens of individual company
+          career pages by hand, because no single site reliably covers the local market the way
+          LinkedIn or Indeed cover the US. Jobless exists to be that one place - real openings
+          from every company it tracks, in one searchable list, updated every day without anyone
+          manually re-typing a single listing.
+        </p>
+      </section>
+
+      <section class="prep-section">
+        <h2>How the data gets here</h2>
+        <p class="prep-section-intro">
+          Every company on Jobless is a self-contained scraper that reads directly from that
+          company's own career page or the public job-board API it already uses (Greenhouse,
+          Lever, Workable, and similar widely-used hiring platforms). Nothing is typed in by
+          hand and nothing is copied from a third-party aggregator - if a listing is on Jobless,
+          it's because the company itself published it, and you can always trust the "Apply"
+          button to take you to the real source.
+        </p>
+        <p class="prep-section-intro">
+          A scheduled job runs every company's scraper once a day, stores the results, and
+          republishes the dataset this site reads from. If one company's page changes format or
+          goes down temporarily, that one scraper fails in isolation - it doesn't take the rest
+          of the site's data down with it, and nothing gets deleted on a bad day. A listing only
+          disappears from Jobless once that company's own scraper runs successfully again and
+          confirms the posting is genuinely gone.
+        </p>
+      </section>
+
+      <section class="prep-section">
+        <h2>What "free, no login" actually means</h2>
+        <p class="prep-section-intro">
+          There's no account system for browsing jobs, no paywall, and no resume upload required
+          to see a listing or click apply. "Mark as applied" and the job filters all run entirely
+          in your own browser - nothing about which jobs you've viewed or applied to is sent
+          anywhere. The one optional exception is the email digest, which needs an email address
+          to send to; everything else works with zero signup.
+        </p>
+      </section>
+
+      <section class="prep-section">
+        <h2>What Jobless won't do</h2>
+        <p class="prep-section-intro">
+          No fabricated listings, no fake "X people applied" counters, and no scraping of review
+          platforms like Glassdoor - company reviews on this site are written directly by the
+          people who submit them, moderated before publishing, never pulled from somewhere else
+          and relabeled as original. If a company's listings are genuinely thin or a review
+          category has little real data, this site says so rather than padding it out.
+        </p>
+      </section>
+
+      <section class="prep-section">
+        <h2>Where this is headed</h2>
+        <p class="prep-section-intro">
+          The goal is to become the single go-to destination for Pakistani tech jobs - starting
+          from the companies already tracked today and growing toward 100 for a proper first
+          launch. The whole project is open source; if a company is missing, anyone can
+          <a href="https://github.com/AbdullahHAK/jobless/issues/new?template=company-suggestion.yml" target="_blank" rel="noopener">suggest it</a>
+          or <a href="https://github.com/AbdullahHAK/jobless" target="_blank" rel="noopener">contribute a scraper directly</a>.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <script src="sidebar.js"></script>
+</body>
+</html>

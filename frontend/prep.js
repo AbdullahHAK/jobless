@@ -1,14 +1,18 @@
 // Prep content is hand-curated static JSON, unlike jobs.json which the
 // daily scrape regenerates - see frontend/data/*.json for each category.
-const HR_QUESTIONS_URL = "data/hr-questions.json";
-const RESUME_TIPS_URL = "data/resume-tips.json";
-const COMPANY_QUESTIONS_URL = "data/company-interview-notes.json";
-const COLD_EMAIL_TEMPLATES_URL = "data/cold-email-templates.json";
-const DSA_TOPICS_URL = "data/dsa-topics.json";
-const SQL_CONCEPTS_URL = "data/sql-concepts.json";
-const SYSTEM_DESIGN_URL = "data/system-design-topics.json";
-const STUDY_NOTES_URL = "data/study-notes.json";
-const ROLE_GUIDES_URL = "data/role-interview-guides.json";
+// Paths are "../data/..." rather than "data/..." because every page that
+// loads this script now lives one level down, in frontend/prep/ - one
+// static page per topic (prep.html itself is just the hub/menu linking to
+// these, and doesn't load this script at all).
+const HR_QUESTIONS_URL = "../data/hr-questions.json";
+const RESUME_TIPS_URL = "../data/resume-tips.json";
+const COMPANY_QUESTIONS_URL = "../data/company-interview-notes.json";
+const COLD_EMAIL_TEMPLATES_URL = "../data/cold-email-templates.json";
+const DSA_TOPICS_URL = "../data/dsa-topics.json";
+const SQL_CONCEPTS_URL = "../data/sql-concepts.json";
+const SYSTEM_DESIGN_URL = "../data/system-design-topics.json";
+const STUDY_NOTES_URL = "../data/study-notes.json";
+const ROLE_GUIDES_URL = "../data/role-interview-guides.json";
 
 // Same escaping helper as app.js - duplicated rather than shared via a
 // module system, since this project deliberately has no build step.
@@ -181,32 +185,3 @@ loadPrepList(SQL_CONCEPTS_URL, "sql-concepts-list", sqlConceptCardHtml);
 loadPrepList(SYSTEM_DESIGN_URL, "system-design-list", systemDesignCardHtml);
 loadPrepList(STUDY_NOTES_URL, "study-notes-list", studyNoteCardHtml);
 loadPrepList(ROLE_GUIDES_URL, "role-guides-list", roleGuideCardHtml);
-
-// Highlights whichever section-nav button matches the section currently
-// scrolled near the top of the viewport, so the nav bar reflects where you
-// actually are on the page, not just where you last clicked.
-function initSectionNavScrollSpy() {
-  const navLinks = [...document.querySelectorAll(".prep-section-nav-btn")];
-  if (!navLinks.length || !("IntersectionObserver" in window)) return;
-
-  const sections = navLinks
-    .map((link) => document.getElementById(link.getAttribute("href").slice(1)))
-    .filter(Boolean);
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        const id = entry.target.id;
-        for (const link of navLinks) {
-          link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
-        }
-      }
-    },
-    { rootMargin: "-10% 0px -70% 0px" },
-  );
-
-  for (const section of sections) observer.observe(section);
-}
-
-initSectionNavScrollSpy();

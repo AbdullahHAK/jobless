@@ -38,6 +38,15 @@ STATIC_PAGES = [
     ("prep.html", "weekly", "0.8"),
     ("reviews.html", "daily", "0.7"),
     ("about.html", "monthly", "0.5"),
+    ("prep/hr-questions.html", "monthly", "0.6"),
+    ("prep/resume.html", "monthly", "0.6"),
+    ("prep/companies.html", "weekly", "0.6"),
+    ("prep/cold-email.html", "monthly", "0.6"),
+    ("prep/dsa.html", "monthly", "0.6"),
+    ("prep/sql.html", "monthly", "0.6"),
+    ("prep/system-design.html", "monthly", "0.6"),
+    ("prep/notes.html", "monthly", "0.6"),
+    ("prep/by-role.html", "monthly", "0.6"),
 ]
 
 

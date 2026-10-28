@@ -1,12 +1,12 @@
 [
   {
-    "id": 79841,
-    "title": "Fullstack Developer",
-    "company": "Trango Tech",
-    "location": "Karachi",
-    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1495&BranchId=4",
+    "id": 80170,
+    "title": "Trainee Software Developer",
+    "company": "Contour Software",
+    "location": "PER - Lahore, PK",
+    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FTrainee-Software-Developer_R55054&jobTitle=Trainee%20Software%20Developer",
     "date_scraped": "2026-10-28",
-    "first_seen_at": "2026-10-28T05:54:58.859506+00:00"
+    "first_seen_at": "2026-10-28T06:57:58.480251+00:00"
   },
   {
     "id": 79818,
@@ -226,7 +226,7 @@
   },
   {
     "id": 77584,
-    "title": "enior Security Operations Engineer Splunk and CrowdStrike",
+    "title": "Senior Security Operations Engineer Splunk and CrowdStrike",
     "company": "Kualitatem",
     "location": "Lahore",
     "apply_link": "https://new.careers.kualitatem.com/job/358",
@@ -628,6 +628,15 @@
     "apply_link": "https://apply.workable.com/j/E241368FC0/apply",
     "date_scraped": "2026-10-28",
     "first_seen_at": "2026-10-25T07:57:51.806315+00:00"
+  },
+  {
+    "id": 75852,
+    "title": "Associate Admin Officer",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043908038/Associate-Admin-Officer?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-24T07:46:29.951832+00:00"
   },
   {
     "id": 75830,
@@ -1314,6 +1323,24 @@
     "first_seen_at": "2026-10-21T18:15:52.873704+00:00"
   },
   {
+    "id": 70078,
+    "title": "Solution Architect",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043731145/Solution-Architect?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-21T08:09:42.313302+00:00"
+  },
+  {
+    "id": 70077,
+    "title": "Senior Account Executive - Sales",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043731160/Senior-Account-Executive-Sales?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-21T08:09:42.313302+00:00"
+  },
+  {
     "id": 70012,
     "title": "Revenue Data Entry Specialist",
     "company": "Prime System Solutions",
@@ -1447,6 +1474,15 @@
     "apply_link": "https://confiz.simplicant.com/jobs/62766-ai-app-lead/detail",
     "date_scraped": "2026-10-28",
     "first_seen_at": "2026-10-20T08:04:32.493275+00:00"
+  },
+  {
+    "id": 68214,
+    "title": "Principal Java Engineer",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043727089/Principal-Java-Engineer?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-19T08:17:07.369320+00:00"
   },
   {
     "id": 68104,
@@ -1735,6 +1771,69 @@
     "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FClient-Experience-Specialist_R54765&jobTitle=Client%20Experience%20Specialist",
     "date_scraped": "2026-10-28",
     "first_seen_at": "2026-10-16T07:41:04.581253+00:00"
+  },
+  {
+    "id": 62823,
+    "title": "Senior Data Engineer",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041796001/Senior-Data-Engineer?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
+  },
+  {
+    "id": 62808,
+    "title": "Front Desk/People Experience Specialist",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043684034/Front-Desk-People-Experience-Specialist?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
+  },
+  {
+    "id": 62807,
+    "title": "AI First WordPress Developer",
+    "company": "Tkxel",
+    "location": "Lahore G.P.O., Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043684045/AI-First-Wordpress-Developer?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
+  },
+  {
+    "id": 62806,
+    "title": "Sales Development Representative",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043684053/Sales-Development-Representative?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
+  },
+  {
+    "id": 62805,
+    "title": "AI Lead / AI Architect",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043720003/AI-Lead-AI-Architect?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
+  },
+  {
+    "id": 62804,
+    "title": "Senior Network & Security Engineer",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043720012/Senior-Network-Security-Engineer?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
+  },
+  {
+    "id": 62803,
+    "title": "Associate SEO Executive",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043731004/Associate-SEO-Executive?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
   },
   {
     "id": 62773,
@@ -2149,6 +2248,15 @@
     "apply_link": "https://curemd.wd1.myworkdayjobs.com/CureMD/job/Lahore/Data-Engineer---ETL_JR102365",
     "date_scraped": "2026-10-28",
     "first_seen_at": "2026-10-07T12:57:33.312340+00:00"
+  },
+  {
+    "id": 53662,
+    "title": "Sales  Development Representative",
+    "company": "Tkxel",
+    "location": "Lahore G.P.O., Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043429026/Sales-Development-Representative?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-07T12:29:16.721529+00:00"
   },
   {
     "id": 53325,
@@ -3627,6 +3735,15 @@
     "first_seen_at": "2026-10-05T09:49:13.140407+00:00"
   },
   {
+    "id": 51301,
+    "title": "Sales Operations Associate",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043530032/Sales-Operations-Associate?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-04T08:59:11.854321+00:00"
+  },
+  {
     "id": 50143,
     "title": "Tax Analyst",
     "company": "CureMD",
@@ -3807,6 +3924,15 @@
     "first_seen_at": "2026-10-01T09:38:15.059975+00:00"
   },
   {
+    "id": 47404,
+    "title": "Senior Data Engineer \u2013 Cloud Platforms (Azure | GCP)",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043463004/Senior-Data-Engineer-Cloud-Platforms-Azure-GCP?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
+  },
+  {
     "id": 47380,
     "title": "Delivery Director",
     "company": "10Pearls",
@@ -3969,6 +4095,24 @@
     "first_seen_at": "2026-09-26T08:08:58.444893+00:00"
   },
   {
+    "id": 43198,
+    "title": "AI Engineer",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042905020/AI-Engineer?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-09-25T08:21:17.746650+00:00"
+  },
+  {
+    "id": 43189,
+    "title": "Gen AI Engineer",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043279008/Gen-AI-Engineer?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-09-25T08:21:17.746650+00:00"
+  },
+  {
     "id": 43097,
     "title": "Collections Specialist",
     "company": "Prime System Solutions",
@@ -4012,6 +4156,24 @@
     "apply_link": "https://nextbridge.com/job-detail?job_id=6ab4cf391e445c2268dfb4c2",
     "date_scraped": "2026-10-28",
     "first_seen_at": "2026-09-24T07:58:38.288280+00:00"
+  },
+  {
+    "id": 41532,
+    "title": "Product Marketer",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043090206/Product-Marketer?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-09-23T08:06:31.387174+00:00"
+  },
+  {
+    "id": 41528,
+    "title": "SEO Lead",
+    "company": "Tkxel",
+    "location": "Lahore G.P.O., Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043227056/SEO-Lead?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-09-23T08:06:31.387174+00:00"
   },
   {
     "id": 41322,
@@ -4356,15 +4518,6 @@
     "first_seen_at": "2026-09-16T08:04:21.325579+00:00"
   },
   {
-    "id": 35303,
-    "title": "Data Engineer",
-    "company": "Contour Software",
-    "location": "3 Locations",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FData-Engineer_R54253&jobTitle=Data%20Engineer",
-    "date_scraped": "2026-10-28",
-    "first_seen_at": "2026-09-16T08:04:21.325579+00:00"
-  },
-  {
     "id": 34972,
     "title": "Infrastructure & Networking SME (GCP/Apigee)",
     "company": "Abacus Consulting",
@@ -4462,6 +4615,15 @@
     "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Karachi-PK%2FAR-AP-Analyst_R54194&jobTitle=AP%20%26%20AR%20Analyst",
     "date_scraped": "2026-10-28",
     "first_seen_at": "2026-09-12T07:29:58.991082+00:00"
+  },
+  {
+    "id": 31673,
+    "title": "IT Change & Transition Specialist",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042905013/IT-Change-Transition-Specialist?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-09-11T07:38:06.618853+00:00"
   },
   {
     "id": 31542,
@@ -4750,6 +4912,15 @@
     "apply_link": "https://abacus-consulting-3.careers-page.com/jobs/f7ff37a8-a361-444b-ac80-178686f8c893",
     "date_scraped": "2026-10-28",
     "first_seen_at": "2026-09-08T07:35:16.906320+00:00"
+  },
+  {
+    "id": 27711,
+    "title": "Forward Deployed Engineer, Agentic Platform",
+    "company": "Tkxel",
+    "location": "Riyadh, Saudi Arabia",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042760067/Forward-Deployed-Engineer-Agentic-Platform?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-09-06T07:27:35.028935+00:00"
   },
   {
     "id": 27660,
@@ -5310,6 +5481,24 @@
     "first_seen_at": "2026-09-03T07:32:49.842605+00:00"
   },
   {
+    "id": 25031,
+    "title": "Account Receivable Specialist",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042628088/Account-Receivable-Specialist?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-09-02T07:28:41.802851+00:00"
+  },
+  {
+    "id": 25030,
+    "title": "Account Payable Specialist",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042628099/Account-Payable-Specialist?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-09-02T07:28:41.802851+00:00"
+  },
+  {
     "id": 25005,
     "title": "Lead Finance - Night Shift",
     "company": "10Pearls",
@@ -5697,6 +5886,15 @@
     "first_seen_at": "2026-08-29T09:34:37.832338+00:00"
   },
   {
+    "id": 20564,
+    "title": "Project Manager",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042569042/Project-Manager?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-08-28T14:45:26.458004+00:00"
+  },
+  {
     "id": 20272,
     "title": "SQA Trainee",
     "company": "Contour Software",
@@ -5857,15 +6055,6 @@
     "apply_link": "https://abacus-consulting-3.careers-page.com/jobs/7d7060af-0b29-4e58-a583-7cfd4558582e",
     "date_scraped": "2026-10-28",
     "first_seen_at": "2026-08-22T03:37:41.378472+00:00"
-  },
-  {
-    "id": 16245,
-    "title": "HRBP",
-    "company": "Trango Tech",
-    "location": "Karachi",
-    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1489&BranchId=4",
-    "date_scraped": "2026-10-28",
-    "first_seen_at": "2026-08-21T03:45:29.563899+00:00"
   },
   {
     "id": 16172,
@@ -6082,51 +6271,6 @@
     "apply_link": "https://apply.workable.com/j/3287D37C4B",
     "date_scraped": "2026-10-28",
     "first_seen_at": "2026-08-17T03:44:03.131016+00:00"
-  },
-  {
-    "id": 11988,
-    "title": "Spanish Speaking Sales Executive",
-    "company": "Trango Tech",
-    "location": "Karachi",
-    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1467&BranchId=4",
-    "date_scraped": "2026-10-28",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11987,
-    "title": "Wordpress Developer",
-    "company": "Trango Tech",
-    "location": "Karachi",
-    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1468&BranchId=4",
-    "date_scraped": "2026-10-28",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11986,
-    "title": "Product Sales Executive - US Market (PaaS)",
-    "company": "Trango Tech",
-    "location": "Karachi",
-    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1473&BranchId=4",
-    "date_scraped": "2026-10-28",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11985,
-    "title": "Information Security Lead (GRC)",
-    "company": "Trango Tech",
-    "location": "Karachi",
-    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1478&BranchId=4",
-    "date_scraped": "2026-10-28",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
-  },
-  {
-    "id": 11984,
-    "title": "Senior Recruiter (International & Local)",
-    "company": "Trango Tech",
-    "location": "Karachi",
-    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1487&BranchId=4",
-    "date_scraped": "2026-10-28",
-    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
   },
   {
     "id": 11857,
@@ -6417,6 +6561,15 @@
     "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
   },
   {
+    "id": 11380,
+    "title": "Senior Devops Engineer/Azure",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042197191/Senior-Devops-Engineer-Azure?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-08-13T04:48:23.212177+00:00"
+  },
+  {
     "id": 11293,
     "title": "Associate Project Manager",
     "company": "InvoZone",
@@ -6595,6 +6748,141 @@
     "apply_link": "https://abacus-consulting-3.careers-page.com/jobs/e333aa41-a657-4d54-a306-b29790390b9e",
     "date_scraped": "2026-10-28",
     "first_seen_at": "2026-07-29T05:46:01.148373+00:00"
+  },
+  {
+    "id": 598,
+    "title": "Microsoft Dynamics 365 Functional Consultant",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000037877025/Microsoft-Dynamics-365-Functional-Consultant?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 597,
+    "title": "Senior Python Engineer",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000038042595/Senior-Python-Engineer?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 596,
+    "title": "Senior Data Engineer",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000038099114/Senior-Data-Engineer?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 592,
+    "title": "Senior Account Manager",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039601151/Senior-Account-Manager?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 591,
+    "title": "Junior Account Manager",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039601163/Junior-Account-Manager?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 588,
+    "title": "UIUX Designer",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039700188/UIUX-Designer?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 587,
+    "title": "Account Executive - EU",
+    "company": "Tkxel",
+    "location": "Lisboa, Portugal",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039720001/Account-Executive-EU?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 586,
+    "title": "Account Executive - North America",
+    "company": "Tkxel",
+    "location": "Reston, United States",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039837053/Account-Executive-North-America?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 585,
+    "title": "Power BI Developer Microsoft Dynamics 365/Contractor",
+    "company": "Tkxel",
+    "location": "N/A",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039837066/Power-BI-Developer-Microsoft-Dynamics-365-Contractor?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 583,
+    "title": "Senior Business Analyst",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000040422258/Senior-Business-Analyst?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 579,
+    "title": "Senior UIUX Designer",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000040951625/Senior-UIUX-Designer?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 577,
+    "title": "Senior Data Engineer - Azure",
+    "company": "Tkxel",
+    "location": "N/A",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041052813/Senior-Data-Engineer-Azure?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 575,
+    "title": "HR Intern",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041291403/HR-Intern?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 571,
+    "title": "GenAI Engineer",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041525643/GenAI-Engineer?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
+  },
+  {
+    "id": 568,
+    "title": "Senior Data Engineer - Azure",
+    "company": "Tkxel",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041692468/Senior-Data-Engineer-Azure?source=CareerSite",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
   },
   {
     "id": 565,
@@ -8934,366 +9222,6 @@
     "location": "Lahore, Pakistan",
     "apply_link": "https://abacus-consulting-3.careers-page.com/jobs/fd8461b1-e536-4164-939f-041f8be1c9b8",
     "date_scraped": "2026-10-28",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 75852,
-    "title": "Associate Admin Officer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043908038/Associate-Admin-Officer?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-10-24T07:46:29.951832+00:00"
-  },
-  {
-    "id": 70078,
-    "title": "Solution Architect",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043731145/Solution-Architect?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-10-21T08:09:42.313302+00:00"
-  },
-  {
-    "id": 70077,
-    "title": "Senior Account Executive - Sales",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043731160/Senior-Account-Executive-Sales?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-10-21T08:09:42.313302+00:00"
-  },
-  {
-    "id": 68214,
-    "title": "Principal Java Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043727089/Principal-Java-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-10-19T08:17:07.369320+00:00"
-  },
-  {
-    "id": 62823,
-    "title": "Senior Data Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041796001/Senior-Data-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 62808,
-    "title": "Front Desk/People Experience Specialist",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043684034/Front-Desk-People-Experience-Specialist?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 62807,
-    "title": "AI First WordPress Developer",
-    "company": "Tkxel",
-    "location": "Lahore G.P.O., Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043684045/AI-First-Wordpress-Developer?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 62806,
-    "title": "Sales Development Representative",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043684053/Sales-Development-Representative?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 62805,
-    "title": "AI Lead / AI Architect",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043720003/AI-Lead-AI-Architect?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 62804,
-    "title": "Senior Network & Security Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043720012/Senior-Network-Security-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 62803,
-    "title": "Associate SEO Executive",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043731004/Associate-SEO-Executive?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-10-15T07:53:03.963892+00:00"
-  },
-  {
-    "id": 53662,
-    "title": "Sales  Development Representative",
-    "company": "Tkxel",
-    "location": "Lahore G.P.O., Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043429026/Sales-Development-Representative?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-10-07T12:29:16.721529+00:00"
-  },
-  {
-    "id": 51301,
-    "title": "Sales Operations Associate",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043530032/Sales-Operations-Associate?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-10-04T08:59:11.854321+00:00"
-  },
-  {
-    "id": 47404,
-    "title": "Senior Data Engineer \u2013 Cloud Platforms (Azure | GCP)",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043463004/Senior-Data-Engineer-Cloud-Platforms-Azure-GCP?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
-  },
-  {
-    "id": 43198,
-    "title": "AI Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042905020/AI-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-09-25T08:21:17.746650+00:00"
-  },
-  {
-    "id": 43189,
-    "title": "Gen AI Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043279008/Gen-AI-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-09-25T08:21:17.746650+00:00"
-  },
-  {
-    "id": 41532,
-    "title": "Product Marketer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043090206/Product-Marketer?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-09-23T08:06:31.387174+00:00"
-  },
-  {
-    "id": 41528,
-    "title": "SEO Lead",
-    "company": "Tkxel",
-    "location": "Lahore G.P.O., Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000043227056/SEO-Lead?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-09-23T08:06:31.387174+00:00"
-  },
-  {
-    "id": 31673,
-    "title": "IT Change & Transition Specialist",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042905013/IT-Change-Transition-Specialist?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-09-11T07:38:06.618853+00:00"
-  },
-  {
-    "id": 27711,
-    "title": "Forward Deployed Engineer, Agentic Platform",
-    "company": "Tkxel",
-    "location": "Riyadh, Saudi Arabia",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042760067/Forward-Deployed-Engineer-Agentic-Platform?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-09-06T07:27:35.028935+00:00"
-  },
-  {
-    "id": 25031,
-    "title": "Account Receivable Specialist",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042628088/Account-Receivable-Specialist?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-09-02T07:28:41.802851+00:00"
-  },
-  {
-    "id": 25030,
-    "title": "Account Payable Specialist",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042628099/Account-Payable-Specialist?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-09-02T07:28:41.802851+00:00"
-  },
-  {
-    "id": 20564,
-    "title": "Project Manager",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042569042/Project-Manager?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-08-28T14:45:26.458004+00:00"
-  },
-  {
-    "id": 11380,
-    "title": "Senior Devops Engineer/Azure",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000042197191/Senior-Devops-Engineer-Azure?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-08-13T04:48:23.212177+00:00"
-  },
-  {
-    "id": 598,
-    "title": "Microsoft Dynamics 365 Functional Consultant",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000037877025/Microsoft-Dynamics-365-Functional-Consultant?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 597,
-    "title": "Senior Python Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000038042595/Senior-Python-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 596,
-    "title": "Senior Data Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000038099114/Senior-Data-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 594,
-    "title": "CEO Intelligence & Communications Associate",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000038929008/CEO-Intelligence-Communications-Associate?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 592,
-    "title": "Senior Account Manager",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039601151/Senior-Account-Manager?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 591,
-    "title": "Junior Account Manager",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039601163/Junior-Account-Manager?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 588,
-    "title": "UIUX Designer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039700188/UIUX-Designer?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 587,
-    "title": "Account Executive - EU",
-    "company": "Tkxel",
-    "location": "Lisboa, Portugal",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039720001/Account-Executive-EU?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 586,
-    "title": "Account Executive - North America",
-    "company": "Tkxel",
-    "location": "Reston, United States",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039837053/Account-Executive-North-America?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 585,
-    "title": "Power BI Developer Microsoft Dynamics 365/Contractor",
-    "company": "Tkxel",
-    "location": "N/A",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000039837066/Power-BI-Developer-Microsoft-Dynamics-365-Contractor?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 583,
-    "title": "Senior Business Analyst",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000040422258/Senior-Business-Analyst?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 579,
-    "title": "Senior UIUX Designer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000040951625/Senior-UIUX-Designer?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 577,
-    "title": "Senior Data Engineer - Azure",
-    "company": "Tkxel",
-    "location": "N/A",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041052813/Senior-Data-Engineer-Azure?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 575,
-    "title": "HR Intern",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041291403/HR-Intern?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 571,
-    "title": "GenAI Engineer",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041525643/GenAI-Engineer?source=CareerSite",
-    "date_scraped": "2026-10-27",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 568,
-    "title": "Senior Data Engineer - Azure",
-    "company": "Tkxel",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://jobs.tkxel.com/jobs/Careers/524295000041692468/Senior-Data-Engineer-Azure?source=CareerSite",
-    "date_scraped": "2026-10-27",
     "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
   }
 ]

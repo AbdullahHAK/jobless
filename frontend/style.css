@@ -1,16 +1,21 @@
-/* Strict 3-color system: true-black, off-white, and one surgical accent -
-   no gradients, no per-category rainbow. Depth and separation come from
-   hairline alpha borders and flat background-contrast steps, not shadows
-   or filled "card" surfaces - see the --shadow-* tokens below, neutralized
-   to `none` so every existing `box-shadow: var(--shadow-sm)` call site
-   goes flat for free without needing to touch each one individually. */
+/* Stepped-gray elevation system, adapted from eden.so's actual compiled
+   CSS (verified against their source, not guessed from screenshots) -
+   surfaces step up in lightness from the page background rather than
+   sitting flush with it, and depth comes from soft multi-layer shadows
+   plus a 1px inset top highlight, not from hairline borders alone. Radius
+   is generous (16-24px on cards, full pill on buttons) rather than tight.
+   Accent stays Jobless's own violet (real brand identity, not eden.so's -
+   their actual "accent" token is just off-white) but is used with the
+   same restraint: most surfaces stay monochrome gray, color is reserved
+   for things that have earned it. */
 :root {
   color-scheme: dark;
   --bg: #0a0a0a;
-  --bg-elevated: #0a0a0a;
-  --card-bg: #0a0a0a;
-  --fg: #f2f1ed;
-  --muted: #86867f;
+  --bg-elevated: #111111;
+  --card-bg: #141414;
+  --fg: #f5f5f5;
+  --muted: #a3a3a3;
+  --muted-dim: #737373;
   --border: rgba(255, 255, 255, 0.08);
   --border-strong: rgba(255, 255, 255, 0.18);
   --accent: #6e5bff;
@@ -18,25 +23,22 @@
   --accent-dark: #4f3fd1;
   --accent-soft: rgba(110, 91, 255, 0.12);
 
-  /* Tight, editorial radii - small enough to read as "precise" rather than
-     "soft/bubbly". 999px (pill) is still used sparingly for the handful of
-     pill-shaped controls (chips, the load-more button). */
-  --radius-sm: 0.25rem;
-  --radius: 0.375rem;
-  --radius-lg: 0.5rem;
-  --radius-xl: 0.75rem;
+  --radius-sm: 0.5rem;
+  --radius: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
 
-  --shadow-sm: none;
-  --shadow-md: none;
-  --shadow-lg: none;
-  --shadow-glow: none;
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.35), 0 18px 40px -22px rgba(0, 0, 0, 0.55);
+  --shadow-md: 0 28px 60px -22px rgba(0, 0, 0, 0.7), 0 3px 10px rgba(0, 0, 0, 0.28);
+  --shadow-lg: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 30px 80px -40px rgba(0, 0, 0, 0.9);
+  --shadow-glow: 0 8px 30px rgba(110, 91, 255, 0.2);
 
-  /* One step up from --bg, for a surface nested inside a bordered
-     container - subtle enough that hairline borders (not fill color) do
-     the actual work of separating sections. */
-  --surface: #111110;
+  /* One step up from --card-bg, for a surface nested inside an already-
+     elevated container (hover fills, inputs). */
+  --surface: #1a1a1a;
 
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Archivo", var(--font-sans);
   --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
   /* Snappy, slightly overshooting spring curve for every hover/interaction
@@ -262,6 +264,13 @@ header {
   max-width: 720px;
   margin: 0 auto;
   padding: 0 0 1rem;
+}
+
+/* Archivo for every display headline, Inter stays for body/UI copy -
+   eden.so pairs the same two families the same way. */
+h1,
+h2 {
+  font-family: var(--font-display);
 }
 
 h1 {
@@ -558,8 +567,10 @@ h1 {
    supporting context" rather than three interchangeable tiles. */
 .stats-cards {
   display: flex;
+  background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
   overflow: hidden;
 }
 
@@ -680,17 +691,22 @@ h1 {
 
 /* The Prep hub page (frontend/prep.html) - a dense, numbered editorial
    list rather than a 3/4-column grid of boxed topic cards. No per-item
-   background/border/shadow at all; hairline rules between rows and a
-   monospace index number do the work a bordered card used to do. The
-   first and last rows close the list with their own top/bottom rule, so
-   the whole thing reads as one continuous table of contents rather than a
-   stack of separate boxes. */
+   background/border/shadow; hairline rules between rows and a monospace
+   index number do the work a bordered card used to do. The rows sit
+   inside one elevated panel (card-bg + soft shadow) rather than being
+   individually boxed - eden.so's "flat rows inside one elevated panel"
+   pattern applied to the list structure from the previous pass. */
 .prep-hub-grid {
   max-width: 44rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   counter-reset: prep-topic;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 0 1.25rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .prep-hub-card {
@@ -707,8 +723,8 @@ h1 {
   transition: background-color 0.2s var(--ease-spring);
 }
 
-.prep-hub-grid .prep-hub-card:last-child {
-  border-bottom: 1px solid var(--border);
+.prep-hub-card:first-child {
+  border-top: none;
 }
 
 .prep-hub-card::before {
@@ -1470,14 +1486,21 @@ select {
 .job-list {
   list-style: none;
   margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--border);
+  padding: 0 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
 }
 
 .job-card {
   border-bottom: 1px solid var(--border);
   padding: 1.1rem 0.25rem;
   transition: background-color 0.2s var(--ease-spring);
+}
+
+.job-card:last-child {
+  border-bottom: none;
 }
 
 .job-card:hover {

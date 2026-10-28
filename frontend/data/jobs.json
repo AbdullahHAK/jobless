@@ -1,5 +1,14 @@
 [
   {
+    "id": 82620,
+    "title": "Software Engineer -Frontend",
+    "company": "Devsinc",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://apply.workable.com/j/2A641AD47B",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-28T09:11:02.294238+00:00"
+  },
+  {
     "id": 81967,
     "title": "Project Manager",
     "company": "Zones",
@@ -619,6 +628,15 @@
     "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FTrainee-Software-Developer_R55054&jobTitle=Trainee%20Software%20Developer",
     "date_scraped": "2026-10-28",
     "first_seen_at": "2026-10-28T06:57:58.480251+00:00"
+  },
+  {
+    "id": 79841,
+    "title": "Fullstack Developer",
+    "company": "Trango Tech",
+    "location": "Karachi",
+    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1495&BranchId=4",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-10-28T05:54:58.859506+00:00"
   },
   {
     "id": 79818,
@@ -6309,15 +6327,6 @@
     "first_seen_at": "2026-08-31T09:04:52.797550+00:00"
   },
   {
-    "id": 23339,
-    "title": "Senior Product Operations Specialist",
-    "company": "Careem",
-    "location": "Karachi, Pakistan",
-    "apply_link": "https://boards.greenhouse.io/careem/jobs/8622174002?gh_jid=8622174002",
-    "date_scraped": "2026-10-28",
-    "first_seen_at": "2026-08-31T09:04:52.797550+00:00"
-  },
-  {
     "id": 23338,
     "title": "Senior IT Infrastructure Engineer II",
     "company": "Careem",
@@ -6651,6 +6660,15 @@
     "first_seen_at": "2026-08-22T03:37:41.378472+00:00"
   },
   {
+    "id": 16245,
+    "title": "HRBP",
+    "company": "Trango Tech",
+    "location": "Karachi",
+    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1489&BranchId=4",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-08-21T03:45:29.563899+00:00"
+  },
+  {
     "id": 16172,
     "title": "Senior Finance Executive",
     "company": "Kualitatem",
@@ -6865,6 +6883,51 @@
     "apply_link": "https://apply.workable.com/j/3287D37C4B",
     "date_scraped": "2026-10-28",
     "first_seen_at": "2026-08-17T03:44:03.131016+00:00"
+  },
+  {
+    "id": 11988,
+    "title": "Spanish Speaking Sales Executive",
+    "company": "Trango Tech",
+    "location": "Karachi",
+    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1467&BranchId=4",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11987,
+    "title": "Wordpress Developer",
+    "company": "Trango Tech",
+    "location": "Karachi",
+    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1468&BranchId=4",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11986,
+    "title": "Product Sales Executive - US Market (PaaS)",
+    "company": "Trango Tech",
+    "location": "Karachi",
+    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1473&BranchId=4",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11985,
+    "title": "Information Security Lead (GRC)",
+    "company": "Trango Tech",
+    "location": "Karachi",
+    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1478&BranchId=4",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
+  },
+  {
+    "id": 11984,
+    "title": "Senior Recruiter (International & Local)",
+    "company": "Trango Tech",
+    "location": "Karachi",
+    "apply_link": "https://hrms.eplanetcom.com/Recruitment/Candidate/ApplyOnline?id=1487&BranchId=4",
+    "date_scraped": "2026-10-28",
+    "first_seen_at": "2026-08-14T04:44:49.893454+00:00"
   },
   {
     "id": 11857,
@@ -7171,15 +7234,6 @@
     "apply_link": "https://next.invozone.com/associate-project-manager-1786530719463",
     "date_scraped": "2026-10-28",
     "first_seen_at": "2026-08-13T04:48:23.212177+00:00"
-  },
-  {
-    "id": 10703,
-    "title": "Associate Software Engineer - Open Stack",
-    "company": "Devsinc",
-    "location": "Lahore, Pakistan",
-    "apply_link": "https://apply.workable.com/j/99FA01AD28",
-    "date_scraped": "2026-10-28",
-    "first_seen_at": "2026-08-12T04:44:01.658693+00:00"
   },
   {
     "id": 10320,

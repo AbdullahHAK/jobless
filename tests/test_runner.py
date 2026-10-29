@@ -38,6 +38,7 @@ def test_run_all_tracks_only_companies_whose_scraper_succeeded(mocker):
         "jobless.runner.all_scrapers",
         return_value=[_WorkingScraper, _FailingScraper],
     )
+    mocker.patch("jobless.runner.link_health.filter_live_jobs", side_effect=lambda jobs: jobs)
 
     jobs, succeeded = runner.run_all()
 
@@ -53,6 +54,7 @@ def test_main_only_prunes_stale_jobs_for_companies_that_succeeded(mocker):
     mock_conn = mocker.MagicMock()
     mocker.patch("jobless.runner.db.get_connection", return_value=mock_conn)
     mock_close = mocker.patch("jobless.runner.db.close_stale_jobs", return_value=0)
+    mocker.patch("jobless.runner.link_health.filter_live_jobs", side_effect=lambda jobs: jobs)
 
     runner.main()
 

@@ -22,7 +22,7 @@ Real openings aggregated daily from company career pages, honest company-specifi
 
 Finding a tech job in Pakistan today means checking dozens of individual company career pages, one by one, because no single aggregator reliably covers the local market. Jobless exists to be the one place that does — scraping every company's career page daily, normalizing the results into one searchable list, and shipping it as a free static site with no account wall between a candidate and an apply button.
 
-The project is still growing toward its first-launch target of **100 companies tracked**; it's at 48 today.
+The project is still growing toward its first-launch target of **100 companies tracked**; it's at 50 today.
 
 ## Table of Contents
 
@@ -62,11 +62,11 @@ Every scraper runs in isolation — one company's site changing or timing out is
 ## Companies Tracked
 
 <details>
-<summary><strong>48 companies</strong> and counting — click to expand</summary>
+<summary><strong>50 companies</strong> and counting — click to expand</summary>
 
 <br>
 
-10Pearls · 7Vals · Abacus Consulting · Arbisoft · ArhamSoft · Avanceon · Bazaar Technologies · Careem · Codup · Confiz · Contour Software · Convo · Creative Chaos · CureMD · DPL · Devsinc · Dubizzle · Educative · EurosHub · Folio3 · Genetech Solutions · i2c Inc · Inbox Business Technologies · InvoZone · JS Bank · Joblogic · KalSoft · Kualitatem · Mindstorm Studios · Motive · NayaPay · NetSol Technologies · Nextbridge · Ovex Technologies · PakWheels · Pakistan Single Window · Prime System Solutions · Remotebase · SadaPay · Safepay · Securiti (Veeam) · Smart Working Solutions · Strategic Systems International · Tkxel · Trango Tech · VentureDive · Zameen.com · Zones
+10Pearls · 7Vals · Abacus Consulting · Arbisoft · ArhamSoft · Avanceon · Bazaar Technologies · Careem · Codup · Confiz · Contour Software · Convo · Creative Chaos · CureMD · DPL · Devsinc · Dubizzle · Educative · EurosHub · Folio3 · Genetech Solutions · i2c Inc · Inbox Business Technologies · InvoZone · JS Bank · Jin Technologies · Joblogic · KalSoft · Kualitatem · Mindstorm Studios · Motive · NayaPay · Nayatel · NetSol Technologies · Nextbridge · Ovex Technologies · PakWheels · Pakistan Single Window · Prime System Solutions · Remotebase · SadaPay · Safepay · Securiti (Veeam) · Smart Working Solutions · Strategic Systems International · Tkxel · Trango Tech · VentureDive · Zameen.com · Zones
 
 </details>
 

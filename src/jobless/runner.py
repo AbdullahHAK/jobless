@@ -1,6 +1,6 @@
 import logging
 
-from . import db, scrapers  # noqa: F401 - import triggers scraper auto-registration
+from . import db, link_health, scrapers  # noqa: F401 - import triggers scraper auto-registration
 from .scrapers.base import Job
 from .scrapers.registry import all_scrapers
 
@@ -10,16 +10,19 @@ logger = logging.getLogger(__name__)
 
 def run_all() -> tuple[list[Job], set[str]]:
     """Run every registered scraper. A single scraper failing is logged and
-    skipped so it doesn't take down the rest of the run. Also returns which
-    companies' scrapers actually succeeded - needed by the caller to safely
-    prune closed listings without wrongly wiping out a company's postings
-    just because its scraper failed this run (see db.close_stale_jobs)."""
+    skipped so it doesn't take down the rest of the run. Each scraper's own
+    jobs are also re-validated against link_health.filter_live_jobs before
+    being kept, since a scraper's source API/page can drift from what's
+    really live (see link_health for why). Also returns which companies'
+    scrapers actually succeeded - needed by the caller to safely prune
+    closed listings without wrongly wiping out a company's postings just
+    because its scraper failed this run (see db.close_stale_jobs)."""
     jobs: list[Job] = []
     succeeded_companies: set[str] = set()
     for scraper_cls in all_scrapers():
         scraper = scraper_cls()
         try:
-            jobs.extend(scraper.scrape())
+            jobs.extend(link_health.filter_live_jobs(scraper.scrape()))
             succeeded_companies.add(scraper_cls.company_name)
         except Exception:
             logger.exception("scraper %s failed", scraper_cls.company_name)

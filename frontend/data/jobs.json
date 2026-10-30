@@ -1,5 +1,95 @@
 [
   {
+    "id": 89907,
+    "title": "Client Success Manager Trainee",
+    "company": "Zones",
+    "location": "Islamabad, Pakistan",
+    "apply_link": "https://jobs.jobvite.com/zones/job/oTB1AfwP",
+    "date_scraped": "2026-10-30",
+    "first_seen_at": "2026-10-30T16:57:04.655925+00:00"
+  },
+  {
+    "id": 89747,
+    "title": "Legal Counsel - Pakistan & Middle East",
+    "company": "10Pearls",
+    "location": "Karachi, Lahore, Islamabad",
+    "apply_link": "https://10pearls.applytojob.com/apply/jobs/details/job_20261030130112_T88AC9PKRKNKSDWF",
+    "date_scraped": "2026-10-30",
+    "first_seen_at": "2026-10-30T16:57:04.655925+00:00"
+  },
+  {
+    "id": 89746,
+    "title": "Senior/ Principal Test Consultant - Afternoon Shift",
+    "company": "10Pearls",
+    "location": "Karachi, Lahore, Islamabad",
+    "apply_link": "https://10pearls.applytojob.com/apply/jobs/details/job_20261030123106_UZPU0TXHHXCVJTSD",
+    "date_scraped": "2026-10-30",
+    "first_seen_at": "2026-10-30T16:57:04.655925+00:00"
+  },
+  {
+    "id": 89735,
+    "title": "Finance Intern",
+    "company": "7Vals",
+    "location": "Lahore, Punjab, Pakistan",
+    "apply_link": "https://7vals.simplicant.com/jobs/57350-finance-intern/detail",
+    "date_scraped": "2026-10-30",
+    "first_seen_at": "2026-10-30T16:57:04.655925+00:00"
+  },
+  {
+    "id": 89690,
+    "title": "Agreement & Billing Specialist",
+    "company": "Prime System Solutions",
+    "location": "Islamabad, Lahore",
+    "apply_link": "https://apply.workable.com/j/29369288C7/apply",
+    "date_scraped": "2026-10-30",
+    "first_seen_at": "2026-10-30T16:57:04.655925+00:00"
+  },
+  {
+    "id": 89499,
+    "title": "Computer Systems Architect (ARM-Based SBC)",
+    "company": "Nextbridge",
+    "location": "Lahore,Pakistan",
+    "apply_link": "https://nextbridge.com/job-detail?job_id=6ae483cea8b0d634fa2e517f",
+    "date_scraped": "2026-10-30",
+    "first_seen_at": "2026-10-30T16:57:04.655925+00:00"
+  },
+  {
+    "id": 89475,
+    "title": "Lead Support Engineer",
+    "company": "Motive",
+    "location": "Pakistan - Remote",
+    "apply_link": "https://job-boards.greenhouse.io/gomotive/jobs/8925055002",
+    "date_scraped": "2026-10-30",
+    "first_seen_at": "2026-10-30T16:57:04.655925+00:00"
+  },
+  {
+    "id": 89464,
+    "title": "Penetration Testing Lead \u2013 Banking & Financial Services",
+    "company": "Kualitatem",
+    "location": "Lahore",
+    "apply_link": "https://new.careers.kualitatem.com/job/363",
+    "date_scraped": "2026-10-30",
+    "first_seen_at": "2026-10-30T16:57:04.655925+00:00"
+  },
+  {
+    "id": 89359,
+    "title": "Lead, Logistics Operations",
+    "company": "foodpanda",
+    "location": "Karachi, Pakistan",
+    "apply_link": "https://careers.foodpanda.com/job/lead-logistics-operations-in-karachi-pakistan-jid-3322",
+    "date_scraped": "2026-10-30",
+    "first_seen_at": "2026-10-30T16:57:04.655925+00:00"
+  },
+  {
+    "id": 89295,
+    "title": "Marketing Executive",
+    "company": "Devsinc",
+    "location": "Lahore, Pakistan",
+    "apply_link": "https://apply.workable.com/j/500B6FCB4F",
+    "date_scraped": "2026-10-30",
+    "first_seen_at": "2026-10-30T16:57:04.655925+00:00"
+  },
+  {
     "id": 88323,
     "title": "Azure AI (Agentic) Specialist - Team Lead",
     "company": "NorthBay Solutions",
@@ -723,7 +813,7 @@
     "id": 85976,
     "title": "Sr.SQAE - Automation",
     "company": "Kualitatem",
-    "location": "Lahore",
+    "location": "Islamabad",
     "apply_link": "https://new.careers.kualitatem.com/job/362",
     "date_scraped": "2026-10-30",
     "first_seen_at": "2026-10-29T11:51:18.412378+00:00"
@@ -788,15 +878,6 @@
     "company": "Nayatel",
     "location": "Gujranwala, Pakistan",
     "apply_link": "https://careers.nayatel.com/vacant-positions/80131",
-    "date_scraped": "2026-10-30",
-    "first_seen_at": "2026-10-29T09:07:56.993163+00:00"
-  },
-  {
-    "id": 84820,
-    "title": "Support Account Manager",
-    "company": "Motive",
-    "location": "Pakistan - Remote",
-    "apply_link": "https://job-boards.greenhouse.io/gomotive/jobs/8754805002",
     "date_scraped": "2026-10-30",
     "first_seen_at": "2026-10-29T09:07:56.993163+00:00"
   },
@@ -1562,15 +1643,6 @@
     "company": "Zones",
     "location": "Islamabad, Pakistan",
     "apply_link": "https://jobs.jobvite.com/zones/job/oLsDAfwa",
-    "date_scraped": "2026-10-30",
-    "first_seen_at": "2026-10-28T07:27:18.785512+00:00"
-  },
-  {
-    "id": 81965,
-    "title": "Project Coordinator",
-    "company": "Zones",
-    "location": "Islamabad, Pakistan",
-    "apply_link": "https://jobs.jobvite.com/zones/job/ojrYAfw2",
     "date_scraped": "2026-10-30",
     "first_seen_at": "2026-10-28T07:27:18.785512+00:00"
   },
@@ -3587,15 +3659,6 @@
     "company": "SadaPay",
     "location": "Karachi, Lahore, Islamabad",
     "apply_link": "https://sadapay.pk/jobs-listing/ai-first-product-designer",
-    "date_scraped": "2026-10-30",
-    "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
-  },
-  {
-    "id": 65188,
-    "title": "Senior Data Engineer",
-    "company": "Joblogic",
-    "location": "Lahore, Punjab, Pakistan",
-    "apply_link": "https://job-boards.eu.greenhouse.io/joblogic/jobs/4938720101",
     "date_scraped": "2026-10-30",
     "first_seen_at": "2026-10-17T17:04:42.531847+00:00"
   },
@@ -5940,15 +6003,6 @@
     "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
   },
   {
-    "id": 47222,
-    "title": "Technical Lead",
-    "company": "Motive",
-    "location": "Pakistan - Remote",
-    "apply_link": "https://job-boards.greenhouse.io/gomotive/jobs/8742388002",
-    "date_scraped": "2026-10-30",
-    "first_seen_at": "2026-09-30T09:09:53.355955+00:00"
-  },
-  {
     "id": 46958,
     "title": "Trainee Software Developer (AI Focused)",
     "company": "Contour Software",
@@ -6566,15 +6620,6 @@
     "company": "InvoZone",
     "location": "Lahore",
     "apply_link": "https://next.invozone.com/business-development-associate-7b2dcc6d",
-    "date_scraped": "2026-10-30",
-    "first_seen_at": "2026-09-12T07:29:58.991082+00:00"
-  },
-  {
-    "id": 32175,
-    "title": "Senior Full Stack .NET Developer",
-    "company": "DPL",
-    "location": "Islamabad",
-    "apply_link": "https://dplit.zohorecruit.com/jobs/Careers/651851000024262150?source=CareerSite",
     "date_scraped": "2026-10-30",
     "first_seen_at": "2026-09-12T07:29:58.991082+00:00"
   },
@@ -7601,15 +7646,6 @@
     "company": "Prime System Solutions",
     "location": "Lahore",
     "apply_link": "https://apply.workable.com/j/17BB3E1833/apply",
-    "date_scraped": "2026-10-30",
-    "first_seen_at": "2026-09-02T07:28:41.802851+00:00"
-  },
-  {
-    "id": 24962,
-    "title": "Billing Specialist",
-    "company": "Prime System Solutions",
-    "location": "Lahore",
-    "apply_link": "https://apply.workable.com/j/5D1177E458/apply",
     "date_scraped": "2026-10-30",
     "first_seen_at": "2026-09-02T07:28:41.802851+00:00"
   },
@@ -9266,15 +9302,6 @@
     "company": "Contour Software",
     "location": "2 Locations",
     "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FSenior-AI-Engineer_R51206&jobTitle=Senior%20AI%20Engineer",
-    "date_scraped": "2026-10-30",
-    "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
-  },
-  {
-    "id": 371,
-    "title": "Workday (HRMS) Trainee",
-    "company": "Contour Software",
-    "location": "PER - Lahore, PK",
-    "apply_link": "https://contour-software.com/job-detail/?jobPath=%2Fjob%2FPER---Lahore-PK%2FWorkday--HRMS--Trainee_R49690&jobTitle=Workday%20%28HRMS%29%20Trainee",
     "date_scraped": "2026-10-30",
     "first_seen_at": "2026-07-27T11:29:19.851740+00:00"
   },

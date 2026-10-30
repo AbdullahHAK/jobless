@@ -57,7 +57,10 @@ Company career page  →  Scraper plugin  →  PostgreSQL (upsert on apply_link)
 
 Each company is a self-contained scraper module implementing a common interface that returns a standard `Job` (title, company, location, apply_link, date_scraped). A registry auto-discovers every scraper dropped into `src/jobless/scrapers/` — no wiring required to add a new one. Each scraper picks whatever data source is actually cleanest for that company's site (a public JSON API discovered via network inspection, static HTML, or rarely a JS payload embedded in the page), documented in a comment at the top of its module.
 
-Every scraper runs in isolation — one company's site changing or timing out is logged and skipped, not fatal to the run. Results are upserted into PostgreSQL keyed on `apply_link`, so re-scraping a still-open job updates it in place instead of duplicating it. A listing is only marked closed if the company's own scraper ran successfully and the listing was genuinely absent from the result — a transient failure never wipes out real data.
+Every scraper runs in isolation — one company's site changing or timing out is logged and skipped, not fatal to the run. Results are upserted into PostgreSQL keyed on `apply_link`, so re-scraping a still-open job updates it in place instead of duplicating it. A listing is only marked closed if the company's own scraper ran successfully *and* that run's result doesn't look anomalous (see below) — a transient failure never wipes out real data.
+
+### 🩺 Scraper health monitoring
+Every run compares each company's job count against its last known-good count. A scraper that suddenly returns 0 (or crashes by >80%) is treated as *probably broken by a site layout change*, not as "this company has no jobs now" — its existing listings are left alone instead of being pruned. Two consecutive anomalous runs (or a single outright exception) auto-files a labeled `scraper-broken` GitHub issue and sends an email alert, and both clear themselves automatically the next time that scraper reports a normal run. Dead `apply_link`s are re-validated against the real page on every scrape (404/410 only — see `link_health.py`), so expired postings never make it onto the live board.
 
 ## Companies Tracked
 

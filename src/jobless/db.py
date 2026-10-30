@@ -28,6 +28,18 @@ CREATE TABLE IF NOT EXISTS jobs (
 -- to actually reach an existing deployment.
 ALTER TABLE jobs ADD COLUMN IF NOT EXISTS is_active BOOLEAN NOT NULL DEFAULT true;
 
+-- Tracks each scraper's last known-good job count so a run that suddenly
+-- returns 0 (or near-0) can be told apart from a company that genuinely
+-- has no openings right now - see scraper_health.evaluate for how this
+-- gets used to skip close_stale_jobs and decide when to alert.
+CREATE TABLE IF NOT EXISTS scraper_health (
+    company TEXT PRIMARY KEY,
+    last_job_count INTEGER NOT NULL DEFAULT 0,
+    consecutive_issues INTEGER NOT NULL DEFAULT 0,
+    is_broken BOOLEAN NOT NULL DEFAULT false,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
 CREATE TABLE IF NOT EXISTS subscribers (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
@@ -139,6 +151,41 @@ def close_stale_jobs(conn: psycopg.Connection, company: str, active_apply_links:
         closed = cur.rowcount
     conn.commit()
     return closed
+
+
+def get_scraper_health(conn: psycopg.Connection, company: str) -> dict | None:
+    """The company's last recorded health row, or None if it's never been scraped before."""
+    with conn.cursor(row_factory=dict_row) as cur:
+        cur.execute(
+            "SELECT last_job_count, consecutive_issues, is_broken "
+            "FROM scraper_health WHERE company = %(company)s;",
+            {"company": company},
+        )
+        return cur.fetchone()
+
+
+def upsert_scraper_health(
+    conn: psycopg.Connection, company: str, last_job_count: int, consecutive_issues: int, is_broken: bool
+) -> None:
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            INSERT INTO scraper_health (company, last_job_count, consecutive_issues, is_broken, updated_at)
+            VALUES (%(company)s, %(last_job_count)s, %(consecutive_issues)s, %(is_broken)s, now())
+            ON CONFLICT (company) DO UPDATE SET
+                last_job_count = EXCLUDED.last_job_count,
+                consecutive_issues = EXCLUDED.consecutive_issues,
+                is_broken = EXCLUDED.is_broken,
+                updated_at = now();
+            """,
+            {
+                "company": company,
+                "last_job_count": last_job_count,
+                "consecutive_issues": consecutive_issues,
+                "is_broken": is_broken,
+            },
+        )
+    conn.commit()
 
 
 def list_jobs(

@@ -165,6 +165,42 @@ def test_close_stale_jobs_with_no_active_links_closes_everything_for_that_compan
     assert params["active_links"] == []
 
 
+def test_get_scraper_health_returns_none_when_never_scraped_before(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchone.return_value = None
+
+    assert db.get_scraper_health(conn, "NewCo") is None
+
+
+def test_get_scraper_health_returns_the_stored_row(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+    cursor.fetchone.return_value = {"last_job_count": 40, "consecutive_issues": 0, "is_broken": False}
+
+    health = db.get_scraper_health(conn, "Arbisoft")
+
+    assert health == {"last_job_count": 40, "consecutive_issues": 0, "is_broken": False}
+    assert cursor.execute.call_args[0][1] == {"company": "Arbisoft"}
+
+
+def test_upsert_scraper_health_inserts_and_commits(mocker):
+    conn = mocker.MagicMock()
+    cursor = conn.cursor.return_value.__enter__.return_value
+
+    db.upsert_scraper_health(conn, "Arbisoft", last_job_count=40, consecutive_issues=0, is_broken=False)
+
+    sql, params = cursor.execute.call_args[0]
+    assert "ON CONFLICT (company) DO UPDATE" in sql
+    assert params == {
+        "company": "Arbisoft",
+        "last_job_count": 40,
+        "consecutive_issues": 0,
+        "is_broken": False,
+    }
+    conn.commit.assert_called_once()
+
+
 def test_list_jobs_only_returns_active_jobs(mocker):
     conn = mocker.MagicMock()
     cursor = conn.cursor.return_value.__enter__.return_value

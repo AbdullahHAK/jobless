@@ -23,10 +23,13 @@ jobs:
     # a push made with the default GITHUB_TOKEN (below) does NOT trigger other
     # workflows, so pages-deploy.yml would never fire for this commit
     # otherwise. Deploying inline is what actually makes the site update daily.
+    # issues: write lets alerts.py file/close the "scraper-broken" issue it
+    # uses to flag a company whose scraper looks broken (see scraper_health.py).
     permissions:
       contents: write
       pages: write
       id-token: write
+      issues: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -44,6 +47,13 @@ jobs:
       - name: Run scrapers
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          # Scraper-health alerts (see scraper_health.py/alerts.py) - both
+          # are optional and silently no-op if unset, so this works even
+          # without ALERT_EMAIL/RESEND configured.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ALERT_EMAIL: ${{ vars.ALERT_EMAIL }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM_EMAIL: ${{ vars.RESEND_FROM_EMAIL }}
         run: uv run jobless
 
       - name: Export static jobs.json for the website

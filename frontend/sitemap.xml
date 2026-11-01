@@ -32,6 +32,7 @@
   <url><loc>https://abdullahhak.github.io/jobless/companies/dubizzle.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/foodpanda.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/i2c-inc.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/companies/ibex.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/inbox-business-technologies.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/invozone.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/jin-technologies.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
@@ -59,6 +60,18 @@
   <url><loc>https://abdullahhak.github.io/jobless/companies/venturedive.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/zameen-com.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/zones.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/91851-hr-business-analyst-ibex.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/91850-full-stack-developer-ibex.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/91849-network-engineer-ibex.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/91848-network-engineer-ibex.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/91847-system-support-engineer-ibex.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/91846-assistant-manager-it-pmo-ibex.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/91845-principal-telecom-engineer-ibex.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/91844-senior-software-engineer-dev-ibex.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/91843-principal-software-engineer-dev-ibex.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/91842-senior-network-engineer-ibex.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/91841-analyst-software-qa-engineer-ibex.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/91840-technical-coordinator-pmo-ibex.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/91122-client-success-manager-trainee-zones.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/91120-software-orchestration-specialist-zones.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/91114-content-writer-zones.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -160,7 +173,6 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/84922-operations-manager-service-center-karachi-pakwheels.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/84881-hr-intern-learning-development-pakistan-single-window.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/84836-full-stack-developer-creative-solutions-nayatel.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/84835-deputy-manager-corporate-legal-affairs-nayatel.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/84814-risk-analyst-i-motive.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/84736-human-resources-officer-jin-technologies.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/84735-software-engineer-jin-technologies.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -783,7 +795,6 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/33874-sqae-manual-arabic-speaker-kualitatem.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/33292-pre-sales-specialist-gcp-abacus-consulting.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/32188-business-development-associate-invozone.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/32175-senior-full-stack-net-developer-dpl.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/32148-electrical-technician-supervisor-devsinc.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/32053-ap-ar-analyst-contour-software.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/31542-sales-executive-field-sales-karachi-pakwheels.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>

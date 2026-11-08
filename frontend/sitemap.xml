@@ -45,6 +45,7 @@
   <url><loc>https://abdullahhak.github.io/jobless/companies/motive.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/nayapay.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/nayatel.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/companies/netsol-technologies.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/nextbridge.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/northbay-solutions.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/ovex-technologies.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
@@ -62,6 +63,7 @@
   <url><loc>https://abdullahhak.github.io/jobless/companies/venturedive.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/zameen-com.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/zones.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/100963-director-finance-procurement-nafsa-pakistan-single-window.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/99802-associate-software-consultant-ibm-soa-10pearls.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/99762-systems-engineer-prime-system-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/99755-service-desk-supervisor-prime-system-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -783,6 +785,7 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/52375-account-executive-codup.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/52138-f5-consultant-abacus-consulting.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/51982-hr-executive-pakwheels.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/51917-grc-specialist-governance-risk-compliance-netsol-technologies.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/51880-information-security-trainee-kualitatem.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/51677-usa-tax-analyst-contract-contour-software.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/51301-sales-operations-associate-tkxel.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -804,6 +807,7 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/47781-fp-a-analyst-contour-software.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/47698-senior-account-executive-customer-success-confiz.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/47380-delivery-director-10pearls.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/47342-executive-assistant-prime-system-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/46958-trainee-software-developer-ai-focused-contour-software.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/46954-sqa-analyst-contour-software.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/46953-intake-analyst-confiz.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -836,7 +840,6 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/40206-software-engineer-level-iii-front-end-focused-web-ui-react-javascript-costa-rica.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/40152-full-stack-engineer-ii-confiz.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/39888-enterprise-account-manager-ksa-abacus-consulting.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/39800-technical-writer-securiti-veeam.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/39768-diagnostic-technician-service-center-islamabad-pakwheels.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/39765-automotive-technician-quick-service-pakwheels-service-center-islamabad-pakwheels.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/39740-store-in-charge-cashier-islamabad-pakwheels.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>

@@ -42,6 +42,7 @@
   <url><loc>https://abdullahhak.github.io/jobless/companies/js-bank.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/kalsoft.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/kualitatem.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/companies/mindstorm-studios.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/motive.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/nayapay.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/nayatel.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
@@ -63,6 +64,20 @@
   <url><loc>https://abdullahhak.github.io/jobless/companies/venturedive.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/zameen-com.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/companies/zones.html</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/105082-hr-associate-zameen-com.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/105008-business-analyst-10pearls.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/105002-senior-python-engineer-data-remote-full-time-as340-pk-smart-working-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/104954-project-engineer-m365-migration-prime-system-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/104952-power-bi-power-automate-engineer-prime-system-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/104830-senior-ai-engineer-northbay-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/104829-senior-ai-engineer-northbay-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/104740-lead-financial-analyst-motive.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/104728-game-designer-mindstorm-studios.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/104526-internal-audit-intern-devsinc.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/104425-senior-tax-compliance-analyst-us-sales-tax-excise-creative-chaos.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/104215-senior-database-performance-engineer-contour-software.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/104179-data-engineer-level-iii-confiz.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/104168-business-analyst-intern-codup.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/103723-software-architect-net-react-azure-10pearls.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/103578-personal-secretary-sapw-nafsa-pakistan-single-window.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/103577-personal-secretary-ow-nafsa-pakistan-single-window.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -154,7 +169,6 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/95981-business-development-manager-10pearls.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/95581-business-manager-foodpanda.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/95543-full-stack-net-developer-dpl.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/95454-associate-it-support-officer-curemd.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/95346-posm-designer-creative-chaos.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/95202-front-end-engineer-react-confiz.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/95197-full-stack-developer-level-iv-java-react-javascript-costa-rica-only-confiz.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -207,9 +221,6 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/89475-lead-support-engineer-motive.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/89359-lead-logistics-operations-foodpanda.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/89295-marketing-executive-devsinc.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/88323-azure-ai-agentic-specialist-team-lead-northbay-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/88322-azure-ai-agentic-specialist-team-lead-northbay-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/88321-azure-ai-agentic-specialist-team-lead-northbay-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/88320-front-end-web-developer-react-azure-northbay-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/88319-front-end-web-developer-react-azure-northbay-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/88318-front-end-web-developer-react-azure-northbay-solutions.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -269,7 +280,6 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/88108-vendor-experience-specialist-foodpanda.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/88107-vendor-experience-specialist-foodpanda.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/88106-data-analyst-quick-commerce-partnerships-foodpanda.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/88105-associate-business-manager-foodpanda.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/88104-senior-specialist-performance-courier-pricing-foodpanda.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/88103-senior-specialist-rider-payments-foodpanda.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/88102-manager-tax-foodpanda.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -319,7 +329,6 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/83963-sales-executive-zameen-com.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/83962-sales-executive-zameen-com.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/83961-sales-executive-zameen-com.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/83960-reporting-and-analytics-executive-zameen-com.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/83959-rental-operations-senior-officer-zameen-com.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/83958-recovery-executive-zameen-com.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/83957-quantity-surveyor-mep-zameen-com.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -373,10 +382,7 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/81967-project-manager-zones.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/81963-project-coordinator-zones.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/81962-inside-solutions-architect-ii-zones.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/81961-client-success-manager-3-zones.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/81958-client-success-manager-2-zones.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/81957-client-success-manager-2-zones.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/81956-client-success-manager-1-zones.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/81955-client-success-manager-trainee-zones.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/81954-manager-software-orchestration-zones.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/81953-licensing-advisor-manager-zones.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -463,7 +469,6 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/77160-senior-full-stack-developer-contour-software.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/75830-delivery-director-10pearls.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/75685-driver-nextbridge.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/75657-role-readiness-specialist-onboarding-motive.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/75656-role-readiness-specialist-onboarding-motive.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/75649-cmrl-account-executive-ii-canada-motive.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/75574-senior-payment-technical-business-analyst-invozone.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -480,19 +485,14 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/71007-associate-legal-counsel-sadapay.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70895-manager-sqa-i-pakistan-single-window.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70892-data-protection-officer-pakistan-single-window.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/70399-qa-qc-engineer-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70398-travel-coordinator-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70397-testing-comissioning-engineer-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70396-technical-lead-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70395-talent-operations-partner-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/70394-supply-chain-intern-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/70393-solution-engineering-intern-leading-to-job-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/70391-senior-elv-draftsman-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70390-senior-accounts-executive-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70389-rps-internship-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70388-project-engineer-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70387-pre-sales-engineer-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/70386-planning-engineer-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70385-marketing-communications-executive-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70384-lead-package-engineer-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70383-lead-design-proposal-engineer-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -501,17 +501,13 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70380-financial-analyst-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70379-electrical-technician-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70378-e-i-engineer-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/70377-document-controller-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70376-design-and-proposal-lead-qatar-region-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/70374-design-application-engineer-pmt-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70373-design-application-engineer-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70372-delivery-manager-elv-systems-execution-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/70370-creative-design-intern-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70369-content-marketing-specialist-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70368-construction-manager-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70367-business-development-manager-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70366-associate-engineer-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/70364-accounts-intern-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70363-accounts-executive-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70362-sr-design-application-engineer-pmt-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70361-senior-technical-project-lead-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -520,7 +516,6 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70358-qa-qc-engineer-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70357-project-engineer-plc-scada-electrical-atg-site-works-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70356-electrical-technician-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/70355-digital-sales-engineer-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70354-design-application-engineer-avanceon.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70078-solution-architect-tkxel.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/70077-senior-account-executive-sales-tkxel.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -536,7 +531,6 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/68941-sqae-manual-kualitatem.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/68940-senior-software-quality-assurance-engineer-saudi-trade-finance-kualitatem.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/68537-site-reliability-engineer-contour-software.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/68507-ai-app-lead-confiz.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/68214-principal-java-engineer-tkxel.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/68104-facility-expansion-site-acquisition-officer-contract-based-pakwheels.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/67907-software-engineer-full-stack-net-react-aws-dpl.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -563,7 +557,6 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/62806-sales-development-representative-tkxel.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/62805-ai-lead-ai-architect-tkxel.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/62804-senior-network-security-engineer-tkxel.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://abdullahhak.github.io/jobless/jobs/62803-associate-seo-executive-tkxel.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/62773-senior-netsuite-technical-consultant-10pearls.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/62772-senior-netsuite-functional-consultant-10pearls.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/62659-car-sales-officer-faisalabad-pakwheels.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -1050,6 +1043,7 @@
   <url><loc>https://abdullahhak.github.io/jobless/jobs/11824-implementation-specialist-curemd.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/11822-associate-manager-digital-marketing-curemd.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/11821-associate-talent-enablement-workday-hris-curemd.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://abdullahhak.github.io/jobless/jobs/11820-associate-talent-enablement-audit-compliance-curemd.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/11819-associate-hr-business-partner-curemd.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/11818-senior-voip-engineer-voip-operations-curemd.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
   <url><loc>https://abdullahhak.github.io/jobless/jobs/11816-soc-analyst-l1-curemd.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
